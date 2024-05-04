@@ -1,0 +1,1230 @@
+<!DOCTYPE html><html><head>
+	<!-- metadata -->
+	<title> Horizonte Roleplay</title>
+	<meta charset="UTF-8">
+	
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="Accept-CH" content="Width, Downlink, Sec-CH-UA">
+	<meta name="theme-color" content="#0676d1">
+	<meta property="description" content="Seja bem vindo ao website oficial do servidor Horizonte Roleplay. Aqui você pode conhecer um pouco mais sobre o servidor!">
+	<meta property="og:title" content=" Horizonte RP">
+	<meta property="og:description" content="Seja bem vindo ao website oficial do servidor Horizonte Roleplay. Aqui você pode conhecer um pouco mais sobre o servidor!">
+	<meta property="og:image" content="https://i.imgur.com/kWKdr17.png">
+	<meta property="og:url" content="https://www.horizonte-rp.com/">
+	<link rel="icon" href="images/hz_new.png" type="image/png">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/hung1001/font-awesome-pro@0ac23ca/css/all.css">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ion-rangeslider/2.3.1/css/ion.rangeSlider.min.css">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" crossorigin="anonymous" referrerpolicy="no-referrer">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+	<script src="https://sdk.mercadopago.com/js/v2"></script>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link href="https://cdn.jsdelivr.net/npm/tom-select@2.2.2/dist/css/tom-select.css" rel="stylesheet">
+	<script src="https://cdn.jsdelivr.net/npm/tom-select@2.2.2/dist/js/tom-select.complete.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/ion-rangeslider/2.3.1/js/ion.rangeSlider.min.js"></script>
+	<script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+	<link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/tom-select/2.2.2/js/tom-select.complete.js" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tom-select/2.2.2/css/tom-select.default.min.css" crossorigin="anonymous" referrerpolicy="no-referrer">
+	<script src="https://www.mercadopago.com/v2/security.js" view="checkout"></script>
+	</head>
+<body class="barlow">
+	<style type="text/css">
+	.navbar-fixed-top {
+		background-image: linear-gradient(to bottom, rgb(2 27 73 / 0%), rgb(2 27 73 / 0%));
+		transition: all .5s linear;
+		padding-bottom: 5px!important;
+	}
+	@media (max-width: 768px) { 
+		
+		.texto-p-header {
+			font-size: 1.2em!important;
+			width: 100%!important;
+		}
+		.titulo-header {
+			font-size: 2em!important;
+		}
+		.navbar {
+			padding-left: 0px!important;
+			padding-right: 12px!important;
+		}
+	}
+	@media (min-width: 768px) { 
+		.texto-p-header {
+			width: 60%!important;
+		}
+	}
+	.collapse {
+		transition: all .5s;
+	}
+	.navbar {
+		transition: all ease 0.4s;
+	}
+
+	@media (prefers-reduced-motion: reduce) {
+		.collapsing {
+			transition-property: height, visibility;
+			transition-duration: .35s;
+		}
+	}
+
+	.navbar-fixed-top.scrolled {
+		background-image: linear-gradient(to bottom, rgb(2 27 73 / 100%), rgb(2 27 73 / 100%));
+	}
+
+	.navbar-nav>.nav-item>.nav-link {
+		font-family: "MonumentExtended";
+		font-size: 1em;
+		color: #c5ebff;
+		text-transform: uppercase;
+		font-weight: regular;
+		transition: all .5s;
+		padding-inline: 10px;
+		margin: 0px;
+		transition: all .1s;
+	}
+
+	.navbar-nav>.nav-item>.nav-link.active {
+		color: #009bec;
+	}
+
+	.navbar-nav>.nav-item>.nav-link:hover {
+		color: #009bec;
+	}
+	@media only screen and (max-device-width: 1365px) {
+		.header-view {
+			background-attachment: scroll;
+		}
+	}
+	.sidebar,
+	.overlay {
+		position: fixed;
+		top: 0;
+		bottom: 0;
+	}
+	.sidebar {
+		right: -100%;
+		max-width: 300px;
+		transition: all ease 0.25s;
+		overflow-y: auto;
+		z-index: 1032;
+	}
+	.overlay {
+		left: 0;
+		right: 0;
+		height: 100%;
+		width: 100%;
+		background-color: rgba(0, 0, 0, 0.50);
+		visibility: hidden;
+		z-index: 1031;
+	}
+	.main-navigation.active .sidebar {
+		right: 0;
+		background: #010d24;
+		border-radius: 37px 0px 0px 37px;
+	}
+	.main-navigation.active .overlay {
+		visibility: visible;
+	}
+	@media (min-width: 992px) {
+		.sidebar {
+			position: relative;
+			top: auto;
+			bottom: auto;
+			right: auto;
+			flex-direction: row;
+			max-width: 100%;
+			transform: none;
+			transition: none;
+			overflow-y: visible;
+			z-index: auto;
+		}
+
+	}
+	.main-heading {
+		position: relative;
+		z-index: 100;
+	}
+	@media (max-width: 991.98px) {
+		.navbar-nav {
+			padding-top: 5rem;
+			padding-left: 1.5rem;
+		}
+	}
+	@media (min-width: 1084px) {
+		.order-lg-2 svg {
+			display: none;
+		}
+	}
+	.navbar-toggler {
+		border: 2px solid #57afff;
+		color: #57afff!important;
+		transition: all .2s;
+		box-shadow: 0px 0px 18px 2px transparent;
+	}
+	.navbar-toggler:hover {
+		border: 2px solid #fff;
+		color: #fff!important;
+		background: #57afff;
+		box-shadow: 0px 0px 18px 2px #57afff;
+	}
+	.navbar-light .navbar-nav .nav-link:focus, .navbar-light .navbar-nav .nav-link:hover {
+		color: #009bec;
+		transform: scale(1.04);
+	}
+</style>
+<nav id="navegacao" class="navbar navbar-expand-lg main-navigation navbar-light navbar-fixed-top mb-3 px-5">
+	<div class="container-fluid">
+		<a class="navbar-brand invert py-0 px-3 m-0" href="">
+			<img id="logo" class="m-0 p-0" src="images/logo_new.png" width="130px">
+		</a>
+		<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-principal" aria-controls="navbar-principal" aria-expanded="true">
+			<span class="fa fa-bars"></span>
+		</button>
+		<div class="overlay d-flex d-lg-none"></div>
+		<div class="order-lg-2 justify-content-end p-4 d-lg-flex w-100 sidebar pb-lg-0">
+			<ul class="navbar-nav ml-auto">
+				<li class="nav-item">
+					<a class="nav-link" href=""><i class="px-1 bi-house-fill"></i> Início</a>
+				</li>
+				<li class="nav-item">
+					<a data-log="loja" class="nav-link" href="comprar_hzcoins.html"><i class="px-1 bi bi-basket-fill"></i> Loja</a>
+				</li>
+				<li class="nav-item">
+					<a data-log="download_mobile" class="nav-link" href="#scroll_download"><i class="px-1 bi bi-download"></i> Baixar launcher</a>
+				</li>
+				<li style="padding-left: 10px;padding-top: 1px;padding-bottom: 8px" class="nav-item">
+											<a class="btn btn-navbar" href="ucp.html">
+							<i class="bi bi-person-fill"></i> LOGIN
+						</a>
+									</li>
+			</ul>
+		</div>
+	</div>
+</nav>
+<script>
+	$(function () {
+		$(".navbar-fixed-top").toggleClass('scrolled', $(this).scrollTop() > ($(".navbar-fixed-top").height()));
+		$(document).scroll(function () {
+			$(".navbar-fixed-top").toggleClass('scrolled', $(this).scrollTop() > ($(".navbar-fixed-top").height()));
+		});
+	});
+	const mainNavigation = document.querySelector(".main-navigation");
+	const overlay = mainNavigation.querySelector(".overlay");
+	const toggler = mainNavigation.querySelector(".navbar-toggler");
+
+	const openSideNav = () => mainNavigation.classList.add("active");
+	const closeSideNav = () => mainNavigation.classList.remove("active");
+	toggler.addEventListener("click", openSideNav);
+	overlay.addEventListener("click", closeSideNav); 
+	$(document).ready(function(){
+		$("a").on('click', function(event) {
+			if (this.hash !== "") {
+				event.preventDefault();
+				var hash = this.hash;
+				$('html, body').animate({
+					scrollTop: $(hash).offset().top-70
+				}, 800, function(){
+					closeSideNav();
+					$("#navbar-principal").collapse("toggle");
+				});
+			}
+		});
+	});
+</script><main style="margin-top: -105px"><style type="text/css">
+  @media (max-width: 480px) {
+    main {
+      margin-top: -109px!important;
+    }
+    .slide__title {
+      font-size: 40px;
+      font-weight: 900;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      line-height: 37px;
+      color: white;
+    }
+    .slide__subtitle {
+      font-size: 1em;
+    }
+    .btn-76 {
+      --neon: #0ea5e9;
+      box-sizing: border-box;
+      font-weight: 900;
+      -webkit-mask-image: none;
+      outline: 4px solid #0a3797;
+      text-align: center;
+      outline-offset: -4px;
+      font-size: 1.95em!important;
+      padding: 0.9rem 1.7rem!important;
+      border-radius: 0.15rem 1.15rem 0.15rem 1.15rem;
+      position: relative;
+      text-transform: uppercase;
+      transition: 0.2s linear 0.1s;
+    }
+  }
+  @media (max-width: 768px) {
+    main {
+      margin-top: -109px!important;
+    }
+    .slide__title {
+      font-size: 34.4px;
+      font-weight: 900;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      line-height: 37px;
+      color: white;
+    }
+    .slide__subtitle {
+      font-size: 0.7em;
+    }
+    .btn-76 {
+      --neon: #0ea5e9;
+      box-sizing: border-box;
+      font-weight: 900;
+      -webkit-mask-image: none;
+      outline: 4px solid #0a3797;
+      text-align: center;
+      outline-offset: -4px;
+      font-size: 0.6em!important;
+      padding: 0.9rem 0.4rem!important;
+      border-radius: 0.15rem 1.15rem 0.15rem 1.15rem;
+      position: relative;
+      text-transform: uppercase;
+      transition: 0.2s linear 0.1s;
+    }
+  }
+  .slide__title {
+/*    text-shadow: 5px 4px 17px #009bec;*/
+}
+section.main:after {
+  background-image: url(images/horizontebg.png);
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  content: "";
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: -2;
+}
+section.main .container-section {
+  align-content: center;
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  height: 100vh;
+  margin: 0 auto;
+  position: relative;
+  width: 93vw;
+}
+.imagem-header  {
+  height: 10px;
+  width: 10px;
+}
+.background
+{
+  will-change: transform;
+  width: 100%;
+  height: 100%;
+}
+.container-section
+{
+  position: absolute!important;
+  left: 50%;
+  top: 50%;
+  transform: translateX(-50%) translateY(-50%);
+}
+</style>
+<section class="banner-top pt-4">
+  <div id="particles-js"></div>
+  <div class="px-2 slide-bg header-slide pt-2" style="margin-top: 60px;">
+          <div class="slide-section px-3 d-flex justify-content-center align-items-center" style="min-height: 560px">
+        <div class="slider__slide slide" style="width: 1280px;white-space: normal;">
+          <div class="row align-items-center" style="position: relative">
+            <div class="slider__conteudo col-md-7 mt-5" style="z-index: 2">
+              <div data-aos="fade-right" class="slide__title mt-5">Seja quem<span class="billion text-primary">Quiser!</span></div>
+              <div data-aos="fade-down" class="slide__subtitle-container pt-2">
+                <div class="slide__subtitle">
+                  Faça amigos, familia, construa seu imperio, sem limitações, você pode ser o que quiser!                </div>
+              </div>
+              <div data-aos="zoom-in" class="slide__action pt-3">
+                <div class="d-flex header-buttons pr-5">
+                                      <div class="mb-3 header-buttons-single">
+                      <a class="btn btn-header" data-log="download_mobile" href="#scroll_download">
+                        <i class="bi bi-download"></i> Instalar                      </a>
+                    </div>
+                                      <div class="mb-3 header-buttons-single">
+                      <a data-bs-toggle="modal" data-bs-target="#modalTrailer" class="btn btn-header" data-log="trailer" href="#modalTrailer">
+                        <i class="bi bi-youtube"></i> Ver Trailer                      </a>
+                    </div>
+                                  </div>
+              </div>
+            </div>
+            <div class="d-flex d-md-none d-lg-none justify-content-center" style="margin-top: -765px;">
+              <img src="images/jason.png" alt="" class="d-block d-md-none d-lg-none" style="
+              position: absolute;
+              width: 245px;
+              z-index: 1;
+              ">
+            </div>
+            <div class="col-md-5">
+              <picture data-aos="fade-left" class="slide__picture d-none d-md-block">
+                <img src="images/jason.png" alt="" class="floating slide__image">
+              </picture>
+            </div>
+          </div>
+        </div>
+      </div>
+          <div class="slide-section px-3 d-flex justify-content-center align-items-center" style="min-height: 560px">
+        <div class="slider__slide slide" style="width: 1280px;white-space: normal;">
+          <div class="row align-items-center" style="position: relative">
+            <div class="slider__conteudo col-md-7 mt-5" style="z-index: 2">
+              <div data-aos="fade-right" class="slide__title mt-5">Construa uma<span class="billion text-primary">Vida!</span></div>
+              <div data-aos="fade-down" class="slide__subtitle-container pt-2">
+                <div class="slide__subtitle">
+                  Em nossos servidores você pode construir uma nova vida atuando como um personagem!                </div>
+              </div>
+              <div data-aos="zoom-in" class="slide__action pt-3">
+                <div class="d-flex header-buttons pr-5">
+                                      <div class="mb-3 header-buttons-single">
+                      <a class="btn btn-header" data-log="download_mobile" href="#scroll_download">
+                        <i class="bi bi-download"></i> Instalar                      </a>
+                    </div>
+                                      <div class="mb-3 header-buttons-single">
+                      <a data-bs-toggle="modal" data-bs-target="#modalTrailer" class="btn btn-header" data-log="trailer" href="#modalTrailer">
+                        <i class="bi bi-youtube"></i> Ver Trailer                      </a>
+                    </div>
+                                  </div>
+              </div>
+            </div>
+            <div class="d-flex d-md-none d-lg-none justify-content-center" style="margin-top: -765px;">
+              <img src="images/main-img.png" alt="" class="d-block d-md-none d-lg-none" style="
+              position: absolute;
+              width: 245px;
+              z-index: 1;
+              ">
+            </div>
+            <div class="col-md-5">
+              <picture data-aos="fade-left" class="slide__picture d-none d-md-block">
+                <img src="images/main-img.png" alt="" class="floating slide__image">
+              </picture>
+            </div>
+          </div>
+        </div>
+      </div>
+      </div>
+  <div class="slider-dots" style="margin-top: -100px"></div>
+</section>
+<section class="banner-1" style="margin-top: -195px;">
+  <style type="text/css">
+    @import url('https://fonts.googleapis.com/css2?family=Sofia+Sans:ital,wght@0,1..1000;1,1..1000&display=swap');
+    .servers {
+      padding-top: 200px;
+      margin-bottom: -100px;
+      font-family: "MonumentExtended";
+    }
+    .servers .item {
+      margin-bottom: -50px;
+      background: linear-gradient(45deg, #000507ab, #003e556b);
+      transition: all .2s;
+      cursor: pointer;
+      font-weight: 700;
+      text-align: center;
+      color: #009bec;
+      justify-content: center;
+      padding: 16px 0px;
+      border-radius: .45rem;
+      border: 2px solid #009bec;
+      box-shadow: 0px 0px 10px transparent;
+    }
+    .servers .item:hover {
+      transform: scale(1.1);
+      background: linear-gradient(45deg, #00283a, #00283a87), url(https://media.tenor.com/G5z9Tu-pr64AAAAd/gta-v.gif);
+      background-size: cover;
+      background-position: center;
+      color: white;
+      text-shadow: 1px 1px 14px #009bec;
+      border: 1px solid #009bec;
+      box-shadow: 0px 0px 20px #009bec;
+    }
+    .servers .item .number {
+      background: linear-gradient(45deg, #009bec, #009bec);
+      border-radius: .25rem;
+      padding: 5px;
+      margin-top: -35px;
+      color: #ffffff;
+      text-shadow: 0px 0px 10px #009bec;
+      width: 51px;
+      font-size: 1.2em;
+      margin-inline: auto;
+      border: none;
+      margin-bottom: 10px;
+      transition: all .2s;
+    }
+    .servers .item:hover .number {
+      background: linear-gradient(45deg, #009bec, #009bec);
+      border-radius: .25rem;
+      color: #ffffff;
+      width: 51px;
+      font-size: 1.2em;
+      margin-inline: auto;
+      box-shadow: 0px 0px 14px 10px #009bec;
+    }
+    .servers .item .title {
+      font-weight: 800;
+      font-size: 1.2em;
+      padding: 14px;
+      text-transform: uppercase;
+    }
+    .servers .item .players {
+      font-size: 0.8em;
+      font-weight: 800;
+    }
+    .servers .item .btn {
+      background: transparent;
+      border: 2px solid #009bec;
+      text-shadow: none;
+      color: #add4ff;
+    }
+    .servers .item:hover .btn {
+      background: #009bec;
+      border: 2px solid #009bec;
+      text-shadow: none;
+      color: #fff;
+    }
+    .servers .item:hover .btn:hover {
+      background: #009bec;
+      border: 2px solid #009bec;
+      text-shadow: none;
+      color: #fff;
+      box-shadow: 1px 1px 20px 12px #009bec;
+    }
+    .servers .item:hover .btn-copy {
+      background: rgb(0 2 35 / 80%);
+      text-shadow: none!important;
+      color: #009bec;
+    }
+    .servers .item .btn-copy {
+      font-weight: 600;
+      font-size: 0.7em;
+      text-transform: uppercase;
+      background: rgb(0 2 35 / 25%);
+      width: 80%;
+      border-radius: .25rem;
+      margin-inline: auto;
+      color: #bcd6ff;
+      padding: 3px 10px;
+    }
+    @media (max-width: 768px) {
+      .banner-1 {
+        margin-top: -116px!important;
+      }
+      #mainsection {
+        margin-top: 150px;
+      }
+      .container-section {
+        margin-top: 42px;
+      }
+      .header-slide {
+        margin-top: 107px;
+      }
+      .marginado {
+        margin-top: 72px!important;
+      }
+      .slider-dots {
+        margin-top: -123px!important;
+      }
+      .imagem_slider {
+        top: -116px!important;
+      }
+      .servers .item .number {
+        font-size: 0.6em;
+        padding: 10px!important;
+      }
+      .servers .item .btn-copy {
+        font-size: 0.4em;
+      }
+      .servers .item .btn {
+        font-size: 0.6em;
+      }
+      .servers .item .title {
+        font-size: 0.6em;
+      }
+      .servers {
+        padding-top: 75px;
+      }
+    }
+
+    .bg_mapa {
+      background-image: radial-gradient(61.34% 45.38% at 50.26% 47.19%, hsl(0deg 0% 0.78% / 43%) 0, #000104 87.48%), url(images/map.png);
+      min-height: 590px;
+      margin-top: -200px;
+      padding: 0px 200px;
+      background-position: center;
+      margin-bottom: 100px;
+      background-size: cover;
+    }
+    .bg-gradient-mapa {
+      background: linear-gradient(to top, #02020200, #010408, transparent);
+      margin-inline: 0 !important;
+      padding-inline: 0px;
+    }
+    .online_players {
+     font-family: Sofia Sans;
+     font-weight: 800;
+     font-size: 8rem;
+     margin-bottom: 0px!important;
+     padding-bottom: 0px!important;
+   }
+   .texts_online_players {
+    padding-inline: 156px;
+  }
+  .online_icon {
+    width: 20px;
+    height: 20px;
+    animation-name: blink;
+    animation-timing-function: linear;
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+  }
+  @keyframes blink {
+    50% {
+      opacity: .2
+    }
+  }
+  .jogadores_online {
+    font-size: .87em;
+    margin-top:-28px!important
+  }
+  @media (max-width: 768px) {
+    .bg-gradient-mapa {
+      padding-inline: 0px;
+    }
+    .online_players {
+      font-size: 6rem;
+    }
+    .texts_online_players {
+      padding-inline: 30px;
+    }
+    .bg_mapa {
+      margin-top: -178px;
+      margin-bottom: -30px;
+      min-height: 572px;
+      padding: 0px 2px;
+    }
+    .btn-mapa {
+      margin-top: 29px!important;
+    }
+    .jogadores_online {
+      font-size: .87em;
+      margin-top: -18px!important
+    }
+    .col_online {
+      margin-inline: 0!important;
+    }
+  }
+  .btn-mapa {
+    border: 2px solid #009bec !important;
+    background: #01060966 !important;
+    backdrop-filter: blur(3px);
+    color: #009bec;
+    transition: all .5s;
+  }
+  .btn-mapa:hover {
+    transform: scale(1.1);
+    border: 2px solid #009bec !important;
+    background: #009bec !important;
+    backdrop-filter: blur(3px);
+    color: #fff;
+  }
+</style>
+<div class="container">
+  <div class="servers row">
+          <div class="server_col mt-5 py-4 col-6 col-md-3 col-md-3 mx-auto">
+        <div class="item">
+          <div class="number">1</div>
+          <strong class="title">Servidor #1</strong><br>
+          <strong class="players">485/500</strong><br>
+          <a id="ip_0" href="samp://ip.horizonte-rp.com:7777" class="btn-copy">ip.horizonte-rp.com:7777</a><br>
+          <a data-log="discord" href="https://discord.com/invite/GmrQbRAvrP" target="_blank" class="btn btn-primary mt-2"><i class="bi bi-discord"></i></a>
+          <button onclick="copyToClipboard(document.getElementById('ip_0'))" class="btn btn-primary mt-2"><i class="bi-clipboard"></i></button>
+        </div>
+      </div>
+          <div class="server_col mt-5 py-4 col-6 col-md-3 col-md-3 mx-auto">
+        <div class="item">
+          <div class="number">2</div>
+          <strong class="title">Servidor #2</strong><br>
+          <strong class="players">171/500</strong><br>
+          <a id="ip_1" href="samp://ip2.horizonte-rp.com:7777" class="btn-copy">ip2.horizonte-rp.com:7777</a><br>
+          <a data-log="discord" href="https://discord.gg/Yf2vCsQsSW" target="_blank" class="btn btn-primary mt-2"><i class="bi bi-discord"></i></a>
+          <button onclick="copyToClipboard(document.getElementById('ip_1'))" class="btn btn-primary mt-2"><i class="bi-clipboard"></i></button>
+        </div>
+      </div>
+          <div class="server_col mt-5 py-4 col-6 col-md-3 col-md-3 mx-auto">
+        <div class="item">
+          <div class="number">3</div>
+          <strong class="title">Servidor #3</strong><br>
+          <strong class="players">126/500</strong><br>
+          <a id="ip_2" href="samp://ip3.horizonte-rp.com:7777" class="btn-copy">ip3.horizonte-rp.com:7777</a><br>
+          <a data-log="discord" href="https://discord.gg/wWpzCGwbve" target="_blank" class="btn btn-primary mt-2"><i class="bi bi-discord"></i></a>
+          <button onclick="copyToClipboard(document.getElementById('ip_2'))" class="btn btn-primary mt-2"><i class="bi-clipboard"></i></button>
+        </div>
+      </div>
+          <div class="server_col mt-5 py-4 col-6 col-md-3 col-md-3 mx-auto">
+        <div class="item">
+          <div class="number">4</div>
+          <strong class="title">Servidor #4</strong><br>
+          <strong class="players">135/500</strong><br>
+          <a id="ip_3" href="samp://ip4.horizonte-rp.com:7777" class="btn-copy">ip4.horizonte-rp.com:7777</a><br>
+          <a data-log="discord" href="https://discord.gg/ApWCz9pqqa" target="_blank" class="btn btn-primary mt-2"><i class="bi bi-discord"></i></a>
+          <button onclick="copyToClipboard(document.getElementById('ip_3'))" class="btn btn-primary mt-2"><i class="bi-clipboard"></i></button>
+        </div>
+      </div>
+      </div>
+</div>
+<div style="margin-top: -140px;">
+  <div id="desktop-launcher" class="desktop-launcher">
+    <div style="height: 300px;"></div>
+    <div style="letter-spacing: 1px;text-shadow: 0px 0px 20px #061424;margin-top: -160px" data-aos="flip-left" class="title--without-shadow text-white title block-title monument">
+      <div id="scroll_download"></div>
+      Bora começar a<span class="billion text-primary">Jogar?</span>
+    </div>
+    <div data-aos="fade-down" class="shadow-bg text-muted subtitle">Baixe já e comece a jogar agora mesmo no seu celular ou computador!
+    </div>
+    <div class="container_download pt-5 mt-3">
+      <div class="container">
+        <div class="card card_download">
+          <div class="row">
+            <div class="col-12 pt-4 pb-4 col-md-7">
+              <div class="container" style="text-align: left;margin-left: 10px">
+                <h2 class="select_sistema text-left text-uppercase text-white monument">Selecione o <span class="billion text-primary">Sistema</span></h2>
+                <div class="switches-container">
+                  <input onclick="changeSistema()" type="radio" id="switchWindows" name="switchSistema" value="Windows" checked="">
+                  <input onclick="changeSistema()" type="radio" id="switchAndroid" name="switchSistema" value="Android">
+                  <label id="labelWindows" for="switchWindows"><i class="bi bi-windows"></i> Windows</label>
+                  <label for="switchAndroid"><i class="bi bi-android"></i> Android</label>
+                  <div class="switch-wrapper">
+                    <div class="switch">
+                      <div><i class="bi bi-windows"></i> Windows</div>
+                      <div><i class="bi bi-android"></i> Android</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 mt-3" id="downloads_windows">
+              <div class="row monument row_specs">
+                <div class="col-12 col-md-7">
+                  <div class="row px-4 w-100 text-white text-info-specs">
+                    <div class="col-6 d-flex justify-content-start text-info-spec"><span>Memória</span></div>
+                    <div class="col-6 d-flex justify-content-end text-info-detail"><span>4GB+</span></div>
+                    <div class="col-6 d-flex justify-content-start text-info-spec"><span>Sistema</span></div>
+                    <div class="col-6 d-flex justify-content-end text-info-detail"><span>Windows 7+</span></div>
+                    <div class="col-6 d-flex justify-content-start text-info-spec"><span>Armazenamento</span></div>
+                    <div class="col-6 d-flex justify-content-end text-info-detail"><span>5GB livres</span></div>
+                    <div class="col-6 d-flex justify-content-start text-info-spec"><span>Memória de vídeo</span></div>
+                    <div class="col-6 d-flex justify-content-end text-info-detail"><span>512MB</span></div>
+                  </div>
+                  <div class="text-left div_btn_download" style="display: flex;margin-left: 23px;margin-top: 15px;">
+                    <a data-log="download_mobile" href="view.html" target="_blank" class="btn btn-navbar"><i class="bi bi-download"></i> Download</a>
+                  </div>
+                </div>
+                <div class="col-12 col-md-5">
+                  <img class="floating img_laptop2" src="images/laptop2.png" width="300px">
+                </div>
+              </div>
+            </div>
+            <div class="col-12" style="display: none" id="downloads_android">
+              <div class="row monument row_specs">
+                <div class="col-12 col-md-7">
+                  <div class="row px-4 w-100 text-white text-info-specs">
+                    <div class="col-6 d-flex justify-content-start text-info-spec"><span>Memória</span></div>
+                    <div class="col-6 d-flex justify-content-end text-info-detail"><span>2GB+</span></div>
+                    <div class="col-6 d-flex justify-content-start text-info-spec"><span>Sistema</span></div>
+                    <div class="col-6 d-flex justify-content-end text-info-detail"><span>Android 5+</span></div>
+                    <div class="col-6 d-flex justify-content-start text-info-spec"><span>Armazenamento</span></div>
+                    <div class="col-6 d-flex justify-content-end text-info-detail"><span>4GB livres</span></div>
+                    <div class="col-6 d-flex justify-content-start text-info-spec"><span>Processador</span></div>
+                    <div class="col-6 d-flex justify-content-end text-info-detail"><span>1.2GHZ+</span></div>
+                  </div>
+                  <div class="text-left div_btn_download" style="display: flex;margin-left: 23px;margin-top: 15px;">
+                    <a data-log="downloads_android" href="details.html" target="_blank" class="btn btn-navbar"><i class="bi bi-download"></i> Download</a>
+                  </div>
+                </div>
+                <div class="col-12 col-md-5">
+                  <img class="floating img_phone_specs" src="images/phone.png" width="300px">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <script>
+          function changeSistema() {
+            var sistema = $("input[name=switchSistema]:checked").val();
+            if(sistema == "Windows") {
+              $("#switchAndroid").attr("checked");
+              $("#switchWindows").removeAttr("checked");
+              $("#downloads_android").hide();
+              $("#downloads_windows").show();
+            } else {
+              $("#switchAndroid").removeAttr("checked");
+              $("#switchWindows").attr("checked");
+              $("#downloads_android").show();
+              $("#downloads_windows").hide();
+            }
+          }
+        </script>
+      <!-- <div class="row">
+        <div class="col-12 col-md-4 col-lg-4">
+          <a data-log="download_pc" data-aos="zoom-in" href="https://www.horizonte-rp.com/download/gta" class="mx-2 my-2">
+            <div class="btn-76">
+              <i class="bi bi-download"></i> GTA-SA
+              <span class="top"></span>
+              <span class="right"></span>
+              <span class="bottom"></span>
+              <span class="left"></span>
+            </div>
+          </a>
+        </div>
+        <div class="col-12 col-md-4 col-lg-4">
+          <a data-aos="zoom-in" href="https://www.horizonte-rp.com/download/samp" class="mx-2 my-2">
+            <div class="btn-76">
+              <i class="bi bi-download"></i> SA-MP
+              <span class="top"></span>
+              <span class="right"></span>
+              <span class="bottom"></span>
+              <span class="left"></span>
+            </div>
+          </a>
+        </div>
+        <div class="col-12 col-md-4 col-lg-4">
+          <a data-aos="zoom-in" href="https://www.horizonte-rp.com/download/voip" class="mx-2 my-2">
+            <div class="btn-76">
+              <i class="bi bi-download"></i> VOIP
+              <span class="top"></span>
+              <span class="right"></span>
+              <span class="bottom"></span>
+              <span class="left"></span>
+            </div>
+          </a>
+        </div>
+      </div> -->
+    </div>
+  </div>
+</div>
+</div>
+  <!-- <div id="mobile-launcher" class="text-center mobile-launcher">
+    <img class="img_phone" src="https://www.horizonte-rp.com/assets/img/phone.png" width="300px">
+    <div data-aos="flip-left" class="mx-auto text-white title">
+      JOGUE SAMP NO<br><span class="mobile-launcher_destaque">Celular</span>
+    </div>
+    <div data-aos="fade-down" class="text-muted subtitle text-center mx-auto">
+      Jogar samp nunca foi tão fácil: Baixe o launcher, adicione nosso IP aos favoritos e aí é só se divertir!
+    </div>
+    <div class="action mt-3">
+      <a data-log="download_mobile" data-aos="zoom-in" href="https://horizonte-rp.com/download/launcher" class="btn btn-navbar">
+        <i class="bi bi-download"></i> Baixar agora!
+      </a>
+      <div data-aos="fade-down" class="mt-3">
+        <h5 style="margin-bottom: -7px" class="text-center">
+          <strong class="rating monument">5.0</strong>
+          <i class="bi-star-fill rating"></i>
+          <i class="bi-star-fill rating"></i>
+          <i class="bi-star-fill rating"></i>
+          <i class="bi-star-fill rating"></i>
+          <i class="bi-star-fill rating"></i>
+        </h5>
+        <span class="downloads text-uppercase monument">+100 mil downloads</span>
+      </div>
+    </div>
+  </div> -->
+</section>
+<section class="bg-gradient-mapa" style="margin-top: 50px">
+  <div class="text-left mx-auto">
+    <div class="row">
+      <div class="col-12 col-md-12 col_online">
+        <!-- <img class="floating jatinho" data-aos="zoom-in" src="https://www.horizonte-rp.com/assets/img/jatinho.png" width="500px"> -->
+        <div class="text-left texts_online_players">
+          <h1 data-aos="zoom-in" class="online_players monument my-0 py-0" style="color: #009bec">917</h1>
+          <h4 data-aos="fade-down" class="my-0 py-0 jogadores_online text-uppercase text-white monument" style="z-index: 400;font-weight: 700;">JOGADORES online <img alt="online" loading="lazy" width="30" class="online_icon" height="30" decoding="async" data-nimg="1" style="color:transparent" src="fonts/online.svg"></h4><br>
+        </div>
+
+        <div class="bg_mapa d-flex align-items-center flex-column justify-content-center">
+          <a data-log="ver_mapa" href="mapa.html" target="_blank" class="btn btn-navbar btn-mapa"><i class="bi bi-map"></i> Ver mapa</a>
+        </div>
+      </div>
+    </div>
+  </div> 
+</section>
+<style type="text/css">
+  .desktop-launcher {
+    background-image: url(images/launcherbg.png)!important;
+  }
+  .shadow-bg {
+    text-shadow: 0px 0px 20px #061424!important;
+  }
+  .title--without-shadow:before {
+    text-shadow: none!important;
+  }
+  .img_laptop2 {
+   -webkit-mask-image: -webkit-gradient(linear, left 40%, left bottom, from(rgba(0,0,0,1)), to(rgba(0,0,0,0)));
+ }
+</style>
+<section style="margin-top: -100px" class="banner-2">
+  <div id="launcher" class="launcher_alt">
+    <div class="launcher__wrap px-6 container">
+      <div class="row row_specs align-items-center">
+        <div class="align_responsive col-md-7">
+          <h2 data-aos="flip-right" style="letter-spacing: 1px;" class="monument launcher__title">Conheça nossa<span class="billion text-primary">Loja</span></h2>
+          <div>
+            <div class="launcher__subtitle-container">
+              <div class="launcher__subtitle pt-2">
+                <h4 data-aos="fade-right" style="font-weight: 380;font-size: 1.3em;font-family: 'MonumentExtendedMedium';text-transform: uppercase;color: #9cddff!important;font-size: 0.8em;">
+                  Você pode escolher ajudar o servidor adicionando HZCoins em sua conta, ou comprando nossos pacotes especiais. A compra é feita automaticamente e totalmente segura!
+                </h4>
+                <div class="pt-3">
+                  <div class="row">
+                    <div class="col-12 col-md-6 col-lg-6">
+                      <a data-log="loja" data-aos="zoom-in" href="comprar_hzcoins.html" class="btn btn-navbar mx-2 my-2">
+                        <i class="bi bi-basket-fill"></i> acessar loja
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-5">
+          <div data-aos="flip-right" class="w-100 launcher__picture d-md-block">
+            <img width="100%" src="images/homem_loja.png" alt="SAMP Launcher por jogar GTA San Andreas Online" class="img-fluid launcher__image floating">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<style>
+  #particles-js {
+    width: 100%;
+    position: absolute;
+    height: 100vh;
+    top: 0%;
+    pointer-events: none;
+    z-index: 1;
+  }
+</style>
+<script src="
+https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js
+"></script>
+<script type="text/javascript">
+  particlesJS('particles-js', {
+    "particles": {
+      "number": {
+        "value": 160,
+        "density": {
+          "enable": true,
+          "value_area": 800
+        }
+      },
+      "color": {
+        "value": "#bbc6ff"
+      },
+      "shape": {
+        "type": "circle",
+        "stroke": {
+          "width": 0,
+          "color": "#bbc6ff"
+        },
+        "polygon": {
+          "nb_sides": 5
+        },
+        "image": {
+          "src": "https://horizonte-rp.com/assets/img/hzcoin_alt.png",
+          "width": 500,
+          "height": 500
+        }
+      },
+      "opacity": {
+        "value": 0.7,
+        "random": true,
+        "anim": {
+          "enable": true,
+          "speed": 1,
+          "opacity_min": 0,
+          "sync": false
+        }
+      },
+      "size": {
+        "value": 2,
+        "random": true,
+        "anim": {
+          "enable": false,
+          "speed": 4,
+          "size_min": 0.1,
+          "sync": false
+        }
+      },
+      "line_linked": {
+        "enable": false,
+        "distance": 150,
+        "color": "#ffffff",
+        "opacity": 0.4,
+        "width": 1
+      },
+      "move": {
+        "enable": true,
+        "speed": 1,
+        "direction": "none",
+        "random": true,
+        "straight": false,
+        "out_mode": "out",
+        "bounce": false,
+        "attract": {
+          "enable": false,
+          "rotateX": 600,
+          "rotateY": 600
+        }
+      }
+    },
+    "interactivity": {
+      "detect_on": "canvas",
+      "events": {
+        "onhover": {
+          "enable": true,
+          "mode": "bubble"
+        },
+        "onclick": {
+          "enable": true,
+          "mode": "repulse"
+        },
+        "resize": true
+      },
+      "modes": {
+        "grab": {
+          "distance": 400,
+          "line_linked": {
+            "opacity": 1
+          }
+        },
+        "bubble": {
+          "distance": 250,
+          "size": 0,
+          "duration": 2,
+          "opacity": 0,
+          "speed": 3
+        },
+        "repulse": {
+          "distance": 400,
+          "duration": 0.4
+        },
+        "push": {
+          "particles_nb": 4
+        },
+        "remove": {
+          "particles_nb": 2
+        }
+      }
+    },
+    "retina_detect": true
+  });
+  function copyToClipboard(elem) {
+    // create hidden text element, if it doesn't already exist
+    var targetId = "_hiddenCopyText_";
+    var isInput = elem.tagName === "INPUT" || elem.tagName === "TEXTAREA";
+    var origSelectionStart, origSelectionEnd;
+    if (isInput) {
+        // can just use the original source element for the selection and copy
+      target = elem;
+      origSelectionStart = elem.selectionStart;
+      origSelectionEnd = elem.selectionEnd;
+    } else {
+        // must use a temporary form element for the selection and copy
+      target = document.getElementById(targetId);
+      if (!target) {
+        var target = document.createElement("textarea");
+        target.style.position = "absolute";
+        target.style.left = "-9999px";
+        target.style.top = "0";
+        target.id = targetId;
+        document.body.appendChild(target);
+      }
+      target.textContent = elem.textContent;
+    }
+    // select the content
+    var currentFocus = document.activeElement;
+    target.focus();
+    target.setSelectionRange(0, target.value.length);
+    
+    // copy the selection
+    var succeed;
+    try {
+      succeed = document.execCommand("copy");
+    } catch(e) {
+      succeed = false;
+    }
+    // restore original focus
+    if (currentFocus && typeof currentFocus.focus === "function") {
+      currentFocus.focus();
+    }
+    
+    if (isInput) {
+        // restore prior selection
+      elem.setSelectionRange(origSelectionStart, origSelectionEnd);
+    } else {
+        // clear temporary content
+      target.textContent = "";
+    }
+    Swal.fire("Copiado!", "O IP foi copiado, basta adicioná-lo aos favoritos!", "success")
+    return succeed;
+  }
+</script>
+<style type="text/css">
+  div:where(.swal2-container) .swal2-html-container {
+    color: #91d1ff;
+  }
+</style>
+
+<script type="text/javascript">
+  function isSmartphone() {
+    if (window.innerWidth <= 768) {
+      return true;
+    } else {
+      return false;
+    }
+  }
+  $(document).ready(function() {
+    if(isSmartphone()) {
+      $("#switchAndroid").attr("checked", "checked");
+      $("#switchWindows").attr("disabled", "disabled");
+      $("#labelWindows").addClass("disabled");
+      $("#switchWindows").attr("onclick", "");
+      $("#switchWindows").removeAttr("checked");
+      $("#downloads_android").show();
+      $("#downloads_windows").hide();
+    }
+  });
+</script>
+
+<div id="modalTrailer" class="modal fade">
+  <div class="modal-dialog modal-dialog-centered modal-lg">
+    <div class="modal-content">
+      <div class="border-0 modal-header">
+        <h6 style="font-size: 0.7em" class="p-0 modal-title monument text-uppercase text-primary">Assistir trailer</h6>
+        <button type="button" style="color: #000!important;line-height: 0px;" class="btn btn-primary p-1" data-bs-dismiss="modal" aria-label="Close"><i style="font-size: 1.5em;line-height: 0px;" class="p-0 bi bi-x"></i></button>
+      </div>
+      <div class="modal-body">
+        <div class="ratio ratio-16x9">
+          <iframe id="trailerIframe" class="rounded embed-responsive-item" src="//www.youtube.com/embed/cu_vu3Gqo80" allowfullscreen=""></iframe>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script type="text/javascript">
+
+  $("#modalTrailer").on("hidden.bs.modal", function() {
+    var iframe = document.getElementById("trailerIframe");
+    iframe.src = iframe.src;
+  });
+</script>
+
+<!-- Meta Pixel Code -->
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '1290851284816813');
+fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=1290851284816813&ev=PageView&noscript=1"
+/></noscript>
+<!-- End Meta Pixel Code --></main><div style="backdrop-filter: blur(2px);margin-top: -6px" class="footer footer-dark">
+  <div class="container pt-5">
+    <div class="row pt-md px-4 align_responsive">
+      <div class="col-md-2 justify-content-start d-flex p-0 ml-0 mb-5 mb-lg-0">
+        <a style="margin: 11px" class="align_responsive mx-auto mx-md-0" href="">
+          <img src="images/logo_new.png" alt="Footer logo" style="width: 100px;">
+        </a>
+      </div>
+      <div class="col-lg-3 col-12 mx-auto text-justified col-sm-4 ml-lg-auto mb-5 mb-lg-0">
+        <h6 style="font-weight: 700;font-size: 1.2em;letter-spacing: 1px;" class="heading monument text-white mb-2">REDES<span class="billion text-primary">Sociais</span></h6>
+        <ul class="list-unstyled monument-medium text-uppercase text-muted">
+          <li><a class="link_footer" target="_blank" href="https://www.instagram.com/horizontegamesrp/">Instagram</a></li>
+          <li><a class="link_footer" target="_blank" href="https://www.youtube.com/channel/UCHgBTyRtIqetyih6jh-eLXw">YouTube</a></li>
+          <li><a class="link_footer" target="_blank" href="http://discord.horizonte-rp.com/">Discord</a></li>
+        </ul>
+      </div>
+      <div class="col-lg-3 col-12 mx-auto text-justified col-sm-4 mb-5 mb-lg-0">
+        <h6 style="font-weight: 700;font-size: 1.2em;letter-spacing: 1px;" class="heading monument text-white mb-2 text-uppercase">Links<span class="billion text-primary">Úteis</span></h6>
+        <ul class="list-unstyled text-muted monument-medium text-uppercase text-small">
+          <li><a class="link_footer" href="termos.html">Termos e condições</a></li>
+          <li><a class="link_footer" href="privacy.html">Políticas de privacidade</a></li>
+          <li><a class="link_footer" href="prazos.html">Prazos de compensação</a></li>
+        </ul>
+      </div>
+      <div class="col-lg-3 col-12 mx-auto text-justified col-sm-4 mb-5 mb-lg-0">
+        <div class="d-flex align-items-center icones_footer justify-content-end">
+          <img class="mr-2" src="images/mercadopago.png" width="50px">
+          <img class="mx-2" src="images/googleplay.png" width="30px">
+          <img class="mx-2" src="images/pix.png" width="60px">
+          <img class="mx-1" src="images/mastercard.png" width="50px">
+        </div>
+        <br>
+        <div class="d-flex flex-column icones_footer align-items-center align-items-md-end justify-content-end">
+          <a class="monument" style="color: #9cddff;font-size: 0.6em" href="email-protection.html#5c2f292c332e28391c34332e352633322839712e2c723f3331"><span class="__cf_email__" data-cfemail="7f0c0a0f100d0b1a3f17100d160510110b1a520d0f511c1012">[email&nbsp;protected]</span></a>
+          <div style="color: #9cddff;font-size: 0.7em" class="copyright monument pt-1 mt-0">CNPJ 40.897.020/0001-21</div>
+        </div>
+      </div>
+    </div>
+    <div class="row align_responsive align-items-center justify-content-center py-4 mt-4 delimiter-top">
+      <div class="col-md-6">
+        <div style="color: #9cddff;font-size: 0.7em" class="copyright monument text-center">
+          � 2024 <span class="text-primary">Horizonte Roleplay</span>. Todos os direitos reservados. <br>
+        </div>
+      </div>
+    </div>
+ </div>
+</div>
+	<script data-cfasync="false" src="js/email-decode.min.js"></script><script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+	<script type="text/javascript">
+		AOS.init({
+			easing: 'ease-out-back'
+		});
+					$('.header-slide').slick({
+				autoplay: true,
+				arrows: false,
+				dots: true,
+				appendDots: $('.slider-dots'),
+			});
+
+			$('.header-slide').on('beforeChange', function(event, slick, currentSlide, nextSlide){
+				$('.slide__title').removeClass('aos-animate');
+				$('.slide__subtitle-container').removeClass('aos-animate');
+				$('.slide__action').removeClass('aos-animate');
+				$('.slide__picture').removeClass('aos-animate');
+			})
+			.on('afterChange', function(event, slick, currentSlide) {
+				$('[data-aos]').addClass("aos-animate");
+				$('.slide__title').addClass('aos-animate');
+				$('.slide__subtitle-container').addClass('aos-animate');
+				$('.slide__action').addClass('aos-animate');
+				$('.slide__picture').addClass('aos-animate');
+			});
+					</script>
+	
+</body></html>

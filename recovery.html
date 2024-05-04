@@ -1,0 +1,677 @@
+<!DOCTYPE html><html lang="pt"><head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	
+	<title>
+		Esqueci minha senha - Horizonte Roleplay
+	</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="Accept-CH" content="Width, Downlink, Sec-CH-UA, Sec-CH-UA-Model">
+	<meta content="Recupere sua senha através desta página." name="description">
+	<meta content="Horizonte Roleplay" name="author">
+	<meta name="theme-color" content="#0676d1">
+	<meta property="og:title" content="Esqueci minha senha - Horizonte RP">
+	<meta property="og:description" content="Recupere sua senha através desta página.">
+	<meta property="og:image" content="https://i.imgur.com/kWKdr17.png">
+	<meta property="og:url" content="https://www.horizonte-rp.com/ucp/recovery">
+
+		<!-- links -->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@sweetalert2/theme-dark@5.0.12/dark.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/quill/1.3.7/quill.core.css" crossorigin="anonymous" referrerpolicy="no-referrer">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/quill/1.3.7/quill.snow.min.css" crossorigin="anonymous" referrerpolicy="no-referrer">
+	<link rel="shortcut icon" href="images/logo-short.png">
+	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&amp;display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="css/vendor.min_1.css">
+	<link rel="stylesheet" href="css/theme.minc619_1.css">
+	<link rel="preload" href="https://www.horizonte-rp.com/assets/ucp/css/style.css?v=515" data-hs-appearance="default" as="style">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/css/toastr.min.css" crossorigin="anonymous" referrerpolicy="no-referrer">
+	<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.css">
+	<link href="css/jquery-jvectormap-1.2.2.css" rel="stylesheet" type="text/css">
+	<!-- scripts -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+	<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/quill/1.3.7/quill.min.js" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/tom-select/2.2.2/js/tom-select.complete.js" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tom-select/2.2.2/css/tom-select.default.min.css" crossorigin="anonymous" referrerpolicy="no-referrer">
+	<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css">
+	<script type="text/javascript" src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
+	<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script>
+	<style data-hs-appearance-onload-styles="">
+		/** {
+			transition: unset !important;
+		}
+		body {
+			opacity: 0;
+		}*/
+	</style>
+	<script>
+		var startTime = (new Date()).getTime();
+	</script>
+	<style type="text/css">
+		.btn-primary {
+			background: linear-gradient(45deg, #0095ff, #0037ff);
+			border: 1px solid #0095ff!important;
+			vertical-align: middle;
+		}
+		.btn {
+			text-transform: uppercase!important;
+			font-weight: bold!important;
+			font-size: 0.9em!important;
+		}
+		.swal2-styled.swal2-cancel {
+			background-color: #ff3100!important;
+			text-transform: uppercase!important;
+			font-weight: bold!important;
+			font-size: 0.9em!important;
+		}
+		.swal2-styled.swal2-confirm {
+			text-transform: uppercase!important;
+			font-weight: bold!important;
+			background: linear-gradient(45deg, #377dff, #004cff)!important;
+			font-size: 0.9em!important;
+		}
+		.btn-outline-danger {
+			border-color: #ff3100!important;
+			color: #ff3100!important;
+		}
+		.btn-outline-danger:hover, .btn-outline-danger:focus {
+			border-color: #ff3100!important;
+			background-color: #ff3100!important;
+			color: white!important;
+		}
+		.btn-outline-secondary {
+			border-color: #4f4bc4!important;
+			color: #4f4bc4!important;
+		}
+		.btn-outline-secondary:hover, .btn-outline-secondary:focus {
+			border-color: #4b47c6!important;
+			background: linear-gradient(45deg, #4f4bc4, #140de7);
+			color: white!important;
+		}
+		.modal-content {
+			backdrop-filter: blur(10px)!important;
+			background: #1219247d!important;
+			border: 1px solid #121924!important;
+			z-index: 1;
+		}
+		@media (max-width: 768px) {
+			.modal-content {
+				backdrop-filter: none!important;
+				background: #121924!important;
+				border: 1px solid #121924!important;
+				z-index: 1;
+			}
+		}
+		.swal2-container.swal2-center>.swal2-popup {
+			grid-column: 2;
+			backdrop-filter: blur(10px)!important;
+			background: #0b2e5029!important;
+			border: 1px solid #06409b!important;
+			grid-row: 2;
+			align-self: center;
+			justify-self: center;
+		}
+
+		.swal2-icon.swal2-warning {
+			border-color: #ff7600;
+			color: #ff7700;
+			text-shadow: 0px 0px 11px #ff770057;
+		}
+
+		.swal2-title {
+			color: #cce9ff;
+			text-shadow: 0px 0px 11px #ffffff57;
+		}
+
+		.swal2-html-container {
+			color: #9ab4ff!important;
+			text-shadow: 0px 0px 9px #8da0de!important;;
+		}
+
+		.swal2-styled.swal2-confirm {
+			border: 0;
+			border-radius: .25em;
+			background: initial;
+			background-color: #4690ff;
+			color: #fff;
+			font-size: 1em;
+		}
+
+					.main .content {
+				padding-top: 1.75rem;
+				padding-bottom: 1.75rem;
+				background-image: linear-gradient(to top, #192130, #121924b3), url("https://i.imgur.com/Y8IY0Tb.png");
+				background-size: 200px;
+			}
+				@import url('https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+		body {
+			font-family: 'Archivo', sans-serif!important;
+		}
+	</style>
+	<script>
+		window.hs_config = { "autopath": "@@autopath", "deleteLine": "hs-builder:delete", "deleteLine:build": "hs-builder:build-delete", "deleteLine:dist": "hs-builder:dist-delete", "previewMode": false, "startPath": "/index.html", "vars": { "themeFont": "https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap", "version": "?v=1.0" }, "layoutBuilder": { "extend": { "switcherSupport": true }, "header": { "layoutMode": "default", "containerMode": "container-fluid" }, "sidebarLayout": "default" }, "themeAppearance": { "layoutSkin": "default", "sidebarSkin": "default", "styles": { "colors": { "primary": "#377dff", "transparent": "transparent", "white": "#fff", "dark": "132144", "gray": { "100": "#f9fafc", "900": "#1e2022" } }, "font": "Inter" } }, "languageDirection": { "lang": "en" }, "skipFilesFromBundle": { "dist": ["assets/ucp/js/hs.theme-appearance.js", "assets/ucp/js/hs.theme-appearance-charts.js", "assets/ucp/js/demo.js"], "build": ["assets/ucp/css/theme.css", "assets/ucp/vendor/hs-navbar-vertical-aside/dist/hs-navbar-vertical-aside-mini-cache.js", "assets/ucp/js/demo.js", "assets/ucp/css/theme-dark.html", "assets/ucp/css/docs.css", "assets/ucp/vendor/icon-set/style.html", "assets/ucp/js/vendor/jquery-jvectormap-1.2.2.min.js", "assets/ucp/vendor/chartjs-plugin-datalabels/dist/chartjs-plugin-datalabels.min.js", "assets/ucp/js/hs.theme-appearance.js", "assets/ucp/js/hs.theme-appearance-charts.js", "assets/ucp/node_modules/chartjs-plugin-datalabels/dist/chartjs-plugin-datalabels.min.html", "assets/ucp/js/demo.js"] }, "minifyCSSFiles": ["assets/ucp/css/theme.css", "assets/ucp/css/theme-dark.css"], "copyDependencies": { "dist": { "*assets/ucp/js/theme-custom.js": "" }, "build": { "*assets/ucp/js/theme-custom.js": "", "assets/ucp/node_modules/bootstrap-icons/font/*fonts/**": "assets/ucp/css" } }, "buildFolder": "", "replacePathsToCDN": {}, "directoryNames": { "src": "./src", "dist": "./dist", "build": "./build" }, "fileNames": { "dist": { "js": "theme.min.js", "css": "style.css" }, "build": { "css": "style.css", "js": "theme.min.js", "vendorCSS": "vendor.min.css", "vendorJS": "vendor.min.js" } }, "fileTypes": "jpg|png|svg|mp4|webm|ogv|json" }
+		window.hs_config.gulpRGBA = (p1) => {
+			const options = p1.split(',')
+			const hex = options[0].toString()
+			const transparent = options[1].toString()
+
+			var c;
+			if (/^#([A-Fa-f0-9]{3}){1,2}$/.test(hex)) {
+				c = hex.substring(1).split('');
+				if (c.length == 3) {
+					c = [c[0], c[0], c[1], c[1], c[2], c[2]];
+				}
+				c = '0x' + c.join('');
+				return 'rgba(' + [(c >> 16) & 255, (c >> 8) & 255, c & 255].join(',') + ',' + transparent + ')';
+			}
+			throw new Error('Bad Hex');
+		}
+		window.hs_config.gulpDarken = (p1) => {
+			const options = p1.split(',')
+
+			let col = options[0].toString()
+			let amt = -parseInt(options[1])
+			var usePound = false
+
+			if (col[0] == "#") {
+				col = col.slice(1)
+				usePound = true
+			}
+			var num = parseInt(col, 16)
+			var r = (num >> 16) + amt
+			if (r > 255) {
+				r = 255
+			} else if (r < 0) {
+				r = 0
+			}
+			var b = ((num >> 8) & 0x00FF) + amt
+			if (b > 255) {
+				b = 255
+			} else if (b < 0) {
+				b = 0
+			}
+			var g = (num & 0x0000FF) + amt
+			if (g > 255) {
+				g = 255
+			} else if (g < 0) {
+				g = 0
+			}
+			return (usePound ? "#" : "") + (g | (b << 8) | (r << 16)).toString(16)
+		}
+		window.hs_config.gulpLighten = (p1) => {
+			const options = p1.split(',')
+
+			let col = options[0].toString()
+			let amt = parseInt(options[1])
+			var usePound = false
+
+			if (col[0] == "#") {
+				col = col.slice(1)
+				usePound = true
+			}
+			var num = parseInt(col, 16)
+			var r = (num >> 16) + amt
+			if (r > 255) {
+				r = 255
+			} else if (r < 0) {
+				r = 0
+			}
+			var b = ((num >> 8) & 0x00FF) + amt
+			if (b > 255) {
+				b = 255
+			} else if (b < 0) {
+				b = 0
+			}
+			var g = (num & 0x0000FF) + amt
+			if (g > 255) {
+				g = 255
+			} else if (g < 0) {
+				g = 0
+			}
+			return (usePound ? "#" : "") + (g | (b << 8) | (r << 16)).toString(16)
+		}
+	</script>
+	<script src="js/hs.theme-appearance.js"></script>
+	<script src="js/hs-navbar-vertical-aside-mini-cache.js"></script>
+	<script src="js/hs-navbar-vertical-aside.js"></script>
+	<script src="js/vendor.min.js"></script>
+	<script src="js/theme.min.js"></script>
+	<script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+	<style type="text/css">
+		.dataTables_wrapper>.row {
+			width: 100%;
+		}
+
+		.ts-wrapper.single .ts-control {
+			box-shadow: none;
+		}
+
+		.tom-select-custom .ts-wrapper.form-select .ts-control,
+		.tom-select-custom .ts-wrapper.multi .ts-control.has-items.hs-select-single-multiple {
+			padding: 0.6125rem 2.35rem 0.6125rem 0.3rem;
+		}
+
+		.ts-control .item {
+			display: flex;
+			align-items: start;
+			padding: 1px 32px 1px 0px;
+		}
+
+		.ts-wrapper.single .ts-control:after {
+			border-color: transparent;
+			border-style: solid;
+			border-width: 5px 5px 0;
+			content: " ";
+			display: block;
+			height: 0;
+			margin-top: -3px;
+			position: absolute;
+			right: 15px;
+			top: 50%;
+			width: 0;
+		}
+		.text-soft-warning {
+			color: #f6dec2!important;
+		}
+		.text-soft-danger {
+			color: #ffa5ca!important;
+		}
+		.text-soft-success {
+			color: #80ffe9!important;
+		}
+		.text-soft-primary {
+			color: #9bbeff!important;
+		}
+	</style>
+</head>
+
+<body class="has-navbar-vertical-aside navbar-vertical-aside-show-xl footer-offset">
+	<script src="js/hs.theme-appearance-charts.js"></script>
+	<script src="js/jquery-jvectormap-1.2.2.min.js"></script>
+	<script src="js/jquery-jvectormap-world-mill-en.js"></script>
+	<script src="js/jquery.dataTables.min.js"></script>
+	<script src="js/dataTables.bootstrap5.js"></script>
+	<script src="js/dataTables.responsive.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+							<img src="https://media.tenor.com/G5z9Tu-pr64AAAAd/gta-v.gif" style="display: none;">
+	<img src="https://media.tenor.com/G5z9Tu-pr64AAAAd/gta-v.gif" style="display: none;">
+	<img src="https://media.tenor.com/25U7Jn4WIQYAAAAd/grand-theft-auto-grand-theft-auto-v.gif" style="display: none;">
+	<img src="https://giffiles.alphacoders.com/493/49390.gif" style="display: none;">
+	<img src="https://media.tenor.com/0m5zQjWdlQ0AAAAC/paodequeijo-mineiro.gif" style="display: none;">
+<style type="text/css">
+	.form-label {
+		color: #0573da;
+		font-weight: 600;
+	}
+	body {
+		background-image: linear-gradient(to top, #192130, #00192fe8), url(https://img.gta5-mods.com/q95/images/felix-s-movie-like-reshade/3d87bc-GTA52019-11-0912-35-04_Easy-Resize.com.jpg);
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-attachment: fixed;
+		min-height: 100vh;
+		min-width: 99.7vw;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		align-content: center;
+		margin-inline: 0!important;
+		padding: 49px!important;
+	}
+	.card-login {
+		backdrop-filter: blur(2px);
+		background-color: #0d1c399e;
+		border-color: #0573da1f;
+		margin-inline: 0!important;
+		box-shadow: none!important;
+	}
+	.btn-primary {
+		background: linear-gradient(45deg, #0573da, #0573da);
+		border: none!important;
+	}
+	.btn-check:focus + .btn-primary, .btn-primary:focus, .btn-primary:hover {
+		box-shadow: 0 4px 10px 10px rgba(55, 125, 255, 0.25);
+		filter: brightness(1.1);
+	}
+	.card_server_1, .card_server_2, .card_server_3, .card_server_4 {
+		border-radius: 1rem!important;
+		background: linear-gradient(45deg, #53a6ff17, #53a6ff0a);
+		transition: all .2s;
+		cursor: pointer;
+		font-weight: 700;
+		color: #53a6ff;
+		justify-content: center;
+		font-size: 1.1em;
+		aspect-ratio: 1/1;
+		border: 1px solid #0573da;
+		box-shadow: 0px 0px 10px transparent;
+		font-family: var(--bs-body-font-family);
+	}
+	.inputes {
+		background-color: #324d632e;
+		border-color: #0573da;
+	}
+	.inputes:focus {
+		color: #0573da;
+		background-color: #236bae52;
+		border-color: #0573da;
+		outline: 0;
+		box-shadow: 0 0 1rem 0 #0573da;
+	}
+			.card_server_1:hover {
+			background: linear-gradient(45deg, #0573da, #009bec4a), url('https://media.tenor.com/G5z9Tu-pr64AAAAd/gta-v.gif');
+			background-size: cover;
+			background-position: center;
+			color: white;
+			text-shadow: 1px 1px 14px #03264a;
+			border: 1px solid #0573da;
+			box-shadow: 0px 0px 20px #0573da;
+		}
+		.card_server_1.selecionado {
+			background: linear-gradient(45deg, #0573da, #00b6ffd1), url('https://media.tenor.com/G5z9Tu-pr64AAAAd/gta-v.gif');
+			background-size: cover;
+			background-position: center;
+			color: white;
+			text-shadow: 1px 1px 14px #03264a;
+			border: 1px solid #0573da;
+			box-shadow: 0px 0px 20px #0573da;
+		}
+			.card_server_2:hover {
+			background: linear-gradient(45deg, #0573da, #009bec4a), url('https://media.tenor.com/25U7Jn4WIQYAAAAd/grand-theft-auto-grand-theft-auto-v.gif');
+			background-size: cover;
+			background-position: center;
+			color: white;
+			text-shadow: 1px 1px 14px #03264a;
+			border: 1px solid #0573da;
+			box-shadow: 0px 0px 20px #0573da;
+		}
+		.card_server_2.selecionado {
+			background: linear-gradient(45deg, #0573da, #00b6ffd1), url('https://media.tenor.com/25U7Jn4WIQYAAAAd/grand-theft-auto-grand-theft-auto-v.gif');
+			background-size: cover;
+			background-position: center;
+			color: white;
+			text-shadow: 1px 1px 14px #03264a;
+			border: 1px solid #0573da;
+			box-shadow: 0px 0px 20px #0573da;
+		}
+			.card_server_3:hover {
+			background: linear-gradient(45deg, #0573da, #009bec4a), url('https://giffiles.alphacoders.com/493/49390.gif');
+			background-size: cover;
+			background-position: center;
+			color: white;
+			text-shadow: 1px 1px 14px #03264a;
+			border: 1px solid #0573da;
+			box-shadow: 0px 0px 20px #0573da;
+		}
+		.card_server_3.selecionado {
+			background: linear-gradient(45deg, #0573da, #00b6ffd1), url('https://giffiles.alphacoders.com/493/49390.gif');
+			background-size: cover;
+			background-position: center;
+			color: white;
+			text-shadow: 1px 1px 14px #03264a;
+			border: 1px solid #0573da;
+			box-shadow: 0px 0px 20px #0573da;
+		}
+			.card_server_4:hover {
+			background: linear-gradient(45deg, #0573da, #009bec4a), url('https://media.tenor.com/0m5zQjWdlQ0AAAAC/paodequeijo-mineiro.gif');
+			background-size: cover;
+			background-position: center;
+			color: white;
+			text-shadow: 1px 1px 14px #03264a;
+			border: 1px solid #0573da;
+			box-shadow: 0px 0px 20px #0573da;
+		}
+		.card_server_4.selecionado {
+			background: linear-gradient(45deg, #0573da, #00b6ffd1), url('https://media.tenor.com/0m5zQjWdlQ0AAAAC/paodequeijo-mineiro.gif');
+			background-size: cover;
+			background-position: center;
+			color: white;
+			text-shadow: 1px 1px 14px #03264a;
+			border: 1px solid #0573da;
+			box-shadow: 0px 0px 20px #0573da;
+		}
+		@import url('https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+	.title-text {
+		text-transform: uppercase;
+		letter-spacing: 0.2px;
+		font-weight: 1000;
+		font-size: 1.8em;
+		color: #0573da;
+		font-family: 'Archivo', sans-serif;
+	}
+	body {
+		font-family: 'Archivo', sans-serif;
+	}
+	@media (min-width: 991.98px) {
+		.card-login {
+			padding: 0px!important;
+			transform: scale(1.0);
+			border: 1px solid #0573da1f;
+		}
+		.card_server_1, .card_server_2, .card_server_3, .card_server_4 {
+			font-size: 1.1em;
+			font-weight: 600;
+			padding: 12px!important;
+		}
+	}
+	@media (max-width: 768px) {
+		.footer-offset {
+			padding: 0!important;
+		}
+		.card_server_1, .card_server_2, .card_server_3, .card_server_4 {
+			font-size: 1.1em;
+			font-weight: 600;
+			padding: 12px!important;
+		}
+		.bg_select {
+			background-image: linear-gradient(to top, #192130, #00192f), url(https://img.gta5-mods.com/q95/images/felix-s-movie-like-reshade/3d87bc-GTA52019-11-0912-35-04_Easy-Resize.com.jpg);
+			background-size: cover;
+			background-repeat: no-repeat;
+			background-attachment: fixed;
+		}
+		.card-login {
+			padding-bottom: 40px;
+			backdrop-filter: none!important;
+			background-color: transparent;
+			border-color: transparent;
+			margin-inline: 7px;
+			box-shadow: none!important;
+		}
+		.card-body {
+			padding-top: 0px!important;
+			padding-bottom: 0px!important;
+		}
+	}
+	.footer-offset {
+		margin-bottom: 0!important;
+	}
+</style>
+	<div class="bg_select py-5 container justify-content-center align-items-center pt-5">
+		<a class="d-flex pt-5 justify-content-center mb-5" href="ucp.html">
+			<img class="zi-2" src="https://i.imgur.com/gf0Qe0C.png" alt="Image Description" style="width: 8rem;margin-top: -40px;margin-bottom: -30px;filter: brightness(39%) sepia(15) saturate(13) hue-rotate(199deg)">
+		</a>
+		<div class="mx-auto" style="max-width: 30rem;">
+			<!-- Card -->
+			<div class="card card-login card-lg mb-5">
+				<div class="card-body">
+										<!-- Form -->
+					<div class="text-center">
+						<div class="mb-5">
+							<h1 class="title-text display-5">Esqueceu a senha?</h1>
+							<p>Digite seu nickname (nome de usuário) de nosso servidor para recuperar sua senha.</p>
+						</div>
+					</div>
+					<div id="escolhaservidor" class="align-items-center justify-content-center text-center row">
+						<div class="col-12 mb-2">
+							<h6 style="font-weight: 500;" class="text-white text-uppercase">Escolha um servidor</h6>
+						</div>
+						<div class="p-1 p-md-2 col-3 col-lg-3 col-md-3 mb-4">
+							<div onclick="changeServer(1)" class="card card_server_1">1</div>
+						</div>
+						<div class="p-1 p-md-2 col-3 col-lg-3 col-md-3 mb-4">
+							<div onclick="changeServer(2)" class="card card_server_2">2</div>
+						</div>
+						<div class="p-1 p-md-2 col-3 col-lg-3 col-md-3 mb-4">
+							<div onclick="changeServer(3)" class="card card_server_3">3</div>
+						</div>
+						<div class="p-1 p-md-2 col-3 col-lg-3 col-md-3 mb-4">
+							<div onclick="changeServer(4)" class="card card_server_4">4</div>
+						</div>
+					</div>
+					<div style="display: none" class="form-group mb-3">
+						<label for="priceNameLabel" class="form-label">Servidor</label>
+						<div class="tom-select-custom">
+							<select name="servidor" id="servidor" class="js-select form-select">
+								<option value="0" selected="">Selecione um</option>
+								<option value="1">Servidor 1</option>
+								<option value="2">Servidor 2</option>
+								<option value="3">Servidor 3</option>
+								<option value="4">Servidor 4</option>
+							</select>
+						</div>
+					</div>
+					<!-- Form -->
+					<div class="mb-4">
+						<label class="form-label" for="resetPasswordUsername" tabindex="0">Nome de usuário</label>
+
+						<input type="text" class="form-control inputes form-control-lg" name="resetPasswordUsername" id="resetPasswordUsername" tabindex="1" placeholder="Digite seu nome de usuário" aria-label="Digite seu nome de usuário" required="">
+						<span class="invalid-feedback">Digite um nome de usuário válido.</span>
+					</div>
+					<!-- End Form -->
+
+					<div class="d-grid gap-2">
+						<button id="submitForm" type="submit" class="btn btn-primary btn-lg">Prosseguir</button>
+						<div class="text-center">
+							<a class="btn btn-link" href="ucp.html">
+								<i class="bi-chevron-left"></i> voltar ao login
+							</a>
+						</div>
+					</div>
+					<small class="text-center">Caso não tenha recebido nenhuma mensagem, ative a configuração de privacidade "Mensagens diretas de membros do servidor" no Discord.</small>
+					<!-- End Form -->
+				</div>
+			</div>
+			<!-- End Card -->
+		</div>
+	</div>
+
+	<script type="text/javascript">
+		function changeServer(num) {
+			$("#servidor").val(num).trigger('change');
+			$(".card_server_1").removeClass("selecionado");
+			$(".card_server_2").removeClass("selecionado");
+			$(".card_server_3").removeClass("selecionado");
+			$(".card_server_4").removeClass("selecionado");
+			$("#resetPasswordUsername").focus();
+			$(".card_server_"+num).addClass("selecionado");
+		}
+		const Toast = Swal.mixin({
+			toast: true,
+			position: 'top-end',
+			showConfirmButton: false,
+			timer: 3000,
+			timerProgressBar: true,
+			didOpen: (toast) => {
+				toast.addEventListener('mouseenter', Swal.stopTimer)
+				toast.addEventListener('mouseleave', Swal.resumeTimer)
+			}
+		})
+
+		$("#submitForm").click(function() {
+			let username = $("#resetPasswordUsername").val();
+			let servidor = $("#servidor").val();
+			if(servidor == 0) {
+				return Toast.fire({
+					icon: 'error',
+					title: "Selecione um servidor."
+				});
+			}
+			if(username == "") {
+				return Toast.fire({
+					icon: 'error',
+					title: "Digite um nome de usuário."
+				});
+			} else {
+				$("#submitForm").attr("disabled");
+				$("#submitForm").addClass("disabled");
+				$.ajax({
+					type: "POST",
+					url: "https://www.horizonte-rp.com/auth/recoverypass",
+					data: { username: username, servidor: servidor },
+					success: function( data ) {
+						let response = JSON.parse(data);
+						Toast.fire({
+							icon: response.code,
+							title: response.message
+						});
+						$("#submitForm").attr("disabled", false);
+						$("#submitForm").removeClass("disabled");
+					}
+				});
+			}
+		});
+	</script>
+		<script>
+	AOS.init();
+</script>
+<script>
+	(function () {
+		localStorage.removeItem('hs_theme')
+		window.onload = function () {
+			HSCore.components.HSFlatpickr.init('.js-flatpickr')
+
+			HSCore.components.HSTomSelect.init('.js-select');
+			HSCore.components.HSChartJS.init('.js-chart')
+			new HSSideNav('.js-navbar-vertical-aside').init()
+			HSBsDropdown.init()
+			const colors = () => {
+				return [HSThemeAppearance.getAppearance() === 'dark' ? '#34383b' : '#e7eaf3', '#377dff']
+			}
+
+			setTimeout(() => {
+				document.querySelectorAll('.js-circle').forEach(item => {
+					HSCore.components.HSCircles.init(item)
+				})
+
+				window.addEventListener('on-hs-appearance-change', () => {
+					HSCore.components.HSCircles.getItems().forEach(circle => {
+						circle.updateColors(colors())
+					})
+				})
+			})
+		}
+	})()
+	$(document).ready(function () {
+		var url = window.location;
+		$('div.nav-item a[href="' + url + '"]').addClass('active');
+		$('div.nav-item a.nav-link').filter(function () {
+			return this.href == url;
+		}).addClass('active');
+
+		$('.count').each(function () {
+			$(this).prop('Counter', 0).animate({
+				Counter: $(this).text()
+			}, {
+				duration: 2000,
+				easing: 'swing',
+				step: function (now) {
+					now = Number(Math.ceil(now)).toLocaleString('pt-br');
+					$(this).text(now);
+				}
+			});
+		});
+	});
+</script>
+<script>
+	$(window).load(function () {
+		var endTime = (new Date()).getTime();
+		var millisecondsLoading = endTime - startTime;
+		$("#time_to_load").text(millisecondsLoading);
+	});
+</script>
+
+
+</body></html>

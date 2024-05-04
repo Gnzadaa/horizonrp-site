@@ -1,0 +1,73 @@
+<!DOCTYPE html><html lang="en"><head>
+	<meta charset="utf-8">
+	<title>404 - Página não encontrada</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta content="Seja bem vindo ao website oficial do servidor Horizonte Roleplay. Aqui você pode conhecer um pouco mais sobre o servidor!" name="description">
+	<meta content="Horizonte Roleplay" name="author">
+	
+	<!-- App favicon -->
+	<link rel="shortcut icon" href="assets/img/brand/favicon.png">
+	<!-- App css -->
+	<link href="assets/ucp/css/icons.min.css" rel="stylesheet" type="text/css">
+	<link href="assets/ucp/css/app.min.css" rel="stylesheet" type="text/css" id="app-style">
+	<link href="assets/ucp/css/style.css" rel="stylesheet" type="text/css">
+<style type="text/css">
+	@import url('https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+	body {
+		font-family: 'Archivo', sans-serif;
+	}
+	.bg_select {
+		background-image: linear-gradient(to top, #192130, #00192fe8), url(https://i.imgur.com/z4HetgU.jpg);
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-attachment: fixed;
+		display: flex;
+		min-height: 100vh;
+		min-width: 100vw;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		align-content: center;
+	}
+	.title-text {
+		text-transform: uppercase;
+		letter-spacing: 0.2px;
+		font-weight: 1000;
+		font-size: 1.8em;
+		font-family: 'Archivo', sans-serif;
+	}
+	.text-red {
+		color: #3485fa;
+	}
+	.btn-primary {
+		background: linear-gradient(45deg, #0573da, #0573da);
+		border: none!important;
+	}
+	.btn-check:focus + .btn-primary, .btn-primary:focus, .btn-primary:hover {
+		box-shadow: 0 4px 10px 10px rgba(55, 125, 255, 0.25);
+		filter: brightness(1.1);
+	}
+</style></head>
+
+<body class="bg_select">
+	<div class="row w-100">
+		<div class="col-12 mx-auto text-center col-md-6">
+			<img style="margin-top: -40px;margin-bottom: -20px;filter: brightness(39%) sepia(15) saturate(13) hue-rotate(199deg)" src="https://i.imgur.com/gf0Qe0C.png" alt="" width="200px">
+			<div class="container w-100">
+				<div class="text-center">
+					<h4 class="title-text text-uppercase text-red mt-3">404</h4>
+					<p style="font-weight: bold;" class="text-muted mt-3"></p><p>A página solicitada não existe :(</p><p></p>
+
+					<a class="btn text-uppercase btn-primary mt-3" href="./ucp">Voltar ao início</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<footer class="footer footer-alt text-center">
+		<script>document.write(new Date().getFullYear())</script> © Horizonte Roleplay
+	</footer>
+	<script src="assets/ucp/js/vendor.min.js"></script>
+	<script src="assets/ucp/js/app.min.js"></script>
+
+
+</body></html>

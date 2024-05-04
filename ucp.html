@@ -1,0 +1,965 @@
+<!DOCTYPE html><html lang="pt"><head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	
+	<title>
+		Inicio - Horizonte Roleplay
+	</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="Accept-CH" content="Width, Downlink, Sec-CH-UA, Sec-CH-UA-Model">
+	<meta content="Acesse as informações da sua conta diretamente em nosso site. Faça denúncias, reporte problemas, peça revisão de banimento e muito mais!" name="description">
+	<meta content="Horizonte Roleplay" name="author">
+	<meta name="theme-color" content="#0676d1">
+	<meta property="og:title" content="Inicio - Horizonte RP">
+	<meta property="og:description" content="Acesse as informações da sua conta diretamente em nosso site. Faça denúncias, reporte problemas, peça revisão de banimento e muito mais!">
+	<meta property="og:image" content="https://i.imgur.com/kWKdr17.png">
+	<meta property="og:url" content="https://www.horizonte-rp.com/ucp">
+
+		<!-- links -->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@sweetalert2/theme-dark@5.0.12/dark.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/quill/1.3.7/quill.core.css" crossorigin="anonymous" referrerpolicy="no-referrer">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/quill/1.3.7/quill.snow.min.css" crossorigin="anonymous" referrerpolicy="no-referrer">
+	<link rel="shortcut icon" href="images/logo-short.png">
+	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&amp;display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="css/vendor.min.css">
+	<link rel="stylesheet" href="css/theme.minc619.css">
+	<link rel="preload" href="https://www.horizonte-rp.com/assets/ucp/css/style.css?v=9850" data-hs-appearance="default" as="style">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/css/toastr.min.css" crossorigin="anonymous" referrerpolicy="no-referrer">
+	<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.css">
+	<link href="css/jquery-jvectormap-1.2.2.css" rel="stylesheet" type="text/css">
+	<!-- scripts -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+	<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/quill/1.3.7/quill.min.js" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/tom-select/2.2.2/js/tom-select.complete.js" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tom-select/2.2.2/css/tom-select.default.min.css" crossorigin="anonymous" referrerpolicy="no-referrer">
+	<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css">
+	<script type="text/javascript" src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
+	<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script>
+	<style data-hs-appearance-onload-styles="">
+		/** {
+			transition: unset !important;
+		}
+		body {
+			opacity: 0;
+		}*/
+	</style>
+	<script>
+		var startTime = (new Date()).getTime();
+	</script>
+	<style type="text/css">
+		.btn-primary {
+			background: linear-gradient(45deg, #0095ff, #0037ff);
+			border: 1px solid #0095ff!important;
+			vertical-align: middle;
+		}
+		.btn {
+			text-transform: uppercase!important;
+			font-weight: bold!important;
+			font-size: 0.9em!important;
+		}
+		.swal2-styled.swal2-cancel {
+			background-color: #ff3100!important;
+			text-transform: uppercase!important;
+			font-weight: bold!important;
+			font-size: 0.9em!important;
+		}
+		.swal2-styled.swal2-confirm {
+			text-transform: uppercase!important;
+			font-weight: bold!important;
+			background: linear-gradient(45deg, #377dff, #004cff)!important;
+			font-size: 0.9em!important;
+		}
+		.btn-outline-danger {
+			border-color: #ff3100!important;
+			color: #ff3100!important;
+		}
+		.btn-outline-danger:hover, .btn-outline-danger:focus {
+			border-color: #ff3100!important;
+			background-color: #ff3100!important;
+			color: white!important;
+		}
+		.btn-outline-secondary {
+			border-color: #4f4bc4!important;
+			color: #4f4bc4!important;
+		}
+		.btn-outline-secondary:hover, .btn-outline-secondary:focus {
+			border-color: #4b47c6!important;
+			background: linear-gradient(45deg, #4f4bc4, #140de7);
+			color: white!important;
+		}
+		.modal-content {
+			backdrop-filter: blur(10px)!important;
+			background: #1219247d!important;
+			border: 1px solid #121924!important;
+			z-index: 1;
+		}
+		@media (max-width: 768px) {
+			.modal-content {
+				backdrop-filter: none!important;
+				background: #121924!important;
+				border: 1px solid #121924!important;
+				z-index: 1;
+			}
+		}
+		.swal2-container.swal2-center>.swal2-popup {
+			grid-column: 2;
+			backdrop-filter: blur(10px)!important;
+			background: #0b2e5029!important;
+			border: 1px solid #06409b!important;
+			grid-row: 2;
+			align-self: center;
+			justify-self: center;
+		}
+
+		.swal2-icon.swal2-warning {
+			border-color: #ff7600;
+			color: #ff7700;
+			text-shadow: 0px 0px 11px #ff770057;
+		}
+
+		.swal2-title {
+			color: #cce9ff;
+			text-shadow: 0px 0px 11px #ffffff57;
+		}
+
+		.swal2-html-container {
+			color: #9ab4ff!important;
+			text-shadow: 0px 0px 9px #8da0de!important;;
+		}
+
+		.swal2-styled.swal2-confirm {
+			border: 0;
+			border-radius: .25em;
+			background: initial;
+			background-color: #4690ff;
+			color: #fff;
+			font-size: 1em;
+		}
+
+					.main .content {
+				padding-top: 1.75rem;
+				padding-bottom: 1.75rem;
+				background-image: linear-gradient(to top, #192130, #121924b3), url("https://i.imgur.com/Y8IY0Tb.png");
+				background-size: 200px;
+			}
+				@import url('https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+		body {
+			font-family: 'Archivo', sans-serif!important;
+		}
+	</style>
+	<script>
+		window.hs_config = { "autopath": "@@autopath", "deleteLine": "hs-builder:delete", "deleteLine:build": "hs-builder:build-delete", "deleteLine:dist": "hs-builder:dist-delete", "previewMode": false, "startPath": "/index.html", "vars": { "themeFont": "https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap", "version": "?v=1.0" }, "layoutBuilder": { "extend": { "switcherSupport": true }, "header": { "layoutMode": "default", "containerMode": "container-fluid" }, "sidebarLayout": "default" }, "themeAppearance": { "layoutSkin": "default", "sidebarSkin": "default", "styles": { "colors": { "primary": "#377dff", "transparent": "transparent", "white": "#fff", "dark": "132144", "gray": { "100": "#f9fafc", "900": "#1e2022" } }, "font": "Inter" } }, "languageDirection": { "lang": "en" }, "skipFilesFromBundle": { "dist": ["assets/ucp/js/hs.theme-appearance.js", "assets/ucp/js/hs.theme-appearance-charts.js", "assets/ucp/js/demo.js"], "build": ["assets/ucp/css/theme.css", "assets/ucp/vendor/hs-navbar-vertical-aside/dist/hs-navbar-vertical-aside-mini-cache.js", "assets/ucp/js/demo.js", "assets/ucp/css/theme-dark.html", "assets/ucp/css/docs.css", "assets/ucp/vendor/icon-set/style.html", "assets/ucp/js/vendor/jquery-jvectormap-1.2.2.min.js", "assets/ucp/vendor/chartjs-plugin-datalabels/dist/chartjs-plugin-datalabels.min.js", "assets/ucp/js/hs.theme-appearance.js", "assets/ucp/js/hs.theme-appearance-charts.js", "assets/ucp/node_modules/chartjs-plugin-datalabels/dist/chartjs-plugin-datalabels.min.html", "assets/ucp/js/demo.js"] }, "minifyCSSFiles": ["assets/ucp/css/theme.css", "assets/ucp/css/theme-dark.css"], "copyDependencies": { "dist": { "*assets/ucp/js/theme-custom.js": "" }, "build": { "*assets/ucp/js/theme-custom.js": "", "assets/ucp/node_modules/bootstrap-icons/font/*fonts/**": "assets/ucp/css" } }, "buildFolder": "", "replacePathsToCDN": {}, "directoryNames": { "src": "./src", "dist": "./dist", "build": "./build" }, "fileNames": { "dist": { "js": "theme.min.js", "css": "style.css" }, "build": { "css": "style.css", "js": "theme.min.js", "vendorCSS": "vendor.min.css", "vendorJS": "vendor.min.js" } }, "fileTypes": "jpg|png|svg|mp4|webm|ogv|json" }
+		window.hs_config.gulpRGBA = (p1) => {
+			const options = p1.split(',')
+			const hex = options[0].toString()
+			const transparent = options[1].toString()
+
+			var c;
+			if (/^#([A-Fa-f0-9]{3}){1,2}$/.test(hex)) {
+				c = hex.substring(1).split('');
+				if (c.length == 3) {
+					c = [c[0], c[0], c[1], c[1], c[2], c[2]];
+				}
+				c = '0x' + c.join('');
+				return 'rgba(' + [(c >> 16) & 255, (c >> 8) & 255, c & 255].join(',') + ',' + transparent + ')';
+			}
+			throw new Error('Bad Hex');
+		}
+		window.hs_config.gulpDarken = (p1) => {
+			const options = p1.split(',')
+
+			let col = options[0].toString()
+			let amt = -parseInt(options[1])
+			var usePound = false
+
+			if (col[0] == "#") {
+				col = col.slice(1)
+				usePound = true
+			}
+			var num = parseInt(col, 16)
+			var r = (num >> 16) + amt
+			if (r > 255) {
+				r = 255
+			} else if (r < 0) {
+				r = 0
+			}
+			var b = ((num >> 8) & 0x00FF) + amt
+			if (b > 255) {
+				b = 255
+			} else if (b < 0) {
+				b = 0
+			}
+			var g = (num & 0x0000FF) + amt
+			if (g > 255) {
+				g = 255
+			} else if (g < 0) {
+				g = 0
+			}
+			return (usePound ? "#" : "") + (g | (b << 8) | (r << 16)).toString(16)
+		}
+		window.hs_config.gulpLighten = (p1) => {
+			const options = p1.split(',')
+
+			let col = options[0].toString()
+			let amt = parseInt(options[1])
+			var usePound = false
+
+			if (col[0] == "#") {
+				col = col.slice(1)
+				usePound = true
+			}
+			var num = parseInt(col, 16)
+			var r = (num >> 16) + amt
+			if (r > 255) {
+				r = 255
+			} else if (r < 0) {
+				r = 0
+			}
+			var b = ((num >> 8) & 0x00FF) + amt
+			if (b > 255) {
+				b = 255
+			} else if (b < 0) {
+				b = 0
+			}
+			var g = (num & 0x0000FF) + amt
+			if (g > 255) {
+				g = 255
+			} else if (g < 0) {
+				g = 0
+			}
+			return (usePound ? "#" : "") + (g | (b << 8) | (r << 16)).toString(16)
+		}
+	</script>
+	<script src="js/hs.theme-appearance.js"></script>
+	<script src="js/hs-navbar-vertical-aside-mini-cache.js"></script>
+	<script src="js/hs-navbar-vertical-aside.js"></script>
+	<script src="js/vendor.min.js"></script>
+	<script src="js/theme.min.js"></script>
+	<script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+	<style type="text/css">
+		.dataTables_wrapper>.row {
+			width: 100%;
+		}
+
+		.ts-wrapper.single .ts-control {
+			box-shadow: none;
+		}
+
+		.tom-select-custom .ts-wrapper.form-select .ts-control,
+		.tom-select-custom .ts-wrapper.multi .ts-control.has-items.hs-select-single-multiple {
+			padding: 0.6125rem 2.35rem 0.6125rem 0.3rem;
+		}
+
+		.ts-control .item {
+			display: flex;
+			align-items: start;
+			padding: 1px 32px 1px 0px;
+		}
+
+		.ts-wrapper.single .ts-control:after {
+			border-color: transparent;
+			border-style: solid;
+			border-width: 5px 5px 0;
+			content: " ";
+			display: block;
+			height: 0;
+			margin-top: -3px;
+			position: absolute;
+			right: 15px;
+			top: 50%;
+			width: 0;
+		}
+		.text-soft-warning {
+			color: #f6dec2!important;
+		}
+		.text-soft-danger {
+			color: #ffa5ca!important;
+		}
+		.text-soft-success {
+			color: #80ffe9!important;
+		}
+		.text-soft-primary {
+			color: #9bbeff!important;
+		}
+	</style>
+</head>
+
+<body class="has-navbar-vertical-aside navbar-vertical-aside-show-xl footer-offset">
+	<script src="js/hs.theme-appearance-charts.js"></script>
+	<script src="js/jquery-jvectormap-1.2.2.min.js"></script>
+	<script src="js/jquery-jvectormap-world-mill-en.js"></script>
+	<script src="js/jquery.dataTables.min.js"></script>
+	<script src="js/dataTables.bootstrap5.js"></script>
+	<script src="js/dataTables.responsive.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+						    <img src="https://media.tenor.com/G5z9Tu-pr64AAAAd/gta-v.gif" style="display: none;">
+    <img src="https://media.tenor.com/G5z9Tu-pr64AAAAd/gta-v.gif" style="display: none;">
+    <img src="https://media.tenor.com/25U7Jn4WIQYAAAAd/grand-theft-auto-grand-theft-auto-v.gif" style="display: none;">
+    <img src="https://giffiles.alphacoders.com/493/49390.gif" style="display: none;">
+    <img src="https://media.tenor.com/0m5zQjWdlQ0AAAAC/paodequeijo-mineiro.gif" style="display: none;">
+<script src="https://cdn.jsdelivr.net/npm/device-uuid@1.0.4/lib/device-uuid.min.js"></script>
+<script type="text/javascript">
+    var uuid = new DeviceUUID().get();
+</script>
+<style type="text/css">
+    body {
+        min-height: 100vh;
+        max-height: 100vh;
+        overflow-y: scroll;
+    }
+    .bg_select {
+        background-image: linear-gradient(to top, #192130, #00192fe8), url(https://i.imgur.com/2zoK6YT.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        align-content: center;
+    }
+
+    body {
+        background-color: #121924;
+    }
+    html {
+        max-height: 100vh;
+    }
+    .card {
+        border: 0;
+        box-shadow: none;
+    }
+}
+.profile_select {
+    cursor: pointer;
+    transition: all .15s ease-in-out;
+}
+.profile_select:hover {
+    box-shadow: 0px 0px 0px 4px #377dff;
+}
+.form-control.is-invalid, .was-validated .form-control:invalid {
+    border: 2px solid #ed4c78!important;
+    border-radius: .25rem!important;
+    box-shadow: inset 0px 0px 9px 0px #ed4c783d;
+}
+.card-login {
+    backdrop-filter: blur(2px);
+    background-color: #0d1c399e;
+    border-color: #445f7d;
+    margin-inline: 7px;
+    box-shadow: none!important;
+}
+.btn-primary {
+    background: linear-gradient(45deg, #0573da, #0573da);
+    border: none!important;
+}
+.btn-check:focus + .btn-primary, .btn-primary:focus, .btn-primary:hover {
+    box-shadow: 0 4px 10px 10px rgba(55, 125, 255, 0.25);
+    filter: brightness(1.1);
+}
+.card_server_1, .card_server_2, .card_server_3, .card_server_4 {
+    border-radius: 1rem!important;
+    background: linear-gradient(45deg, #53a6ff17, #53a6ff0a);
+    transition: all .2s;
+    cursor: pointer;
+    font-weight: 700;
+    color: #53a6ff;
+    justify-content: center;
+    font-size: 1.1em;
+    aspect-ratio: 1/1;
+    border: 1px solid #0573da;
+    box-shadow: 0px 0px 10px transparent;
+    font-family: var(--bs-body-font-family);
+}
+    .card_server_1:hover {
+        background: linear-gradient(45deg, #0573da, #009bec4a), url('https://media.tenor.com/G5z9Tu-pr64AAAAd/gta-v.gif');
+        background-size: cover;
+        background-position: center;
+        color: white;
+        text-shadow: 1px 1px 14px #03264a;
+        border: 1px solid #0573da;
+        box-shadow: 0px 0px 20px #0573da;
+    }
+    .card_server_1.selecionado {
+        background: linear-gradient(45deg, #0573da, #00b6ffd1), url('https://media.tenor.com/G5z9Tu-pr64AAAAd/gta-v.gif');
+        background-size: cover;
+        background-position: center;
+        color: white;
+        text-shadow: 1px 1px 14px #03264a;
+        border: 1px solid #0573da;
+        box-shadow: 0px 0px 20px #0573da;
+    }
+    .card_server_2:hover {
+        background: linear-gradient(45deg, #0573da, #009bec4a), url('https://media.tenor.com/25U7Jn4WIQYAAAAd/grand-theft-auto-grand-theft-auto-v.gif');
+        background-size: cover;
+        background-position: center;
+        color: white;
+        text-shadow: 1px 1px 14px #03264a;
+        border: 1px solid #0573da;
+        box-shadow: 0px 0px 20px #0573da;
+    }
+    .card_server_2.selecionado {
+        background: linear-gradient(45deg, #0573da, #00b6ffd1), url('https://media.tenor.com/25U7Jn4WIQYAAAAd/grand-theft-auto-grand-theft-auto-v.gif');
+        background-size: cover;
+        background-position: center;
+        color: white;
+        text-shadow: 1px 1px 14px #03264a;
+        border: 1px solid #0573da;
+        box-shadow: 0px 0px 20px #0573da;
+    }
+    .card_server_3:hover {
+        background: linear-gradient(45deg, #0573da, #009bec4a), url('https://giffiles.alphacoders.com/493/49390.gif');
+        background-size: cover;
+        background-position: center;
+        color: white;
+        text-shadow: 1px 1px 14px #03264a;
+        border: 1px solid #0573da;
+        box-shadow: 0px 0px 20px #0573da;
+    }
+    .card_server_3.selecionado {
+        background: linear-gradient(45deg, #0573da, #00b6ffd1), url('https://giffiles.alphacoders.com/493/49390.gif');
+        background-size: cover;
+        background-position: center;
+        color: white;
+        text-shadow: 1px 1px 14px #03264a;
+        border: 1px solid #0573da;
+        box-shadow: 0px 0px 20px #0573da;
+    }
+    .card_server_4:hover {
+        background: linear-gradient(45deg, #0573da, #009bec4a), url('https://media.tenor.com/0m5zQjWdlQ0AAAAC/paodequeijo-mineiro.gif');
+        background-size: cover;
+        background-position: center;
+        color: white;
+        text-shadow: 1px 1px 14px #03264a;
+        border: 1px solid #0573da;
+        box-shadow: 0px 0px 20px #0573da;
+    }
+    .card_server_4.selecionado {
+        background: linear-gradient(45deg, #0573da, #00b6ffd1), url('https://media.tenor.com/0m5zQjWdlQ0AAAAC/paodequeijo-mineiro.gif');
+        background-size: cover;
+        background-position: center;
+        color: white;
+        text-shadow: 1px 1px 14px #03264a;
+        border: 1px solid #0573da;
+        box-shadow: 0px 0px 20px #0573da;
+    }
+@import url('https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+.btn-login-discord {
+    background-color: #101d35;
+    border-color: #0573da;
+    color: #0573da;
+    box-shadow: none!important;
+    font-weight: bold!important;
+    transition: all .25s;
+}
+.btn-login-discord:hover {
+    background-color: #0573da;
+    border-color: #0573da;
+    box-shadow: 0px 0px 9px 0px #0573da!important;
+    color: #fff;
+}
+.avatar:not(img) {
+    background-color: transparent;
+}
+.divider-center::after, .divider-center::before {
+    -ms-flex: 1 1 0%;
+    flex: 1 1 0%;
+    border-top: 0.0625rem solid #a1edff59;
+    margin-top: 0.0625rem;
+    content: "";
+}
+.footer-offset {
+    margin-bottom: 0!important;
+}
+.title-text {
+    text-transform: uppercase;
+    letter-spacing: 0.2px;
+    font-weight: 1000;
+    font-size: 1.8em;
+    font-family: 'Archivo', sans-serif;
+}
+.inputes {
+    background-color: #324d632e;
+    border-color: #fff;
+}
+.inputes:focus {
+    color: #fff;
+    background-color: #236bae52;
+    border-color: transparent;
+    outline: 0;
+    box-shadow: 0 0 1rem 0 #0075ff;
+}
+.input-group-merge {
+    position: relative;
+    overflow: hidden;
+    border: 1px solid #0573da;
+    border-radius: 0.3125rem;
+}
+.input-group-text {
+    color: #0573da;
+}
+.servidor-title {
+    text-transform: uppercase;
+    background: #fff;
+    border-radius: 0.3125rem;
+    cursor: default;
+    padding: 5px 23px;
+    font-size: 1.2em!important;
+    font-weight: 1000;
+    color: #1049c1;
+}
+body {
+    font-family: 'Archivo', sans-serif;
+}
+@media (max-width: 768px) {
+    .card_server_1, .card_server_2, .card_server_3, .card_server_4 {
+        font-size: 1.1em;
+        font-weight: 600;
+        padding: 12px!important;
+    }
+    .bg_select {
+        background-image: linear-gradient(to top, #192130, #00192f), url(https://i.imgur.com/2zoK6YT.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+    }
+    .card-login {
+        padding-bottom: 40px;
+        backdrop-filter: none!important;
+        background-color: transparent;
+        border-color: transparent;
+        margin-inline: 7px;
+        box-shadow: none!important;
+    }
+    .card-body {
+        padding-top: 0px!important;
+        padding-bottom: 0px!important;
+    }
+}
+.form-label {
+    color: #0573da;
+    font-weight: 600;
+}
+@media (min-width: 991.98px) {
+    .card-login {
+        padding: 0px!important;
+        transform: scale(1.0);
+        border: 1px solid #0573da1f;
+    }
+    .card_server_1, .card_server_2, .card_server_3, .card_server_4 {
+        font-size: 1.1em;
+        font-weight: 600;
+        padding: 12px!important;
+    }
+}
+</style>
+<div class="h-100 bg_select align-items-center justify-content-center py-0 py-md-5">
+    <a class="d-none d-md-flex justify-content-center mb-5" href="ucp.html">
+        <img class="zi-2" src="https://i.imgur.com/gf0Qe0C.png" alt="Image Description" style="width: 8rem;margin-top: -40px;margin-bottom: -30px;filter: brightness(39%) sepia(15) saturate(13) hue-rotate(199deg)">
+    </a>
+    <div class="row w-100">
+        <div class="mx-auto align-items-center justify-content-center col-12 col-md-4" style="z-index: 1;">
+            <!-- Card -->
+            <div class="card-login card card-lg">
+                <div class="card-body mx-0 px-2 px-md-5">
+                    <!-- Form -->
+                                            <form id="form_signin" enctype="multipart/form-data" method="post" accept-charset="utf-8" action="">
+                            <div class="text-center">
+                                <div class="mb-2">
+                                    <img class="zi-2 mb-1 d-inline d-md-none d-lg-none d-xl-none" src="https://i.imgur.com/gf0Qe0C.png" alt="Image Description" style="width: 8rem;filter: brightness(39%) sepia(15) saturate(13) hue-rotate(199deg)">
+                                    <h1 style="color: #0573da" class="display-5 title-text">login</h1>
+                                </div>
+                                
+                                <div class="form-group">
+                                    <div id="escolhaservidor" class="align-items-center justify-content-center row">
+                                        <div class="col-12 mb-2">
+                                            <h6 style="font-weight: 500;" class="text-white text-uppercase">Escolha um servidor</h6>
+                                        </div>
+                                        <div class="col-3 col-lg-3 col-md-3 mb-4">
+                                            <div onclick="changeServer(1)" class="card card_server_1">1</div>
+                                        </div>
+                                        <div class="col-3 col-lg-3 col-md-3 mb-4">
+                                            <div onclick="changeServer(2)" class="card card_server_2">2</div>
+                                        </div>
+                                        <div class="col-3 col-lg-3 col-md-3 mb-4">
+                                            <div onclick="changeServer(3)" class="card card_server_3">3</div>
+                                        </div>
+                                        <div class="col-3 col-lg-3 col-md-3 mb-4">
+                                            <div onclick="changeServer(4)" class="card card_server_4">4</div>
+                                        </div>
+                                    </div>
+                                    <div id="restlogin" class="mt-2" style="text-align: left!important;">
+                                        <div class="form-group text-left mb-3">
+                                            <label for="nome" class="form-label">Nome de usuário</label>
+                                            <div class="input-group has-validation input-group-merge">
+                                                <div class="input-group-prepend input-group-text" id="nomeAddOn">
+                                                    <i class="bi-person"></i>
+                                                </div>
+                                                <input type="text" class="inputes form-control" id="nome" name="nome" placeholder="Nome_Sobrenome" aria-label="Nome de usuário" aria-describedby="nomeAddOn">
+                                            </div>
+                                        </div>
+
+                                        <div class="form-group text-left mb-3">
+                                            <label for="senha" class="form-label">Senha</label>
+                                            <div class="input-group has-validation input-group-merge">
+                                                <div class="input-group-prepend input-group-text" id="senhaAddOn">
+                                                    <i class="bi-lock"></i>
+                                                </div>
+                                                <input type="password" class="inputes form-control" id="senha" name="senha" placeholder="********" aria-label="senha de usuário" aria-describedby="senhaAddOn">
+                                            </div>
+                                        </div>
+                                        <div class="mt-2 mb-4" style="text-align: left;">
+                                            <a style="color: #6db9ff73" href="recovery.html">Esqueci minha senha</a>
+                                        </div>
+                                        <small id="infos"></small>
+                                        <div class="d-grid">
+                                            <button style="letter-spacing: 0.5px" id="button_submit" type="submit" class="btn btn-primary btn-lg">Fazer login</button>
+                                        </div>
+                                    </div>
+                                    <span style="color: #a1edff59!important" class="divider-center my-3">OU</span>
+
+                                    <div id="discordlogins">
+                                        <div class="d-grid mb-0">
+                                            <a class="btn btn-login-discord btn-white btn-lg" href="https://discordapp.com/oauth2/authorize?response_type=code&amp;client_id=956621033178288189&amp;redirect_uri=https://www.horizonte-rp.com/main/oauth2&amp;scope=guilds.members.read guilds email identify&amp;state=1ec181fddaa1515c5d3ef5bc">
+                                                <span class="d-flex justify-content-center align-items-center">
+                                                    <i class="avatar avatar-xss me-2 bi bi-discord"></i>
+                                                    Login via Discord
+                                                </span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div style="display: none;" class="tom-select-custom">
+                                    <select name="servidor" id="servidor" class="js-select form-select">
+                                        <option value="0" selected="">Nenhum</option>
+                                        <option value="1">Servidor 1</option>
+                                        <option value="2">Servidor 2</option>
+                                        <option value="3">Servidor 3</option>
+                                        <option value="4">Servidor 4</option>
+                                    </select>
+                                </div>
+                                <script>
+                                    function changeServer(num) {
+                                        $("#servidor").val(num).trigger('change');
+                                        $(".card_server_1").removeClass("selecionado");
+                                        $(".card_server_2").removeClass("selecionado");
+                                        $(".card_server_3").removeClass("selecionado");
+                                        $(".card_server_4").removeClass("selecionado");
+                                        $("#nome").focus();
+                                        $(".card_server_"+num).addClass("selecionado");
+                                    }
+                                </script>
+                            </div>
+                        </form></div>
+                    
+                                </div>
+            </div>
+        </div>
+    </div>
+
+<div class="d-none d-md-inline" id="particles-js"></div>
+<style type="text/css">
+    #particles-js {
+        width: 100%;
+        position: absolute;
+        height: 100vh;
+        top: -2%;
+        pointer-events: none;
+        z-index: 0;
+    }
+</style>
+<script src="
+https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js
+"></script>
+<script type="text/javascript">
+    particlesJS('particles-js', {
+        "particles": {
+            "number": {
+                "value": 50,
+                "density": {
+                    "enable": true,
+                    "value_area": 600
+                }
+            },
+            "color": {
+                "value": "#ffffff"
+            },
+            "shape": {
+                "type": "circle",
+                "stroke": {
+                    "width": 0,
+                    "color": "#000000"
+                },
+                "polygon": {
+                    "nb_sides": 5
+                },
+                "image": {
+                    "src": "https://horizonte-rp.com/assets/img/hzcoin_alt.png",
+                    "width": 500,
+                    "height": 500
+                }
+            },
+            "opacity": {
+                "value": 1,
+                "random": true,
+                "anim": {
+                    "enable": true,
+                    "speed": 1,
+                    "opacity_min": 0,
+                    "sync": false
+                }
+            },
+            "size": {
+                "value": 3,
+                "random": true,
+                "anim": {
+                    "enable": false,
+                    "speed": 4,
+                    "size_min": 0.3,
+                    "sync": false
+                }
+            },
+            "line_linked": {
+                "enable": false,
+                "distance": 150,
+                "color": "#ffffff",
+                "opacity": 0.4,
+                "width": 1
+            },
+            "move": {
+                "enable": true,
+                "speed": 1,
+                "direction": "none",
+                "random": true,
+                "straight": false,
+                "out_mode": "out",
+                "bounce": false,
+                "attract": {
+                    "enable": false,
+                    "rotateX": 600,
+                    "rotateY": 600
+                }
+            }
+        },
+        "interactivity": {
+            "detect_on": "canvas",
+            "events": {
+                "onhover": {
+                    "enable": true,
+                    "mode": "bubble"
+                },
+                "onclick": {
+                    "enable": true,
+                    "mode": "repulse"
+                },
+                "resize": true
+            },
+            "modes": {
+                "grab": {
+                    "distance": 400,
+                    "line_linked": {
+                        "opacity": 1
+                    }
+                },
+                "bubble": {
+                    "distance": 250,
+                    "size": 0,
+                    "duration": 2,
+                    "opacity": 0,
+                    "speed": 3
+                },
+                "repulse": {
+                    "distance": 400,
+                    "duration": 0.4
+                },
+                "push": {
+                    "particles_nb": 4
+                },
+                "remove": {
+                    "particles_nb": 2
+                }
+            }
+        },
+        "retina_detect": true
+    });
+</script>
+<script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.5/dist/jquery.validate.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.5/dist/additional-methods.min.js"></script>
+<script>
+        $(document).ready(function() {
+        $.validator.setDefaults({
+            success: "valid"
+        });
+
+        $.validator.addMethod("pwcheck", function(value) {
+            return /^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#\$%\^&\*])(?=.{8,})/.test(value)
+        }, "Utilize pelo menos uma letra maiúscula, uma minúscula, um número e um símbolo.");
+
+        $.validator.addMethod("alphanumeric", function(value, element) {
+            return this.optional(element) || /^\w+$/i.test(value);
+        }, "Utilize apenas letras, números ou underline.");
+
+        $.validator.addMethod("onlyletters", function(value, element) {
+            return this.optional(element) || /^[a-z," "]+$/i.test(value);
+        }, "Utilize apenas letras.");
+
+        $( "#form_signin" ).validate({
+            submitHandler: function(form, event) {
+                event.preventDefault();
+                let servidor = $("#servidor").val();
+                if(servidor == 0) {
+                    const Toast = Swal.mixin({
+                        toast: true,
+                        position: 'top-end',
+                        showConfirmButton: false,
+                        timer: 3000,
+                        timerProgressBar: true
+                    })
+                    return Toast.fire({
+                        icon: 'error',
+                        title: "Selecione um servidor."
+                    });
+                }
+                $("#button_submit").attr("disabled");
+                $("#button_submit").addClass("disabled");
+                var dados = $( form ).serialize();
+                $.ajax({
+                    type: "POST",
+                    url: "https://www.horizonte-rp.com/auth/login",
+                    data: dados,
+                    headers: {'uuid': uuid},
+                    success: function( data ) {
+                        let response = $.parseJSON(data);
+                        if(response.response == "success") {
+                            const Toast = Swal.mixin({
+                                toast: true,
+                                position: 'top-end',
+                                showConfirmButton: false,
+                                timer: 1000,
+                                timerProgressBar: true,
+                                didOpen: (toast) => {
+                                },
+                                didDestroy: (toast) => {
+                                    if(response.redirect != "0")
+                                        window.location.href = "https://www.horizonte-rp.com/"+response.redirect;
+                                    else 
+                                    window.location.href = "https://www.horizonte-rp.com/ucp";
+                                }
+                            })
+
+                            Toast.fire({
+                                icon: 'success',
+                                title: response.message
+                            })
+                        } else {
+                            const Toast = Swal.mixin({
+                                toast: true,
+                                position: 'top-end',
+                                showConfirmButton: false,
+                                timer: 3000,
+                                timerProgressBar: true,
+                                didOpen: (toast) => {
+                                    toast.addEventListener('mouseenter', Swal.stopTimer)
+                                    toast.addEventListener('mouseleave', Swal.resumeTimer)
+                                }
+                            })
+
+                            Toast.fire({
+                                icon: 'error',
+                                title: response.message
+                            });
+
+                            $("#button_submit").removeAttr("disabled");
+                            $("#button_submit").removeClass("disabled");
+                        }
+                    }
+                });
+                return false;
+            },
+            rules: {
+                senha:{
+                    required:true,
+                    minlength:1
+                },
+                nome:{
+                    minlength:1,
+                    required:true
+                }
+            },
+            messages: {
+                senha: "Digite sua senha",
+                nome: "Digite um nome válido"
+            },
+            validClass: "is-valid",
+            errorClass: "is-invalid",
+            errorPlacement: function(error,element) {
+                return true;
+            }
+        });
+    });
+</script>		<script>
+	AOS.init();
+</script>
+<script>
+	(function () {
+		localStorage.removeItem('hs_theme')
+		window.onload = function () {
+			HSCore.components.HSFlatpickr.init('.js-flatpickr')
+
+			HSCore.components.HSTomSelect.init('.js-select');
+			HSCore.components.HSChartJS.init('.js-chart')
+			new HSSideNav('.js-navbar-vertical-aside').init()
+			HSBsDropdown.init()
+			const colors = () => {
+				return [HSThemeAppearance.getAppearance() === 'dark' ? '#34383b' : '#e7eaf3', '#377dff']
+			}
+
+			setTimeout(() => {
+				document.querySelectorAll('.js-circle').forEach(item => {
+					HSCore.components.HSCircles.init(item)
+				})
+
+				window.addEventListener('on-hs-appearance-change', () => {
+					HSCore.components.HSCircles.getItems().forEach(circle => {
+						circle.updateColors(colors())
+					})
+				})
+			})
+		}
+	})()
+	$(document).ready(function () {
+		var url = window.location;
+		$('div.nav-item a[href="' + url + '"]').addClass('active');
+		$('div.nav-item a.nav-link').filter(function () {
+			return this.href == url;
+		}).addClass('active');
+
+		$('.count').each(function () {
+			$(this).prop('Counter', 0).animate({
+				Counter: $(this).text()
+			}, {
+				duration: 2000,
+				easing: 'swing',
+				step: function (now) {
+					now = Number(Math.ceil(now)).toLocaleString('pt-br');
+					$(this).text(now);
+				}
+			});
+		});
+	});
+</script>
+<script>
+	$(window).load(function () {
+		var endTime = (new Date()).getTime();
+		var millisecondsLoading = endTime - startTime;
+		$("#time_to_load").text(millisecondsLoading);
+	});
+</script>
+
+
+</body></html>

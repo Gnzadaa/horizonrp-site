@@ -1,0 +1,1590 @@
+<!DOCTYPE html><html><head>
+	<!-- metadata -->
+	<title>Mapa do servidor - Horizonte Roleplay</title>
+	<meta charset="UTF-8">
+	
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="Accept-CH" content="Width, Downlink, Sec-CH-UA">
+	<meta name="theme-color" content="#0676d1">
+	<meta property="description" content="Seja bem vindo ao website oficial do servidor Horizonte Roleplay. Aqui você pode conhecer um pouco mais sobre o servidor!">
+	<meta property="og:title" content="Mapa do servidor - Horizonte RP">
+	<meta property="og:description" content="Seja bem vindo ao website oficial do servidor Horizonte Roleplay. Aqui você pode conhecer um pouco mais sobre o servidor!">
+	<meta property="og:image" content="https://i.imgur.com/kWKdr17.png">
+	<meta property="og:url" content="https://www.horizonte-rp.com/mapa">
+	<link rel="icon" href="images/hz_new.png" type="image/png">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/hung1001/font-awesome-pro@0ac23ca/css/all.css">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ion-rangeslider/2.3.1/css/ion.rangeSlider.min.css">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" crossorigin="anonymous" referrerpolicy="no-referrer">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+	<script src="https://sdk.mercadopago.com/js/v2"></script>
+	<link rel="stylesheet" type="text/css" href="css/style_3.css">
+	<link href="https://cdn.jsdelivr.net/npm/tom-select@2.2.2/dist/css/tom-select.css" rel="stylesheet">
+	<script src="https://cdn.jsdelivr.net/npm/tom-select@2.2.2/dist/js/tom-select.complete.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/ion-rangeslider/2.3.1/js/ion.rangeSlider.min.js"></script>
+	<script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+	<link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/tom-select/2.2.2/js/tom-select.complete.js" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tom-select/2.2.2/css/tom-select.default.min.css" crossorigin="anonymous" referrerpolicy="no-referrer">
+	<script src="https://www.mercadopago.com/v2/security.js" view="checkout"></script>
+	</head>
+<body class="barlow">
+	<style type="text/css">
+	.navbar-fixed-top {
+		background-image: linear-gradient(to bottom, rgb(2 27 73 / 0%), rgb(2 27 73 / 0%));
+		transition: all .5s linear;
+		padding-bottom: 5px!important;
+	}
+	@media (max-width: 768px) { 
+		
+		.texto-p-header {
+			font-size: 1.2em!important;
+			width: 100%!important;
+		}
+		.titulo-header {
+			font-size: 2em!important;
+		}
+		.navbar {
+			padding-left: 0px!important;
+			padding-right: 12px!important;
+		}
+	}
+	@media (min-width: 768px) { 
+		.texto-p-header {
+			width: 60%!important;
+		}
+	}
+	.collapse {
+		transition: all .5s;
+	}
+	.navbar {
+		transition: all ease 0.4s;
+	}
+
+	@media (prefers-reduced-motion: reduce) {
+		.collapsing {
+			transition-property: height, visibility;
+			transition-duration: .35s;
+		}
+	}
+
+	.navbar-fixed-top.scrolled {
+		background-image: linear-gradient(to bottom, rgb(2 27 73 / 100%), rgb(2 27 73 / 100%));
+	}
+
+	.navbar-nav>.nav-item>.nav-link {
+		font-family: "MonumentExtended";
+		font-size: 1em;
+		color: #c5ebff;
+		text-transform: uppercase;
+		font-weight: regular;
+		transition: all .5s;
+		padding-inline: 10px;
+		margin: 0px;
+		transition: all .1s;
+	}
+
+	.navbar-nav>.nav-item>.nav-link.active {
+		color: #009bec;
+	}
+
+	.navbar-nav>.nav-item>.nav-link:hover {
+		color: #009bec;
+	}
+	@media only screen and (max-device-width: 1365px) {
+		.header-view {
+			background-attachment: scroll;
+		}
+	}
+	.sidebar,
+	.overlay {
+		position: fixed;
+		top: 0;
+		bottom: 0;
+	}
+	.sidebar {
+		right: -100%;
+		max-width: 300px;
+		transition: all ease 0.25s;
+		overflow-y: auto;
+		z-index: 1032;
+	}
+	.overlay {
+		left: 0;
+		right: 0;
+		height: 100%;
+		width: 100%;
+		background-color: rgba(0, 0, 0, 0.50);
+		visibility: hidden;
+		z-index: 1031;
+	}
+	.main-navigation.active .sidebar {
+		right: 0;
+		background: #010d24;
+		border-radius: 37px 0px 0px 37px;
+	}
+	.main-navigation.active .overlay {
+		visibility: visible;
+	}
+	@media (min-width: 992px) {
+		.sidebar {
+			position: relative;
+			top: auto;
+			bottom: auto;
+			right: auto;
+			flex-direction: row;
+			max-width: 100%;
+			transform: none;
+			transition: none;
+			overflow-y: visible;
+			z-index: auto;
+		}
+
+	}
+	.main-heading {
+		position: relative;
+		z-index: 100;
+	}
+	@media (max-width: 991.98px) {
+		.navbar-nav {
+			padding-top: 5rem;
+			padding-left: 1.5rem;
+		}
+	}
+	@media (min-width: 1084px) {
+		.order-lg-2 svg {
+			display: none;
+		}
+	}
+	.navbar-toggler {
+		border: 2px solid #57afff;
+		color: #57afff!important;
+		transition: all .2s;
+		box-shadow: 0px 0px 18px 2px transparent;
+	}
+	.navbar-toggler:hover {
+		border: 2px solid #fff;
+		color: #fff!important;
+		background: #57afff;
+		box-shadow: 0px 0px 18px 2px #57afff;
+	}
+	.navbar-light .navbar-nav .nav-link:focus, .navbar-light .navbar-nav .nav-link:hover {
+		color: #009bec;
+		transform: scale(1.04);
+	}
+</style>
+<nav id="navegacao" class="navbar navbar-expand-lg main-navigation navbar-light navbar-fixed-top mb-3 px-5">
+	<div class="container-fluid">
+		<a class="navbar-brand invert py-0 px-3 m-0" href="">
+			<img id="logo" class="m-0 p-0" src="images/logo_new.png" width="130px">
+		</a>
+		<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-principal" aria-controls="navbar-principal" aria-expanded="true">
+			<span class="fa fa-bars"></span>
+		</button>
+		<div class="overlay d-flex d-lg-none"></div>
+		<div class="order-lg-2 justify-content-end p-4 d-lg-flex w-100 sidebar pb-lg-0">
+			<ul class="navbar-nav ml-auto">
+				<li class="nav-item">
+					<a class="nav-link" href=""><i class="px-1 bi-house-fill"></i> Início</a>
+				</li>
+				<li class="nav-item">
+					<a data-log="loja" class="nav-link" href="comprar_hzcoins.html"><i class="px-1 bi bi-basket-fill"></i> Loja</a>
+				</li>
+				<li class="nav-item">
+					<a data-log="download_mobile" class="nav-link" href="#scroll_download"><i class="px-1 bi bi-download"></i> Baixar launcher</a>
+				</li>
+				<li style="padding-left: 10px;padding-top: 1px;padding-bottom: 8px" class="nav-item">
+											<a class="btn btn-navbar" href="ucp.html">
+							<i class="bi bi-person-fill"></i> LOGIN
+						</a>
+									</li>
+			</ul>
+		</div>
+	</div>
+</nav>
+<script>
+	$(function () {
+		$(".navbar-fixed-top").toggleClass('scrolled', $(this).scrollTop() > ($(".navbar-fixed-top").height()));
+		$(document).scroll(function () {
+			$(".navbar-fixed-top").toggleClass('scrolled', $(this).scrollTop() > ($(".navbar-fixed-top").height()));
+		});
+	});
+	const mainNavigation = document.querySelector(".main-navigation");
+	const overlay = mainNavigation.querySelector(".overlay");
+	const toggler = mainNavigation.querySelector(".navbar-toggler");
+
+	const openSideNav = () => mainNavigation.classList.add("active");
+	const closeSideNav = () => mainNavigation.classList.remove("active");
+	toggler.addEventListener("click", openSideNav);
+	overlay.addEventListener("click", closeSideNav); 
+	$(document).ready(function(){
+		$("a").on('click', function(event) {
+			if (this.hash !== "") {
+				event.preventDefault();
+				var hash = this.hash;
+				$('html, body').animate({
+					scrollTop: $(hash).offset().top-70
+				}, 800, function(){
+					closeSideNav();
+					$("#navbar-principal").collapse("toggle");
+				});
+			}
+		});
+	});
+</script><main style="margin-top: -105px"><style type="text/css">
+	.btn-navbar.disabled {
+		background: #009bec85;
+		color: #ffffff57;
+	}
+</style>
+<div style="margin-top: 150px" class="row">
+	<div class="text-center col-12 col-md-9 mx-auto my-2">
+		<a href="mapa_3.html" disabled="" class="mb-2 px-2 btn disabled btn-navbar">#SV1</a>
+		<a href="mapa_1.html" disabled="" class="mb-2 px-2 btn  btn-navbar">#SV2</a>
+		<a href="mapa_2.html" disabled="" class="mb-2 px-2 btn  btn-navbar">#SV3</a>
+		<a href="mapa_4.html" disabled="" class="mb-2 px-2 btn  btn-navbar">#SV4</a>
+	</div>
+	<div class="col-12 col-md-9 mx-auto my-2">
+		<div class="noshadow">
+			<div class="bg-transparent">
+				<div id="map-canvas" class="rounded w-100" style="height: 70vh"></div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<script src="https://maps.google.com/maps/api/js?key=AIzaSyAhMe5IRSBHCF5LBYOY8ebz7eisw9GZDmk&amp;"></script>
+<script src="js/SanMap.js"></script>
+<script>
+	var mapType = new SanMapType(0, 1, function (zoom, x, y) {
+		return x == -1 && y == -1  
+		? "https://www.horizonte-rp.com/assets/img/gtasa-blank-outer.png"
+		: "https://www.horizonte-rp.com/assets/img/gtasa-blank-vector." + zoom + "." + x + "." + y + ".png";
+	});
+	var map = SanMap.createMap(document.getElementById('map-canvas'), 
+		{'Mapa': mapType}, 0, SanMap.getLatLngFromPos(0,0), false, 'Mapa');
+	map.controls[google.maps.ControlPosition.TOP_RIGHT].push(document.getElementById('map-legend'));
+	google.maps.mapTypeControl = false;
+	google.maps.event.addListener(map, 'click', function(event) {
+		var pos = SanMap.getPosFromLatLng(event.latLng);
+		console.log(pos.x + "," + pos.y);
+	}); 															
+	function createMarker(x, y, icon, info) {
+		var p_windows = new google.maps.InfoWindow({
+			content: "<p>"+info+"</p>"
+		});
+		var p_marker = new google.maps.Marker({
+			position: SanMap.getLatLngFromPos(x, y),
+			map: map,
+			icon: "https://www.brasilmegatrucker.com/assets/images/icones/Icon_"+icon+".gif"
+		});
+		google.maps.event.addListener(p_marker, 'click', function() {
+			p_windows.open(map,p_marker);
+		});
+	}
+</script>						
+<script>
+						createMarker(2495.36, -1690.16,32,"Casa 1<br>Valor: R$1.500.000<br>Dono: Rayzin");
+								createMarker(2522.63, -1679.37,32,"Casa 2<br>Valor: R$225.000<br>Dono: steve_smith");
+								createMarker(2523.67, -1658.6,32,"Casa 3<br>Valor: R$195.000<br>Dono: Gabe_Maverick");
+								createMarker(2513.27, -1650.76,32,"Casa 4<br>Valor: R$195.000<br>Dono: Zecada_DL");
+								createMarker(2498.54, -1643.19,32,"Casa 5<br>Valor: R$195.000<br>Dono: Demonic");
+								createMarker(2486.45, -1645.85,32,"Casa 6<br>Valor: R$240.000<br>Dono: Escobar_fe");
+								createMarker(2459.42, -1690.85,32,"Casa 7<br>Valor: R$375.000<br>Dono: RYDER_");
+								createMarker(2469.46, -1647.07,32,"Casa 8<br>Valor: R$195.000<br>Dono: SONECAzz");
+								createMarker(2451.94, -1642.22,32,"Casa 9<br>Valor: R$195.000<br>Dono: Snowball");
+								createMarker(2413.85, -1647.45,32,"Casa 10<br>Valor: R$195.000<br>Dono: Snowball");
+								createMarker(2393.12, -1646.34,32,"Casa 11<br>Valor: R$195.000<br>Dono: Madoga_plays");
+								createMarker(2362.89, -1644.13,32,"Casa 12<br>Valor: R$195.000<br>Dono: Paulo_Atirador");
+								createMarker(2408.99, -1673.63,32,"Casa 13<br>Valor: R$195.000<br>Dono: jv_dlx");
+								createMarker(2384.59, -1674.67,32,"Casa 14<br>Valor: R$195.000<br>Dono: Authentic_erik");
+								createMarker(2368.32, -1673.61,32,"Casa 15<br>Valor: R$195.000<br>Dono: pedriinn_borges");
+								createMarker(2282.25, -1642.96,32,"Casa 16<br>Valor: R$195.000<br>Dono: Big_Smoke");
+								createMarker(2257.03, -1644.79,32,"Casa 17<br>Valor: R$195.000<br>Dono: pj_icaro");
+								createMarker(2244.12, -1638.66,32,"Casa 18<br>Valor: R$195.000<br>Dono: guxta_jwou");
+								createMarker(2306.98, -1678.21,32,"Casa 19<br>Valor: R$195.000<br>Dono: NT_Ramos");
+								createMarker(2328.38, -1681.94,32,"Casa 20<br>Valor: R$675.000<br>Dono: Violetaa");
+								createMarker(2308.9, -1715.43,32,"Casa 21<br>Valor: R$195.000<br>Dono: byuu");
+								createMarker(2326.78, -1717.94,32,"Casa 22<br>Valor: R$195.000<br>Dono: Curuplra");
+								createMarker(2385.39, -1713.29,32,"Casa 23<br>Valor: R$675.000<br>Dono: rc_ruanzin");
+								createMarker(2402.5, -1716.6,32,"Casa 24<br>Valor: R$195.000<br>Dono: Tavin_Play");
+								createMarker(2068.19, -1731.58,32,"Casa 25<br>Valor: R$195.000<br>Dono: Naruto0_ssp");
+								createMarker(2067.85, -1717.08,32,"Casa 26<br>Valor: R$195.000<br>Dono: Nix_Teuzin");
+								createMarker(2066.07, -1703.52,32,"Casa 27<br>Valor: R$525.000<br>Dono: Arcanjo_S");
+								createMarker(2067.95, -1656.49,32,"Casa 28<br>Valor: R$195.000<br>Dono: Acrezin_Bg");
+								createMarker(2069.15, -1643.75,32,"Casa 29<br>Valor: R$195.000<br>Dono: AnnaXitz");
+								createMarker(2068.99, -1628.86,32,"Casa 30<br>Valor: R$195.000<br>Dono: gabriel_gxzt");
+								createMarker(2016.56, -1629.92,32,"Casa 31<br>Valor: R$195.000<br>Dono: lucca_lokoo");
+								createMarker(2015.61, -1641.72,32,"Casa 32<br>Valor: R$195.000<br>Dono: Ripper_");
+								createMarker(2012.35, -1656.44,32,"Casa 33<br>Valor: R$195.000<br>Dono: Miqueias_silvB");
+								createMarker(2016.47, -1703.25,32,"Casa 34<br>Valor: R$675.000<br>Dono: Fedora");
+								createMarker(2014.89, -1717.01,32,"Casa 35<br>Valor: R$195.000<br>Dono: Arcanjo_S");
+								createMarker(2013.77, -1732.58,32,"Casa 36<br>Valor: R$675.000<br>Dono: Kadin_Silva");
+								createMarker(1984.5, -1718.94,32,"Casa 37<br>Valor: R$300.000<br>Dono: FELIP_RP");
+								createMarker(1984.97, -1682.88,32,"Casa 38<br>Valor: R$195.000<br>Dono: BBIIEELL");
+								createMarker(1675.26, -2120.82,32,"Casa 39<br>Valor: R$150.000<br>Dono: MICAEL_CHEF");
+								createMarker(1667.46, -2109.3,32,"Casa 40<br>Valor: R$195.000<br>Dono: SNOW_PTX");
+								createMarker(1684.76, -2098.91,32,"Casa 41<br>Valor: R$195.000<br>Dono: felipe_brabo");
+								createMarker(1695.49, -2125.04,32,"Casa 42<br>Valor: R$195.000<br>Dono: Adam_");
+								createMarker(1715.12, -2124.45,32,"Casa 43<br>Valor: R$195.000<br>Dono: brayan_fhk");
+								createMarker(1734.69, -2129.87,32,"Casa 44<br>Valor: R$195.000<br>Dono: Weslley_Moura");
+								createMarker(1761.16, -2124.72,32,"Casa 45<br>Valor: R$195.000<br>Dono: Calvinho_loko");
+								createMarker(1782.14, -2125.85,32,"Casa 46<br>Valor: R$195.000<br>Dono: kaiquesandeer");
+								createMarker(1804.17, -2124.22,32,"Casa 47<br>Valor: R$195.000<br>Dono: ghostt_Walker");
+								createMarker(1711.63, -2102,32,"Casa 48<br>Valor: R$195.000<br>Dono: leudson_viana");
+								createMarker(1734.07, -2098.75,32,"Casa 49<br>Valor: R$195.000<br>Dono: Hollywood_BR");
+								createMarker(1762.41, -2102.92,32,"Casa 50<br>Valor: R$195.000<br>Dono: silva_hugo");
+								createMarker(1781.47, -2102.24,32,"Casa 51<br>Valor: R$195.000<br>Dono: relberth_rp");
+								createMarker(1801.96, -2099.57,32,"Casa 52<br>Valor: R$195.000<br>Dono: Calvinho_loko");
+								createMarker(1851.82, -2069.63,32,"Casa 53<br>Valor: R$195.000<br>Dono: LczXduro");
+								createMarker(1873.56, -2069.92,32,"Casa 54<br>Valor: R$195.000<br>Dono: BABI_GEBELO");
+								createMarker(1895.44, -2068.17,32,"Casa 55<br>Valor: R$195.000<br>Dono: Adagomiro_nunes");
+								createMarker(1894.24, -2133.86,32,"Casa 56<br>Valor: R$195.000<br>Dono: vitu_13");
+								createMarker(1872.5, -2133.61,32,"Casa 57<br>Valor: R$195.000<br>Dono: sergio_maiocchhii");
+								createMarker(1851.83, -2135.74,32,"Casa 58<br>Valor: R$195.000<br>Dono: borgesMDM");
+								createMarker(1854.03, -1914.95,32,"Casa 59<br>Valor: R$210.000<br>Dono: JOTA_IPL");
+								createMarker(1872.24, -1912.48,32,"Casa 60<br>Valor: R$210.000<br>Dono: Calvinho_loko");
+								createMarker(1891.91, -1914.94,32,"Casa 61<br>Valor: R$210.000<br>Dono: TIO_BEBY");
+								createMarker(1913.47, -1912.62,32,"Casa 62<br>Valor: R$210.000<br>Dono: Vitor_Trent");
+								createMarker(1928.59, -1916.95,32,"Casa 63<br>Valor: R$210.000<br>Dono: Leozin_Bl");
+								createMarker(1937.66, -1911.34,32,"Casa 64<br>Valor: R$210.000<br>Dono: Marcelo_Jose");
+								createMarker(1909.99, -1598.58,32,"Casa 65<br>Valor: R$375.000<br>Dono: danyel_alves");
+								createMarker(1863.94, -1598.16,32,"Casa 66<br>Valor: R$375.000<br>Dono: malak_rp");
+								createMarker(1326.36, -1067.71,32,"Casa 67<br>Valor: R$750.000<br>Dono: kconde");
+								createMarker(1326.41, -1090.53,32,"Casa 68<br>Valor: R$750.000<br>Dono: Abel_Luan");
+								createMarker(1284.78, -1090.2,32,"Casa 69<br>Valor: R$750.000<br>Dono: CleytinnRJ");
+								createMarker(1285.02, -1067.41,32,"Casa 70<br>Valor: R$750.000<br>Dono: genno");
+								createMarker(1242.24, -1076.46,32,"Casa 71<br>Valor: R$750.000<br>Dono: FORASTEIRO");
+								createMarker(1242.53, -1099.25,32,"Casa 72<br>Valor: R$750.000<br>Dono: Brunoh");
+								createMarker(1183.12, -1098.97,32,"Casa 73<br>Valor: R$750.000<br>Dono: Dexternil");
+								createMarker(1183.2, -1076.19,32,"Casa 74<br>Valor: R$750.000<br>Dono: Dexternil");
+								createMarker(1142.13, -1069.97,32,"Casa 75<br>Valor: R$750.000<br>Dono: Sayu_");
+								createMarker(1142.35, -1092.8,32,"Casa 76<br>Valor: R$750.000<br>Dono: Louzadasamppp");
+								createMarker(1102.88, -1069.67,32,"Casa 77<br>Valor: R$750.000<br>Dono: Bob_ppn");
+								createMarker(1103, -1092.45,32,"Casa 78<br>Valor: R$750.000<br>Dono: Agente_Secreto");
+								createMarker(1051.02, -1057.66,32,"Casa 79<br>Valor: R$825.000<br>Dono: Rato_157");
+								createMarker(993.702, -1057.56,32,"Casa 80<br>Valor: R$825.000<br>Dono: Kconde");
+								createMarker(985.8, -1095.15,32,"Casa 81<br>Valor: R$900.000<br>Dono: yDYBALA");
+								createMarker(1118.16, -1022.88,32,"Casa 82<br>Valor: R$825.000<br>Dono: Mita_");
+								createMarker(1128.04, -1022.55,32,"Casa 83<br>Valor: R$825.000<br>Dono: guki");
+								createMarker(690.933, -1275.88,32,"Casa 84<br>Valor: R$2.250.000<br>Dono: Winchester_");
+								createMarker(685.482, -1421.27,32,"Casa 85<br>Valor: R$1.000.000<br>Dono: Mk_SLZ");
+								createMarker(738.935, -1417.37,32,"Casa 86<br>Valor: R$600.000<br>Dono: baianozin");
+								createMarker(783.48, -1464.47,32,"Casa 87<br>Valor: R$600.000<br>Dono: Taxzy_Souza");
+								createMarker(772.192, -1510.95,32,"Casa 88<br>Valor: R$600.000<br>Dono: Call_jonhson");
+								createMarker(762.315, -1564.16,32,"Casa 89<br>Valor: R$600.000<br>Dono: josue_medellin");
+								createMarker(648.48, -1536.78,32,"Casa 90<br>Valor: R$1.000.000<br>Dono: Henrique_cbjr");
+								createMarker(648.394, -1489.63,32,"Casa 91<br>Valor: R$1.000.000<br>Dono: lukzin_fm");
+								createMarker(648.061, -1442.47,32,"Casa 92<br>Valor: R$1.000.000<br>Dono: Vingador_vn");
+								createMarker(824.515, -1423.33,32,"Casa 93<br>Valor: R$600.000<br>Dono: Santosxpx");
+								createMarker(852.238, -1422.25,32,"Casa 94<br>Valor: R$1.000.000<br>Dono: LucasNRJ");
+								createMarker(880.123, -1423.4,32,"Casa 95<br>Valor: R$600.000<br>Dono: Aninhaa_s");
+								createMarker(901.458, -1447.3,32,"Casa 96<br>Valor: R$1.000.000<br>Dono: Guizinho_souza");
+								createMarker(901.549, -1471.06,32,"Casa 97<br>Valor: R$1.000.000<br>Dono: Luan_Viceratti");
+								createMarker(904.72, -1512.89,32,"Casa 98<br>Valor: R$1.000.000<br>Dono: Dk_Badboy");
+								createMarker(877.959, -1515.86,32,"Casa 99<br>Valor: R$1.000.000<br>Dono: Azulzinha_Mlx");
+								createMarker(850.891, -1519.96,32,"Casa 100<br>Valor: R$1.000.000<br>Dono: SNIPER_MUSK");
+								createMarker(822.428, -1504.38,32,"Casa 101<br>Valor: R$1.000.000<br>Dono: Luiz_Continii");
+								createMarker(841.259, -1472.27,32,"Casa 102<br>Valor: R$1.000.000<br>Dono: zliminha");
+								createMarker(652.387, -1619.86,32,"Casa 103<br>Valor: R$195.000<br>Dono: xJUUUH");
+								createMarker(652.732, -1636.88,32,"Casa 104<br>Valor: R$195.000<br>Dono: bellingham_xz");
+								createMarker(653.655, -1652.56,32,"Casa 105<br>Valor: R$195.000<br>Dono: SANLITO");
+								createMarker(651.512, -1693.91,32,"Casa 106<br>Valor: R$195.000<br>Dono: cria_blc");
+								createMarker(650.303, -1714.16,32,"Casa 107<br>Valor: R$195.000<br>Dono: brangelmiller");
+								createMarker(696.824, -1705.63,32,"Casa 108<br>Valor: R$195.000<br>Dono: Gabriel__Reliquia");
+								createMarker(698.121, -1689.75,32,"Casa 109<br>Valor: R$195.000<br>Dono: raezada");
+								createMarker(696.977, -1645.98,32,"Casa 110<br>Valor: R$195.000<br>Dono: MuriloHR");
+								createMarker(700.272, -1626.81,32,"Casa 111<br>Valor: R$195.000<br>Dono: LUCCA_DIXAVAS");
+								createMarker(766.014, -1746.07,32,"Casa 112<br>Valor: R$195.000<br>Dono: MAFIOSO_ws");
+								createMarker(766.015, -1727.17,32,"Casa 113<br>Valor: R$195.000<br>Dono: MARTINS_ZONTE");
+								createMarker(766.18, -1696.72,32,"Casa 114<br>Valor: R$195.000<br>Dono: witor_muniz");
+								createMarker(764.89, -1655.66,32,"Casa 115<br>Valor: R$600.000<br>Dono: Josuelito_");
+								createMarker(763.807, -1606.05,32,"Casa 116<br>Valor: R$195.000<br>Dono: Luan_Alvez");
+								createMarker(791.505, -1753.86,32,"Casa 117<br>Valor: R$195.000<br>Dono: hugo_nunes");
+								createMarker(798.001, -1729.2,32,"Casa 118<br>Valor: R$195.000<br>Dono: janderson_neiff");
+								createMarker(796.977, -1707.32,32,"Casa 119<br>Valor: R$195.000<br>Dono: CHICO_TRIPA");
+								createMarker(798.094, -1691.13,32,"Casa 120<br>Valor: R$195.000<br>Dono: RD_A");
+								createMarker(790.977, -1662.09,32,"Casa 121<br>Valor: R$195.000<br>Dono: Pretin_Samp");
+								createMarker(847.867, -1717.25,32,"Casa 122<br>Valor: R$600.000<br>Dono: OVERDOZE_Viceratti");
+								createMarker(865.357, -1635.15,32,"Casa 123<br>Valor: R$600.000<br>Dono: CHICO_TRIPA");
+								createMarker(893.717, -1636.63,32,"Casa 124<br>Valor: R$600.000<br>Dono: CHICO_TRIPA");
+								createMarker(986.229, -1624.49,32,"Casa 125<br>Valor: R$600.000<br>Dono: Rd_piedroxx");
+								createMarker(986.179, -1704.27,32,"Casa 126<br>Valor: R$600.000<br>Dono: pedro_vdlk");
+								createMarker(315.846, -1770.45,32,"Casa 127<br>Valor: R$1.650.000<br>Dono: _KAPETA");
+								createMarker(168.265, -1769.54,32,"Casa 128<br>Valor: R$270.000<br>Dono: Layla_");
+								createMarker(866.753, -1798.2,32,"Casa 129<br>Valor: R$800.000<br>Dono: Jordan_xxx");
+								createMarker(883.287, -1799.5,32,"Casa 130<br>Valor: R$800.000<br>Dono: allpha");
+								createMarker(922.064, -1803.08,32,"Casa 131<br>Valor: R$600.000<br>Dono: corninho_dygeras");
+								createMarker(969.877, -1810.82,32,"Casa 132<br>Valor: R$600.000<br>Dono: Joao_Zinjbr");
+								createMarker(993.063, -1816.42,32,"Casa 133<br>Valor: R$600.000<br>Dono: sonick_sk");
+								createMarker(2437.96, -2019.26,32,"Casa 134<br>Valor: R$195.000<br>Dono: jeanzin_jn");
+								createMarker(2465.37, -2019.34,32,"Casa 135<br>Valor: R$195.000<br>Dono: Smok_Weed");
+								createMarker(2486.46, -2020.45,32,"Casa 136<br>Valor: R$195.000<br>Dono: luck_voltia");
+								createMarker(2507.88, -2019.49,32,"Casa 137<br>Valor: R$195.000<br>Dono: breck_souza");
+								createMarker(2521.74, -2018.07,32,"Casa 138<br>Valor: R$195.000<br>Dono: dbzpvp");
+								createMarker(2523.59, -1999.18,32,"Casa 139<br>Valor: R$195.000<br>Dono: wilha_sp");
+								createMarker(2508.3, -1999.71,32,"Casa 140<br>Valor: R$195.000<br>Dono: paulo_beramar");
+								createMarker(2483.5, -1996.59,32,"Casa 141<br>Valor: R$195.000<br>Dono: AndersonGomes");
+								createMarker(2465.12, -1996.76,32,"Casa 142<br>Valor: R$195.000<br>Dono: Hungria_Samp");
+								createMarker(2696.37, -1992.14,32,"Casa 143<br>Valor: R$195.000<br>Dono: shei_beiramar");
+								createMarker(2672.78, -1990.63,32,"Casa 144<br>Valor: R$195.000<br>Dono: forniigh");
+								createMarker(2652.86, -1991.14,32,"Casa 145<br>Valor: R$195.000<br>Dono: Josivan_terro_vnt");
+								createMarker(2637.84, -1992.45,32,"Casa 146<br>Valor: R$195.000<br>Dono: scott_facada");
+								createMarker(2636.42, -2012.19,32,"Casa 147<br>Valor: R$195.000<br>Dono: hugosena");
+								createMarker(2648.51, -2021.86,32,"Casa 148<br>Valor: R$195.000<br>Dono: adailson_Bellard");
+								createMarker(2673.21, -2018.69,32,"Casa 149<br>Valor: R$195.000<br>Dono: Thexx_Henrii");
+								createMarker(2695.3, -2019.34,32,"Casa 150<br>Valor: R$195.000<br>Dono: guilherme__oliveira");
+								createMarker(2752.07, -1962.86,32,"Casa 151<br>Valor: R$450.000<br>Dono: BRABOX_BR");
+								createMarker(2786.52, -1926.17,32,"Casa 152<br>Valor: R$450.000<br>Dono: Jhzin_abravo");
+								createMarker(2802.36, -1962.8,32,"Casa 153<br>Valor: R$450.000<br>Dono: Bielziinn_rz");
+								createMarker(2802.32, -1936.45,32,"Casa 154<br>Valor: R$450.000<br>Dono: Snowball");
+								createMarker(2853.48, -1365.99,32,"Casa 155<br>Valor: R$825.000<br>Dono: ruanxp_rlq");
+								createMarker(2842.22, -1335.45,32,"Casa 156<br>Valor: R$825.000<br>Dono: KaueXunico");
+								createMarker(2807.93, -1189.89,32,"Casa 157<br>Valor: R$675.000<br>Dono: imleley");
+								createMarker(2808.1, -1176.75,32,"Casa 158<br>Valor: R$675.000<br>Dono: Wightfrs");
+								createMarker(2629.03, -1067.85,32,"Casa 159<br>Valor: R$195.000<br>Dono: suquinDemurucuja");
+								createMarker(2628.66, -1085.15,32,"Casa 160<br>Valor: R$195.000<br>Dono: Fulano_Kalashnikov");
+								createMarker(2626.85, -1098.72,32,"Casa 161<br>Valor: R$195.000<br>Dono: sofia_hihi");
+								createMarker(2626.98, -1112.52,32,"Casa 162<br>Valor: R$195.000<br>Dono: JhonKene");
+								createMarker(2575.17, -1070.68,32,"Casa 163<br>Valor: R$195.000<br>Dono: bieltv");
+								createMarker(2520.14, -1113,32,"Casa 164<br>Valor: R$195.000<br>Dono: Juliano_Oliveira");
+								createMarker(2470.67, -1104.09,32,"Casa 165<br>Valor: R$195.000<br>Dono: Gome");
+								createMarker(2457.06, -1101.5,32,"Casa 166<br>Valor: R$195.000<br>Dono: Maia_Street");
+								createMarker(2438.58, -1104.8,32,"Casa 167<br>Valor: R$195.000<br>Dono: Vitinn_Dusamp");
+								createMarker(2407.89, -1106.18,32,"Casa 168<br>Valor: R$195.000<br>Dono: mth_six");
+								createMarker(2373.95, -1140.38,32,"Casa 169<br>Valor: R$195.000<br>Dono: Calango_baiano");
+								createMarker(2394.87, -1135.1,32,"Casa 170<br>Valor: R$600.000<br>Dono: Lombrigo");
+								createMarker(2424.06, -1126.63,32,"Casa 171<br>Valor: R$210.000<br>Dono: M13_MATHEUS");
+								createMarker(2488.11, -1136.29,32,"Casa 172<br>Valor: R$195.000<br>Dono: jose_jj");
+								createMarker(2509.32, -1132.66,32,"Casa 173<br>Valor: R$195.000<br>Dono: LDZINN_ARAUJO");
+								createMarker(2579.7, -1034.11,32,"Casa 174<br>Valor: R$105.000<br>Dono: zNordestinoxx");
+								createMarker(2560.8, -1034.35,32,"Casa 175<br>Valor: R$105.000<br>Dono: betrayed");
+								createMarker(2549.67, -1032.15,32,"Casa 176<br>Valor: R$105.000<br>Dono: XuxuDLS");
+								createMarker(2526.9, -1034.14,32,"Casa 177<br>Valor: R$105.000<br>Dono: CALABREZAUM");
+								createMarker(2512.7, -1028.02,32,"Casa 178<br>Valor: R$105.000<br>Dono: PRO_Reidelas");
+								createMarker(2490.66, -1012.01,32,"Casa 179<br>Valor: R$105.000<br>Dono: MetGala");
+								createMarker(2462.31, -1011.96,32,"Casa 180<br>Valor: R$105.000<br>Dono: Santoswsz_");
+								createMarker(2440.66, -1056.5,32,"Casa 181<br>Valor: R$105.000<br>Dono: Juninho_Vbl");
+								createMarker(2456.67, -1054.59,32,"Casa 182<br>Valor: R$105.000<br>Dono: Maicol_V");
+								createMarker(2478.81, -1063.73,32,"Casa 183<br>Valor: R$105.000<br>Dono: Enryk");
+								createMarker(2498.97, -1065.52,32,"Casa 184<br>Valor: R$105.000<br>Dono: kauezin_cpx");
+								createMarker(2527.42, -1060.62,32,"Casa 185<br>Valor: R$105.000<br>Dono: LaerT_Reed");
+								createMarker(2533.72, -1063.48,32,"Casa 186<br>Valor: R$105.000<br>Dono: Vitim_turco");
+								createMarker(2581, -969.434,32,"Casa 187<br>Valor: R$105.000<br>Dono: akira_black");
+								createMarker(2583.14, -953.849,32,"Casa 188<br>Valor: R$105.000<br>Dono: SuspeitoX7yt");
+								createMarker(2552.7, -958.219,32,"Casa 189<br>Valor: R$105.000<br>Dono: Kaue_carlos");
+								createMarker(2518.4, -965.394,32,"Casa 190<br>Valor: R$105.000<br>Dono: MINI_NENEZINHO");
+								createMarker(2490.56, -965.759,32,"Casa 191<br>Valor: R$105.000<br>Dono: XANGO_PVP");
+								createMarker(2499.4, -948.461,32,"Casa 192<br>Valor: R$105.000<br>Dono: Vini_Solaxx");
+								createMarker(2472.38, -963.309,32,"Casa 193<br>Valor: R$105.000<br>Dono: RHYANZIN_O_MAIS_NOVO");
+								createMarker(2459.47, -948.51,32,"Casa 194<br>Valor: R$105.000<br>Dono: REIZINHO_PX");
+								createMarker(2454.89, -964.976,32,"Casa 195<br>Valor: R$105.000<br>Dono: Jonas_Capetinha");
+								createMarker(2389.81, -1037.73,32,"Casa 196<br>Valor: R$105.000<br>Dono: GG_AntHS");
+								createMarker(2370.22, -1035.11,32,"Casa 197<br>Valor: R$105.000<br>Dono: lucasgtalucas");
+								createMarker(2335.06, -1045.33,32,"Casa 198<br>Valor: R$105.000<br>Dono: micas");
+								createMarker(2297.3, -1053.73,32,"Casa 199<br>Valor: R$105.000<br>Dono: max_silva_silva");
+								createMarker(2283.66, -1046.73,32,"Casa 200<br>Valor: R$105.000<br>Dono: gordinho_mk");
+								createMarker(2467.66, -1199.38,32,"Casa 201<br>Valor: R$195.000<br>Dono: pedrinho_geras");
+								createMarker(2472.83, -1238.99,32,"Casa 202<br>Valor: R$450.000<br>Dono: tracy_mcgrady");
+								createMarker(2492.05, -1239.77,32,"Casa 203<br>Valor: R$450.000<br>Dono: Fulano_Kalashnikov");
+								createMarker(2550.98, -1234.88,32,"Casa 204<br>Valor: R$450.000<br>Dono: Mc_Coringa");
+								createMarker(2520.68, -1197.38,32,"Casa 205<br>Valor: R$525.000<br>Dono: Eazy_Smith");
+								createMarker(2550.23, -1196.81,32,"Casa 206<br>Valor: R$525.000<br>Dono: deusML");
+								createMarker(2387.31, -1279.65,32,"Casa 207<br>Valor: R$195.000<br>Dono: FLORINDO");
+								createMarker(2386.76, -1328.37,32,"Casa 208<br>Valor: R$195.000<br>Dono: SCARFACETUGA");
+								createMarker(2388.98, -1346.09,32,"Casa 209<br>Valor: R$195.000<br>Dono: luigy");
+								createMarker(2382.29, -1366.18,32,"Casa 210<br>Valor: R$195.000<br>Dono: Lean_Indin");
+								createMarker(2440.06, -1357.14,32,"Casa 211<br>Valor: R$195.000<br>Dono: Sky_Hekc");
+								createMarker(2440.21, -1338.83,32,"Casa 212<br>Valor: R$195.000<br>Dono: Splash_");
+								createMarker(2434.63, -1320.76,32,"Casa 213<br>Valor: R$195.000<br>Dono: Gabriel_Djkl");
+								createMarker(2434.83, -1303.41,32,"Casa 214<br>Valor: R$195.000<br>Dono: _Junin");
+								createMarker(2435.83, -1289.39,32,"Casa 215<br>Valor: R$195.000<br>Dono: Professor_tT");
+								createMarker(2434.42, -1275,32,"Casa 216<br>Valor: R$195.000<br>Dono: Gabriel_Djkl");
+								createMarker(2468.06, -1278.31,32,"Casa 217<br>Valor: R$195.000<br>Dono: PacaZ7");
+								createMarker(2469.59, -1295.44,32,"Casa 218<br>Valor: R$195.000<br>Dono: MrC_");
+								createMarker(2756.3, -1182.21,32,"Casa 219<br>Valor: R$450.000<br>Dono: AlissonDimarolla");
+								createMarker(2749.79, -1205.72,32,"Casa 220<br>Valor: R$450.000<br>Dono: fzinnxpk");
+								createMarker(2749.91, -1222.31,32,"Casa 221<br>Valor: R$450.000<br>Dono: Vingador_vn");
+								createMarker(2749.93, -1238.71,32,"Casa 222<br>Valor: R$450.000<br>Dono: naldobeny");
+								createMarker(2775.98, -1246.42,32,"Casa 223<br>Valor: R$600.000<br>Dono: Jackson_Dukerson");
+								createMarker(2797.94, -1247.09,32,"Casa 224<br>Valor: R$600.000<br>Dono: Vingador_vn");
+								createMarker(2808.09, -1281.06,32,"Casa 225<br>Valor: R$600.000<br>Dono: Smithinho");
+								createMarker(2808.42, -1303.06,31,"Casa 226<br>Valor: R$600.000<br>Dono: Ninguem");
+								createMarker(2808.62, -1324.87,31,"Casa 227<br>Valor: R$600.000<br>Dono: Ninguem");
+								createMarker(2783.12, -1358.37,32,"Casa 228<br>Valor: R$600.000<br>Dono: Paola_Escobar");
+								createMarker(2783.26, -1333.29,32,"Casa 229<br>Valor: R$600.000<br>Dono: luiz_duty");
+								createMarker(2783.49, -1306.18,31,"Casa 230<br>Valor: R$600.000<br>Dono: Ninguem");
+								createMarker(2783.42, -1281.23,32,"Casa 231<br>Valor: R$600.000<br>Dono: LEONARDO_SOUSAA");
+								createMarker(2755.95, -1302.51,32,"Casa 232<br>Valor: R$450.000<br>Dono: mbzin");
+								createMarker(2249.86, -1238.28,32,"Casa 233<br>Valor: R$195.000<br>Dono: _Bigode__");
+								createMarker(2229.6, -1240.05,32,"Casa 234<br>Valor: R$675.000<br>Dono: Teteu_th");
+								createMarker(2209.76, -1239.18,32,"Casa 235<br>Valor: R$195.000<br>Dono: raylan_do_cv");
+								createMarker(2191.8, -1238.01,32,"Casa 236<br>Valor: R$195.000<br>Dono: Cr_Negueba");
+								createMarker(2153.76, -1242.65,32,"Casa 237<br>Valor: R$195.000<br>Dono: fast_gamer");
+								createMarker(2110.95, -1243.63,32,"Casa 238<br>Valor: R$195.000<br>Dono: Demonic");
+								createMarker(2090.81, -1234.27,32,"Casa 239<br>Valor: R$195.000<br>Dono: Randslley_Maycon");
+								createMarker(2090.95, -1279.23,32,"Casa 240<br>Valor: R$675.000<br>Dono: SCOOT_");
+								createMarker(2111.3, -1279.95,32,"Casa 241<br>Valor: R$195.000<br>Dono: Vitinho_yre");
+								createMarker(2132.35, -1281.41,32,"Casa 242<br>Valor: R$195.000<br>Dono: TAVIN_PLAY");
+								createMarker(2150.25, -1285.93,32,"Casa 243<br>Valor: R$195.000<br>Dono: Stanf_GloW");
+								createMarker(2191.56, -1277.24,32,"Casa 244<br>Valor: R$675.000<br>Dono: Violetaa");
+								createMarker(2207.87, -1282.34,32,"Casa 245<br>Valor: R$195.000<br>Dono: Henrique_cbjr");
+								createMarker(2230.09, -1281.05,32,"Casa 246<br>Valor: R$195.000<br>Dono: BRENO_SB");
+								createMarker(2250.24, -1280.88,32,"Casa 247<br>Valor: R$195.000<br>Dono: gb_criminoso");
+								createMarker(2148.56, -1318.9,32,"Casa 248<br>Valor: R$195.000<br>Dono: Rn_Souza");
+								createMarker(2126.73, -1316.95,32,"Casa 249<br>Valor: R$270.000<br>Dono: delas_teteu");
+								createMarker(2100.86, -1320.94,32,"Casa 250<br>Valor: R$195.000<br>Dono: metebala_doCPX");
+								createMarker(2129.58, -1363.18,32,"Casa 251<br>Valor: R$195.000<br>Dono: cavalo_");
+								createMarker(2147.69, -1367.26,32,"Casa 252<br>Valor: R$195.000<br>Dono: cavalo_");
+								createMarker(2185.13, -1364.71,32,"Casa 253<br>Valor: R$195.000<br>Dono: AnGeLL_");
+								createMarker(2202.75, -1365.03,32,"Casa 254<br>Valor: R$195.000<br>Dono: Cariocazz_Naoki");
+								createMarker(2256.79, -1408.34,32,"Casa 255<br>Valor: R$195.000<br>Dono: CP_ALISSON");
+								createMarker(2243.86, -1408.39,32,"Casa 256<br>Valor: R$195.000<br>Dono: Setinha");
+								createMarker(2230.76, -1408.45,32,"Casa 257<br>Valor: R$195.000<br>Dono: dgzzinx");
+								createMarker(2263.49, -1458.05,32,"Casa 258<br>Valor: R$195.000<br>Dono: Fausto_Guetto");
+								createMarker(2247.37, -1458.13,32,"Casa 259<br>Valor: R$195.000<br>Dono: Joaopedro_Alves");
+								createMarker(2232.26, -1458.09,32,"Casa 260<br>Valor: R$195.000<br>Dono: Lucad_Lucks");
+								createMarker(2191.48, -1470.35,32,"Casa 261<br>Valor: R$195.000<br>Dono: AbysS");
+								createMarker(2192.13, -1455.87,32,"Casa 262<br>Valor: R$195.000<br>Dono: Gustavo_Paraiba");
+								createMarker(2190.28, -1419.28,32,"Casa 263<br>Valor: R$240.000<br>Dono: Lucas_Bhh");
+								createMarker(2197.27, -1404.02,32,"Casa 264<br>Valor: R$195.000<br>Dono: Vingador_vn");
+								createMarker(2150.15, -1400.61,32,"Casa 265<br>Valor: R$195.000<br>Dono: Leandro_Barboza");
+								createMarker(2150, -1419.07,32,"Casa 266<br>Valor: R$195.000<br>Dono: Feijao_s");
+								createMarker(2148.54, -1433.72,32,"Casa 267<br>Valor: R$195.000<br>Dono: menozin_cv_");
+								createMarker(2145.59, -1470.4,32,"Casa 268<br>Valor: R$195.000<br>Dono: kaua_vi");
+								createMarker(2145.11, -1484.89,32,"Casa 269<br>Valor: R$375.000<br>Dono: STICKER");
+								createMarker(2157.08, -1708.51,32,"Casa 270<br>Valor: R$375.000<br>Dono: Lucas_criadodo");
+								createMarker(2166.55, -1671.84,32,"Casa 271<br>Valor: R$375.000<br>Dono: SEUVAGEM_SAGAZ");
+								createMarker(2139.13, -1698.24,32,"Casa 272<br>Valor: R$375.000<br>Dono: Renato_Freitas_Silva");
+								createMarker(2144.26, -1663.5,32,"Casa 273<br>Valor: R$375.000<br>Dono: KWAI_STARK");
+								createMarker(2142.85, -1605.38,32,"Casa 274<br>Valor: R$375.000<br>Dono: marcelo_pzl");
+								createMarker(2185.91, -1608.41,32,"Casa 275<br>Valor: R$375.000<br>Dono: Lucas_amadeu");
+								createMarker(2150.09, -1584.69,32,"Casa 276<br>Valor: R$375.000<br>Dono: marcelo_pzl");
+								createMarker(2089.04, -1166.31,32,"Casa 277<br>Valor: R$750.000<br>Dono: Portugues_DePortugal");
+								createMarker(2092.13, -1145.34,32,"Casa 278<br>Valor: R$225.000<br>Dono: Bk_Hari_Xitado");
+								createMarker(2090.7, -1123.61,32,"Casa 279<br>Valor: R$195.000<br>Dono: naruto_lindo");
+								createMarker(2048.16, -1115.67,32,"Casa 280<br>Valor: R$195.000<br>Dono: Henrique_Oliver");
+								createMarker(2023.03, -1123.61,32,"Casa 281<br>Valor: R$225.000<br>Dono: Surfista_Dimarolla");
+								createMarker(2000.22, -1117.31,32,"Casa 282<br>Valor: R$750.000<br>Dono: Teyscottsilva");
+								createMarker(1956.12, -1118.56,32,"Casa 283<br>Valor: R$195.000<br>Dono: Juba_Gaizloko");
+								createMarker(1939.26, -1117.58,32,"Casa 284<br>Valor: R$225.000<br>Dono: Cesar_Acelino");
+								createMarker(1922.28, -1118.56,32,"Casa 285<br>Valor: R$195.000<br>Dono: ruben_bezugas");
+								createMarker(1905.84, -1116.24,32,"Casa 286<br>Valor: R$225.000<br>Dono: GOKU_GR");
+								createMarker(1886.84, -1116.93,32,"Casa 287<br>Valor: R$195.000<br>Dono: Joaozinho_X");
+								createMarker(1440.7, -926.466,32,"Casa 288<br>Valor: R$750.000<br>Dono: Thiagui_Real");
+								createMarker(1411.11, -920.963,32,"Casa 289<br>Valor: R$750.000<br>Dono: Fofao_Rp");
+								createMarker(1421.79, -885.668,32,"Casa 290<br>Valor: R$900.000<br>Dono: Benac");
+								createMarker(1468.65, -905.38,32,"Casa 291<br>Valor: R$900.000<br>Dono: Kconde");
+								createMarker(1539.44, -851.355,32,"Casa 292<br>Valor: R$1.050.000<br>Dono: DAMA_DA_NOITE");
+								createMarker(1534.25, -800.193,32,"Casa 293<br>Valor: R$750.000<br>Dono: FAIXA_ROZA_CV");
+								createMarker(1527.23, -773.207,32,"Casa 294<br>Valor: R$750.000<br>Dono: Zk_Turco_Rp");
+								createMarker(1496.98, -690.105,32,"Casa 295<br>Valor: R$1.950.000<br>Dono: Rodrigo__");
+								createMarker(1442.65, -629.829,32,"Casa 296<br>Valor: R$1.125.000<br>Dono: Ketlyn_Dank");
+								createMarker(1331.81, -632.553,32,"Casa 297<br>Valor: R$1.500.000<br>Dono: Delas.fxp");
+								createMarker(1094.98, -647.05,32,"Casa 298<br>Valor: R$1.500.000<br>Dono: ErK_RealTrem");
+								createMarker(1045.11, -642.339,32,"Casa 299<br>Valor: R$1.500.000<br>Dono: Konan_Garcia");
+								createMarker(980.214, -676.789,32,"Casa 300<br>Valor: R$1.950.000<br>Dono: MAEL_CHEFE");
+								createMarker(946.002, -710.067,32,"Casa 301<br>Valor: R$525.000<br>Dono: Cv_Mt");
+								createMarker(898.576, -677.577,32,"Casa 302<br>Valor: R$1.050.000<br>Dono: Dexternil");
+								createMarker(867.952, -716.771,32,"Casa 303<br>Valor: R$900.000<br>Dono: davizinit");
+								createMarker(848.488, -745.135,32,"Casa 304<br>Valor: R$675.000<br>Dono: RECRUTATV");
+								createMarker(890.948, -782.491,32,"Casa 305<br>Valor: R$1.050.000<br>Dono: OliverXx");
+								createMarker(809.226, -759.154,32,"Casa 306<br>Valor: R$900.000<br>Dono: Mac_Marley");
+								createMarker(785.826, -827.814,32,"Casa 307<br>Valor: R$675.000<br>Dono: joro_mauro");
+								createMarker(1298.53, -798.969,32,"Casa 308<br>Valor: R$3.000.000<br>Dono: Unknown_cs");
+								createMarker(1093.81, -806.414,32,"Casa 309<br>Valor: R$1.200.000<br>Dono: Rai_Cerqueira");
+								createMarker(1111.71, -741.976,32,"Casa 310<br>Valor: R$1.050.000<br>Dono: Sophia_Cavalcante");
+								createMarker(1034.59, -812.342,32,"Casa 311<br>Valor: R$750.000<br>Dono: especial_");
+								createMarker(989.668, -828.411,32,"Casa 312<br>Valor: R$900.000<br>Dono: Gb_Da_Vs");
+								createMarker(977.407, -770.911,32,"Casa 313<br>Valor: R$750.000<br>Dono: BLAZE_HRZT");
+								createMarker(937.335, -847.829,32,"Casa 314<br>Valor: R$900.000<br>Dono: alex__ff");
+								createMarker(836.486, -894.246,32,"Casa 315<br>Valor: R$1.500.000<br>Dono: Paola_Escobar");
+								createMarker(828.039, -858.674,32,"Casa 316<br>Valor: R$525.000<br>Dono: MrC_");
+								createMarker(725.078, -998.942,32,"Casa 317<br>Valor: R$900.000<br>Dono: Buzeira_bala");
+								createMarker(699.886, -1060.01,32,"Casa 318<br>Valor: R$1.050.000<br>Dono: paulopipip");
+								createMarker(471.076, -1164.63,32,"Casa 319<br>Valor: R$600.000<br>Dono: Gabe_Maverick");
+								createMarker(416.11, -1154.88,32,"Casa 320<br>Valor: R$900.000<br>Dono: Dariu_Ravok");
+								createMarker(497.482, -1094.24,32,"Casa 321<br>Valor: R$1.050.000<br>Dono: Menorr_Bebel");
+								createMarker(558.714, -1075.5,32,"Casa 322<br>Valor: R$900.000<br>Dono: FAISKA_CE");
+								createMarker(611.828, -1085.4,32,"Casa 323<br>Valor: R$675.000<br>Dono: LDZIN777");
+								createMarker(647.73, -1057.97,32,"Casa 324<br>Valor: R$375.000<br>Dono: breno_sampaio");
+								createMarker(672.358, -1019.54,32,"Casa 325<br>Valor: R$375.000<br>Dono: FUSION");
+								createMarker(645.722, -1117.18,32,"Casa 326<br>Valor: R$900.000<br>Dono: paulopipip");
+								createMarker(352, -1197.36,32,"Casa 327<br>Valor: R$900.000<br>Dono: Arya_Liz");
+								createMarker(299.165, -1155.45,32,"Casa 328<br>Valor: R$2.250.000<br>Dono: SCOfield");
+								createMarker(252.502, -1221.78,32,"Casa 329<br>Valor: R$1.500.000<br>Dono: Gomess");
+								createMarker(252.483, -1268.93,32,"Casa 330<br>Valor: R$2.100.000<br>Dono: PL_BALA");
+								createMarker(219.821, -1250.74,32,"Casa 331<br>Valor: R$1.500.000<br>Dono: PL_BALA");
+								createMarker(190.294, -1308.16,32,"Casa 332<br>Valor: R$1.875.000<br>Dono: Marcol");
+								createMarker(143.15, -1469.81,32,"Casa 333<br>Valor: R$375.000<br>Dono: milenapjl");
+								createMarker(228.42, -1404.76,32,"Casa 334<br>Valor: R$525.000<br>Dono: Luis_Nego");
+								createMarker(255.286, -1366.52,32,"Casa 335<br>Valor: R$1.500.000<br>Dono: regin");
+								createMarker(298.136, -1337.44,32,"Casa 336<br>Valor: R$1.200.000<br>Dono: Loirin_FxG");
+								createMarker(354.768, -1280.59,32,"Casa 337<br>Valor: R$600.000<br>Dono: Carolzinha_reeis");
+								createMarker(397.943, -1270.94,32,"Casa 338<br>Valor: R$600.000<br>Dono: lapadejogo");
+								createMarker(431.905, -1253.39,32,"Casa 339<br>Valor: R$600.000<br>Dono: Cria_Escobar");
+								createMarker(552.906, -1200.13,32,"Casa 340<br>Valor: R$900.000<br>Dono: jnoballa");
+								createMarker(2572.03, -1091.52,32,"Casa 341<br>Valor: R$195.000<br>Dono: BR_coringa");
+								createMarker(-2099.62, 898.449,32,"Casa 342<br>Valor: R$750.000<br>Dono: Diogoo_Silva");
+								createMarker(-2116.9, 926.848,31,"Casa 343<br>Valor: R$525.000<br>Dono: Ninguem");
+								createMarker(-2662.01, 877.309,32,"Casa 344<br>Valor: R$900.000<br>Dono: riq_sp");
+								createMarker(-2641.2, 935.707,32,"Casa 345<br>Valor: R$900.000<br>Dono: levi_pa");
+								createMarker(-2721.88, 923.977,32,"Casa 346<br>Valor: R$900.000<br>Dono: Yzzi_Jenner");
+								createMarker(-2710.75, 968.241,32,"Casa 347<br>Valor: R$900.000<br>Dono: Frostz_Falcone");
+								createMarker(-2655.41, 986.841,32,"Casa 348<br>Valor: R$900.000<br>Dono: Lucas_Jones");
+								createMarker(-2657.27, 849.694,32,"Casa 349<br>Valor: R$600.000<br>Dono: silv_asa");
+								createMarker(-2706.62, 865.515,32,"Casa 350<br>Valor: R$900.000<br>Dono: RD__");
+								createMarker(-2027.78, -41.275,32,"Casa 351<br>Valor: R$450.000<br>Dono: Thalysson_");
+								createMarker(-2792.29, -17.6758,32,"Casa 352<br>Valor: R$525.000<br>Dono: edilsonariel");
+								createMarker(-2794.06, 21.5125,32,"Casa 353<br>Valor: R$375.000<br>Dono: marquin_tks");
+								createMarker(-2794.05, 85.0081,32,"Casa 354<br>Valor: R$375.000<br>Dono: Vinixs_Trem");
+								createMarker(-2791.88, 193.871,32,"Casa 355<br>Valor: R$375.000<br>Dono: ousado_px");
+								createMarker(-1438.79, -1543.82,32,"Casa 356<br>Valor: R$2.250.000<br>Dono: Chester_Braw");
+								createMarker(-2700.4, 820.147,32,"Casa 357<br>Valor: R$675.000<br>Dono: Duardo_Samp");
+								createMarker(-2642.18, 820.105,31,"Casa 358<br>Valor: R$525.000<br>Dono: Ninguem");
+								createMarker(-2621.99, 782.812,32,"Casa 359<br>Valor: R$525.000<br>Dono: Luizanunes");
+								createMarker(-2620.56, 832.967,32,"Casa 360<br>Valor: R$525.000<br>Dono: Luiz_Enisse");
+								createMarker(295.138, -1765.52,32,"Casa 361<br>Valor: R$300.000<br>Dono: Amandaruiva");
+								createMarker(-2045.48, -2522.96,32,"Casa 362<br>Valor: R$105.000<br>Dono: chTT");
+								createMarker(-2053.54, -2544.56,32,"Casa 363<br>Valor: R$105.000<br>Dono: breck_souza");
+								createMarker(-2068.31, -2537.75,32,"Casa 364<br>Valor: R$105.000<br>Dono: jabiroca");
+								createMarker(-2069.05, -2561.3,32,"Casa 365<br>Valor: R$105.000<br>Dono: luanvale");
+								createMarker(-2074.8, -2526.46,32,"Casa 366<br>Valor: R$105.000<br>Dono: maylane");
+								createMarker(-2101.48, -2532.3,32,"Casa 367<br>Valor: R$105.000<br>Dono: felipe_otf");
+								createMarker(-2087.41, -2510.43,32,"Casa 368<br>Valor: R$105.000<br>Dono: RSxVagabundo");
+								createMarker(-2070.08, -2494.95,32,"Casa 369<br>Valor: R$105.000<br>Dono: mrs_slv_mdr");
+								createMarker(-2132.13, -2511.33,32,"Casa 370<br>Valor: R$180.000<br>Dono: Paola_Escobar");
+								createMarker(-2161.04, -2535.09,32,"Casa 371<br>Valor: R$450.000<br>Dono: SAVIO_");
+								createMarker(-2180.56, -2519.32,31,"Casa 372<br>Valor: R$450.000<br>Dono: Ninguem");
+								createMarker(-2192.71, -2509.85,31,"Casa 373<br>Valor: R$450.000<br>Dono: Ninguem");
+								createMarker(-2224.2, -2482.62,32,"Casa 374<br>Valor: R$450.000<br>Dono: Dink");
+								createMarker(-2238.69, -2424.29,32,"Casa 375<br>Valor: R$450.000<br>Dono: Agente_Secreto");
+								createMarker(-2219.66, -2400.51,32,"Casa 376<br>Valor: R$450.000<br>Dono: Luci_ane");
+								createMarker(-2076.38, -2312.26,32,"Casa 377<br>Valor: R$375.000<br>Dono: kingg");
+								createMarker(-2671.4, 928.569,32,"Casa 378<br>Valor: R$900.000<br>Dono: MalBoRo_DeboXe");
+								createMarker(-2552.03, 2266.87,32,"Casa 379<br>Valor: R$900.000<br>Dono: Meno_Dk");
+								createMarker(-2523.67, 2239.4,32,"Casa 380<br>Valor: R$900.000<br>Dono: arthur_sagax");
+								createMarker(-2437.34, 2354.61,31,"Casa 381<br>Valor: R$900.000<br>Dono: Ninguem");
+								createMarker(-2421.04, 2406.53,32,"Casa 382<br>Valor: R$525.000<br>Dono: KaueXunico");
+								createMarker(-2478.67, 2488.87,32,"Casa 383<br>Valor: R$105.000<br>Dono: Sergio_Morae");
+								createMarker(-2479.1, 2509.2,32,"Casa 384<br>Valor: R$105.000<br>Dono: HS_ARCANJO");
+								createMarker(-2446.67, 2512.32,32,"Casa 385<br>Valor: R$105.000<br>Dono: mlk_escoba");
+								createMarker(-2446.15, 2491.12,32,"Casa 386<br>Valor: R$105.000<br>Dono: isack_andrade");
+								createMarker(-2422.4, 2491.65,32,"Casa 387<br>Valor: R$105.000<br>Dono: DIOGOMEC");
+								createMarker(-2636.2, 2352.06,31,"Casa 388<br>Valor: R$525.000<br>Dono: Ninguem");
+								createMarker(-1500.08, 1960.49,32,"Casa 389<br>Valor: R$375.000<br>Dono: Paola_Escobar");
+								createMarker(-1533.38, 2656.58,32,"Casa 390<br>Valor: R$450.000<br>Dono: Joao_Zinjbr");
+								createMarker(-1603.65, 2689.68,32,"Casa 391<br>Valor: R$105.000<br>Dono: MR_Senor");
+								createMarker(-1551.07, 2699.76,32,"Casa 392<br>Valor: R$105.000<br>Dono: Gaturno_Cj");
+								createMarker(-1491.58, 2685.42,32,"Casa 393<br>Valor: R$105.000<br>Dono: mayco_mizera");
+								createMarker(-1466.16, 2693.1,32,"Casa 394<br>Valor: R$105.000<br>Dono: Caua_jab");
+								createMarker(-1669.58, 2598.55,32,"Casa 395<br>Valor: R$105.000<br>Dono: GHOSTGHZIN");
+								createMarker(-1667.59, 2486.29,32,"Casa 396<br>Valor: R$105.000<br>Dono: Roubem_OHoodson");
+								createMarker(-911.549, 2686.42,32,"Casa 397<br>Valor: R$1.125.000<br>Dono: Gabe_Maverick");
+								createMarker(-672.954, 2706.2,32,"Casa 398<br>Valor: R$105.000<br>Dono: Joao_Zinjbr");
+								createMarker(-604.537, 2716.63,32,"Casa 399<br>Valor: R$105.000<br>Dono: JaquelineSamp");
+								createMarker(-582.389, 2712.83,32,"Casa 400<br>Valor: R$105.000<br>Dono: Junioor_Mouraa");
+								createMarker(-329.619, 1536.6,32,"Casa 401<br>Valor: R$375.000<br>Dono: Aurino_filhooo");
+								createMarker(-368.368, 1510.78,31,"Casa 402<br>Valor: R$375.000<br>Dono: Ninguem");
+								createMarker(-392.785, 1510.7,31,"Casa 403<br>Valor: R$375.000<br>Dono: Ninguem");
+								createMarker(-311.036, 1303.38,32,"Casa 404<br>Valor: R$900.000<br>Dono: JubileuVbanido");
+								createMarker(-314.531, 1774.49,32,"Casa 405<br>Valor: R$900.000<br>Dono: Gabe_Maverick");
+								createMarker(-369.397, 1169.29,32,"Casa 406<br>Valor: R$900.000<br>Dono: alexandre_1993");
+								createMarker(-360.402, 1141.73,32,"Casa 407<br>Valor: R$375.000<br>Dono: junior_samp93");
+								createMarker(-362.507, 1110.58,32,"Casa 408<br>Valor: R$600.000<br>Dono: Pink_Hot");
+								createMarker(-328.686, 1118.82,32,"Casa 409<br>Valor: R$375.000<br>Dono: Red_antirp");
+								createMarker(-324.369, 1165.23,32,"Casa 410<br>Valor: R$375.000<br>Dono: Vingador33");
+								createMarker(-290.811, 1176.66,32,"Casa 411<br>Valor: R$375.000<br>Dono: Vagner_Martins");
+								createMarker(-258.959, 1168.76,32,"Casa 412<br>Valor: R$375.000<br>Dono: Rui_Salgado");
+								createMarker(-258.646, 1151.15,32,"Casa 413<br>Valor: R$600.000<br>Dono: NajuX_Yamazaki");
+								createMarker(-260.534, 1119.95,32,"Casa 414<br>Valor: R$375.000<br>Dono: Pablo_Do_Samp");
+								createMarker(-684.658, 923.292,32,"Casa 415<br>Valor: R$1.200.000<br>Dono: FaeL_Chefe");
+								createMarker(-298.27, 1115.14,32,"Casa 416<br>Valor: R$600.000<br>Dono: alisson_severino");
+								createMarker(-258.945, 1083.21,32,"Casa 417<br>Valor: R$375.000<br>Dono: Joao_Zinjbr");
+								createMarker(-258.884, 1043.83,32,"Casa 418<br>Valor: R$375.000<br>Dono: chico_pecinha");
+								createMarker(-278.953, 1003.36,32,"Casa 419<br>Valor: R$375.000<br>Dono: lucas_Pimentel");
+								createMarker(-247.884, 1001.66,32,"Casa 420<br>Valor: R$600.000<br>Dono: Uni_Sz");
+								createMarker(-1051.22, 1549.43,32,"Casa 421<br>Valor: R$375.000<br>Dono: Barba_");
+								createMarker(-607.642, -1074.77,32,"Casa 422<br>Valor: R$195.000<br>Dono: FORASTEIRO");
+								createMarker(-601.248, -1066.13,32,"Casa 423<br>Valor: R$195.000<br>Dono: Thiago_DelaCruz");
+								createMarker(-594.804, -1057.44,32,"Casa 424<br>Valor: R$195.000<br>Dono: Calvinho_loko");
+								createMarker(-588.769, -1048.99,32,"Casa 425<br>Valor: R$195.000<br>Dono: ghost_mhp");
+								createMarker(-582.692, -1040.41,32,"Casa 426<br>Valor: R$195.000<br>Dono: Levisk_");
+								createMarker(-576.718, -1032.17,32,"Casa 427<br>Valor: R$195.000<br>Dono: Segredin");
+								createMarker(-347.787, -1046.27,32,"Casa 428<br>Valor: R$450.000<br>Dono: ErickzinOfc");
+								createMarker(-382.148, -1438.95,32,"Casa 429<br>Valor: R$1.500.000<br>Dono: Naoki_Viceratti");
+								createMarker(-418.548, -1759.57,32,"Casa 430<br>Valor: R$105.000<br>Dono: taciogato");
+								createMarker(-2214.36, -2451.61,31,"Casa 431<br>Valor: R$450.000<br>Dono: Ninguem");
+								createMarker(-2174.09, -2481.98,32,"Casa 432<br>Valor: R$450.000<br>Dono: TuaCrush");
+								createMarker(743.268, -509.62,32,"Casa 433<br>Valor: R$825.000<br>Dono: Pitoco_Alencar");
+								createMarker(745.171, -556.483,32,"Casa 434<br>Valor: R$825.000<br>Dono: LH_TROVX");
+								createMarker(768.283, -503.758,32,"Casa 435<br>Valor: R$825.000<br>Dono: Juliaa_Silvaa");
+								createMarker(795.194, -506.422,32,"Casa 436<br>Valor: R$825.000<br>Dono: gabriel_davi");
+								createMarker(818.192, -509.555,32,"Casa 437<br>Valor: R$825.000<br>Dono: Jade_Miller");
+								createMarker(766.681, -556.348,32,"Casa 438<br>Valor: R$825.000<br>Dono: Juliaa_Silvaa");
+								createMarker(870.112, -25.6634,32,"Casa 439<br>Valor: R$450.000<br>Dono: Bob_");
+								createMarker(1457.09, 2773.43,32,"Casa 440<br>Valor: R$2.250.000<br>Dono: kevin_toic");
+								createMarker(-2059.09, 890.068,32,"Casa 441<br>Valor: R$750.000<br>Dono: Lc_andrade");
+								createMarker(206.909, -1769.85,32,"Casa 442<br>Valor: R$270.000<br>Dono: WEEDamora");
+								createMarker(280.747, -1768.23,32,"Casa 443<br>Valor: R$270.000<br>Dono: NURIA");
+								createMarker(1475.54, 373.203,32,"Casa 444<br>Valor: R$105.000<br>Dono: Tremm_hgz");
+								createMarker(1419.85, 390.205,32,"Casa 445<br>Valor: R$105.000<br>Dono: yPup");
+								createMarker(1428.46, 355.984,32,"Casa 446<br>Valor: R$105.000<br>Dono: Portuga_Youtuber");
+								createMarker(705.344, 291.651,32,"Casa 447<br>Valor: R$105.000<br>Dono: rony_");
+								createMarker(748.125, 278.419,32,"Casa 448<br>Valor: R$105.000<br>Dono: GG_Ducati");
+								createMarker(758.397, 374.965,32,"Casa 449<br>Valor: R$105.000<br>Dono: pixgoku");
+								createMarker(805.267, 359.219,32,"Casa 450<br>Valor: R$105.000<br>Dono: feh_papito");
+								createMarker(612.778, 1549.93,32,"Casa 451<br>Valor: R$105.000<br>Dono: CALABREZAUM");
+								createMarker(424.075, 2536.57,32,"Casa 452<br>Valor: R$900.000<br>Dono: Julius_Viceratti");
+								createMarker(-36.1198, 1115.36,32,"Casa 453<br>Valor: R$375.000<br>Dono: Pereira_Lipi");
+								createMarker(12.682, 1113.33,32,"Casa 454<br>Valor: R$375.000<br>Dono: JD_Silva");
+								createMarker(1.69127, 1076.16,32,"Casa 455<br>Valor: R$375.000<br>Dono: tevin_xtrem");
+								createMarker(-45.0858, 1081.09,32,"Casa 456<br>Valor: R$375.000<br>Dono: Capone_shelby");
+								createMarker(-32.1784, 1038.66,32,"Casa 457<br>Valor: R$375.000<br>Dono: Henrique_Hugo");
+								createMarker(1566.83, 23.2496,32,"Casa 458<br>Valor: R$600.000<br>Dono: junin_zzk");
+								createMarker(1274.63, 2522.48,32,"Casa 459<br>Valor: R$600.000<br>Dono: sagaz_dcria");
+								createMarker(-1059.8, -1205.45,32,"Casa 460<br>Valor: R$1.800.000<br>Dono: Gabe_Maverick");
+								createMarker(1315.6, 2524.56,32,"Casa 461<br>Valor: R$600.000<br>Dono: KZ_pv");
+								createMarker(744.804, -591.169,32,"Casa 462<br>Valor: R$825.000<br>Dono: kovalski_th");
+								createMarker(972.169, -2153.53,32,"Casa 463<br>Valor: R$3.000.000<br>Dono: Joan_Araujo");
+								createMarker(300.505, 1141.25,32,"Casa 464<br>Valor: R$195.000<br>Dono: Ghost_Zn");
+								createMarker(397.77, 1157.63,32,"Casa 465<br>Valor: R$105.000<br>Dono: Bruninho_Lt");
+								createMarker(501.27, 1116.34,32,"Casa 466<br>Valor: R$105.000<br>Dono: Thiagui_Real");
+								createMarker(710.696, 1194.65,32,"Casa 467<br>Valor: R$105.000<br>Dono: Richard_moura");
+								createMarker(710.452, 1207.73,32,"Casa 468<br>Valor: R$105.000<br>Dono: Richard_moura");
+								createMarker(1327.12, -1834.89,32,"Casa 469<br>Valor: R$750.000<br>Dono: noguez");
+								createMarker(1325.82, -1812.87,32,"Casa 470<br>Valor: R$750.000<br>Dono: Coringa_Marley");
+								createMarker(1332, -1827.04,32,"Casa 471<br>Valor: R$450.000<br>Dono: Henserberg");
+								createMarker(1327.09, -1800.95,32,"Casa 472<br>Valor: R$750.000<br>Dono: Vinicius_Gaming");
+								createMarker(1326.44, -1789.06,32,"Casa 473<br>Valor: R$750.000<br>Dono: Dylan_Gabriel");
+								createMarker(1324.49, -1780.84,32,"Casa 474<br>Valor: R$750.000<br>Dono: Qeeda_SFC");
+								createMarker(1326.08, -1769.58,32,"Casa 475<br>Valor: R$750.000<br>Dono: Luis_Nego");
+								createMarker(1324.47, -1752.78,32,"Casa 476<br>Valor: R$750.000<br>Dono: MKZINN_");
+								createMarker(2241.89, -1882.82,32,"Casa 477<br>Valor: R$450.000<br>Dono: Vamp_Alvess");
+								createMarker(2269.2, -1882.62,32,"Casa 478<br>Valor: R$450.000<br>Dono: luck_voltia");
+								createMarker(2284.63, -1906.17,32,"Casa 479<br>Valor: R$450.000<br>Dono: Fernandosampaio");
+								createMarker(2261.38, -1906.16,32,"Casa 480<br>Valor: R$450.000<br>Dono: IcaroX_7sC");
+								createMarker(2238.12, -1906.51,32,"Casa 481<br>Valor: R$450.000<br>Dono: Jeff_rd");
+								createMarker(2296.52, -1882.71,31,"Casa 482<br>Valor: R$450.000<br>Dono: Ninguem");
+								createMarker(2008.51, -1768.01,32,"Casa 483<br>Valor: R$1.050.000<br>Dono: BaianoXodiado");
+								createMarker(1995.52, -1770.61,32,"Casa 484<br>Valor: R$1.050.000<br>Dono: Demonic");
+								createMarker(1977.19, -1768.11,32,"Casa 485<br>Valor: R$1.050.000<br>Dono: Felipe_Gomes");
+								createMarker(1412.49, -2163.4,32,"Casa 486<br>Valor: R$750.000<br>Dono: bkinho_sousa");
+								createMarker(1440.77, -2164.56,32,"Casa 487<br>Valor: R$750.000<br>Dono: RD__");
+								createMarker(1460.18, -2163.99,32,"Casa 488<br>Valor: R$750.000<br>Dono: IMSANO_");
+								createMarker(1474.24, -2173.51,32,"Casa 489<br>Valor: R$450.000<br>Dono: Baiano_Novatoll");
+								createMarker(1503.79, -2172.38,32,"Casa 490<br>Valor: R$450.000<br>Dono: Hrx_Docorre");
+								createMarker(1531.88, -2172.09,32,"Casa 491<br>Valor: R$450.000<br>Dono: AlissonDimarolla");
+								createMarker(1558.35, -2171.75,32,"Casa 492<br>Valor: R$450.000<br>Dono: Kaike_Allves");
+								createMarker(1580.67, -2173.58,32,"Casa 493<br>Valor: R$450.000<br>Dono: CHICO_TRIPA");
+								createMarker(1610.22, -2172.45,32,"Casa 494<br>Valor: R$450.000<br>Dono: orange");
+								createMarker(1638.34, -2171.88,32,"Casa 495<br>Valor: R$450.000<br>Dono: Spring_Stark");
+								createMarker(1087.48, -1872.49,32,"Casa 496<br>Valor: R$1.650.000<br>Dono: CV_Felipe");
+								createMarker(1112.47, -1873.7,32,"Casa 497<br>Valor: R$1.650.000<br>Dono: Carlos_Drak");
+								createMarker(1132.54, -1872.44,32,"Casa 498<br>Valor: R$1.650.000<br>Dono: JNRofc");
+								createMarker(1175, -1872.49,32,"Casa 499<br>Valor: R$1.650.000<br>Dono: Carolzinha_reeis");
+								createMarker(1192.3, -1872.29,32,"Casa 500<br>Valor: R$1.650.000<br>Dono: PedrinzXunico");
+								createMarker(1244.31, -1867.53,32,"Casa 501<br>Valor: R$900.000<br>Dono: Alicee");
+								createMarker(1264.88, -1862.92,32,"Casa 502<br>Valor: R$450.000<br>Dono: jose_guarda");
+								createMarker(1420.17, -1862.78,32,"Casa 503<br>Valor: R$1.650.000<br>Dono: TURCA_DELE");
+								createMarker(1471.97, -1862.79,32,"Casa 504<br>Valor: R$1.650.000<br>Dono: lexfortoem");
+								createMarker(1523.76, -1862.78,32,"Casa 505<br>Valor: R$1.650.000<br>Dono: FaeL_Chefe");
+								createMarker(1675.23, -1578.58,32,"Casa 506<br>Valor: R$750.000<br>Dono: Xeiwan");
+								createMarker(1681.52, -1577.43,32,"Casa 507<br>Valor: R$750.000<br>Dono: CAUANZINN_");
+								createMarker(1693.39, -1577.21,32,"Casa 508<br>Valor: R$750.000<br>Dono: alexandre_tcs");
+								createMarker(1699.7, -1576.59,32,"Casa 509<br>Valor: R$750.000<br>Dono: zNICOLASz_XTREME");
+								createMarker(1745.47, -1789.51,32,"Casa 510<br>Valor: R$450.000<br>Dono: Gb_Henrique");
+								createMarker(1767.9, -1790.72,32,"Casa 511<br>Valor: R$450.000<br>Dono: landerson_lt");
+								createMarker(1797.32, -1790.11,32,"Casa 512<br>Valor: R$450.000<br>Dono: bx_trem");
+								createMarker(1797.3, -1754.56,32,"Casa 513<br>Valor: R$450.000<br>Dono: jucabala_pqd");
+								createMarker(1768.9, -1755.15,32,"Casa 514<br>Valor: R$450.000<br>Dono: Adam_");
+								createMarker(1746.41, -1753.35,32,"Casa 515<br>Valor: R$450.000<br>Dono: cleitinveneza");
+								createMarker(1716.95, -1754.62,32,"Casa 516<br>Valor: R$450.000<br>Dono: Luan_Thales");
+								createMarker(1712.56, -1785.32,32,"Casa 517<br>Valor: R$450.000<br>Dono: FORASTEIRO");
+								createMarker(2319.67, -1365.99,32,"Casa 518<br>Valor: R$750.000<br>Dono: Winner_correia");
+								createMarker(2319.17, -1353.18,32,"Casa 519<br>Valor: R$450.000<br>Dono: sulista_torneirinhaa");
+								createMarker(2320.42, -1345.92,32,"Casa 520<br>Valor: R$750.000<br>Dono: Daniel_Tz");
+								createMarker(2318.58, -1338.08,32,"Casa 521<br>Valor: R$750.000<br>Dono: Kzin_fx");
+								createMarker(2319.54, -1331,32,"Casa 522<br>Valor: R$750.000<br>Dono: Nute_linha");
+								createMarker(2320.38, -1318.75,32,"Casa 523<br>Valor: R$750.000<br>Dono: Paul_Wolkerrr");
+								createMarker(2356, -1318.89,32,"Casa 524<br>Valor: R$750.000<br>Dono: SHEIK_hzn");
+								createMarker(2355.93, -1331.71,32,"Casa 525<br>Valor: R$450.000<br>Dono: Ruyter_");
+								createMarker(2355.12, -1338.88,32,"Casa 526<br>Valor: R$750.000<br>Dono: Wesleyzin_ws");
+								createMarker(2356.86, -1346.8,32,"Casa 527<br>Valor: R$750.000<br>Dono: Bate_em_veia");
+								createMarker(2355.22, -1353.9,32,"Casa 528<br>Valor: R$750.000<br>Dono: Luiz_ofc");
+								createMarker(2355.12, -1365.78,32,"Casa 529<br>Valor: R$750.000<br>Dono: Matheus_agusto");
+								createMarker(339.715, -1356.09,32,"Casa 530<br>Valor: R$1.500.000<br>Dono: Striker_Mec");
+								createMarker(366.295, -1340.55,32,"Casa 531<br>Valor: R$1.500.000<br>Dono: Vinizin_TTxxx");
+								createMarker(392.08, -1327.62,32,"Casa 532<br>Valor: R$1.500.000<br>Dono: RianPk");
+								createMarker(1834.46, -1401.45,32,"Casa 533<br>Valor: R$1.200.000<br>Dono: pitotaplay");
+								createMarker(1834.88, -1411.98,32,"Casa 534<br>Valor: R$270.000<br>Dono: Guxt_LS");
+								createMarker(1829.41, -1422.02,32,"Casa 535<br>Valor: R$270.000<br>Dono: Marley_Frederico");
+								createMarker(1831.14, -1441.24,32,"Casa 536<br>Valor: R$900.000<br>Dono: abelha_mel");
+								createMarker(1813.24, -1443.4,32,"Casa 537<br>Valor: R$750.000<br>Dono: Guxt");
+								createMarker(1798.59, -1443.4,32,"Casa 538<br>Valor: R$750.000<br>Dono: Balla_Zn");
+								createMarker(2241.48, -1766.12,32,"Casa 539<br>Valor: R$900.000<br>Dono: VitinhoMec");
+								createMarker(2240.45, -1783.08,32,"Casa 540<br>Valor: R$900.000<br>Dono: Demonic");
+								createMarker(2241.11, -1802.47,32,"Casa 541<br>Valor: R$900.000<br>Dono: VitinhoMec");
+								createMarker(2286.6, -1775.7,32,"Casa 542<br>Valor: R$900.000<br>Dono: isaac_guem");
+								createMarker(2287.46, -1795.14,32,"Casa 543<br>Valor: R$900.000<br>Dono: Venicius_Rlk");
+								createMarker(2286.37, -1812.15,32,"Casa 544<br>Valor: R$900.000<br>Dono: jeffezinn_xx");
+								createMarker(2315.28, -1765.94,32,"Casa 545<br>Valor: R$900.000<br>Dono: Lc_trem");
+								createMarker(2314.44, -1782.88,32,"Casa 546<br>Valor: R$900.000<br>Dono: Agente_Secreto");
+								createMarker(2315.15, -1802.33,32,"Casa 547<br>Valor: R$900.000<br>Dono: TH_ZINM");
+								createMarker(2358.58, -1775.74,32,"Casa 548<br>Valor: R$900.000<br>Dono: Jorge_RamosSix");
+								createMarker(2359.14, -1795.11,32,"Casa 549<br>Valor: R$900.000<br>Dono: ReiinoXdaballa");
+								createMarker(2358.75, -1812.16,32,"Casa 550<br>Valor: R$900.000<br>Dono: Drax_Negrao");
+								createMarker(2384.08, -1765.93,32,"Casa 551<br>Valor: R$900.000<br>Dono: Winner_correia");
+								createMarker(2383.39, -1783.13,32,"Casa 552<br>Valor: R$900.000<br>Dono: Henrique_cbjr");
+								createMarker(2383.95, -1802.51,32,"Casa 553<br>Valor: R$900.000<br>Dono: carolzinhaa");
+								createMarker(-1979.14, -2070.14,32,"Casa 554<br>Valor: R$900.000<br>Dono: Matheus_couto");
+								createMarker(1449.07, -1571.03,32,"Casa 555<br>Valor: R$1.650.000<br>Dono: Izzynha");
+								createMarker(1475.2, -1569.61,32,"Casa 556<br>Valor: R$1.650.000<br>Dono: Ravi_Bittencourt");
+								createMarker(1515.66, -1570.83,32,"Casa 557<br>Valor: R$1.650.000<br>Dono: WellSales");
+								createMarker(1530.42, -1571.09,32,"Casa 558<br>Valor: R$1.650.000<br>Dono: SCOfield");
+								createMarker(1564.26, -1544.17,32,"Casa 559<br>Valor: R$800.000<br>Dono: Duque_br");
+								createMarker(1564.21, -1520.37,32,"Casa 560<br>Valor: R$800.000<br>Dono: ySurtado_HnT");
+								createMarker(1558.44, -1498.95,32,"Casa 561<br>Valor: R$750.000<br>Dono: Call_Jonhson");
+								createMarker(1547.9, -1500.15,32,"Casa 562<br>Valor: R$750.000<br>Dono: dvzin_rl");
+								createMarker(1532.91, -1502.15,32,"Casa 563<br>Valor: R$750.000<br>Dono: Igor_Costa");
+								createMarker(1521.68, -1501.51,32,"Casa 564<br>Valor: R$750.000<br>Dono: MaryXhels");
+								createMarker(1512.21, -1503.06,32,"Casa 565<br>Valor: R$750.000<br>Dono: Muriloo");
+								createMarker(1504.02, -1496.74,32,"Casa 566<br>Valor: R$450.000<br>Dono: NOBZINHA_XIT");
+								createMarker(1487.61, -1501.48,32,"Casa 567<br>Valor: R$750.000<br>Dono: _Japaan02");
+								createMarker(1478.22, -1498.89,32,"Casa 568<br>Valor: R$750.000<br>Dono: henckel_th");
+								createMarker(1467.73, -1500.1,32,"Casa 569<br>Valor: R$750.000<br>Dono: Luck_shelby");
+								createMarker(1531.84, -1533.33,32,"Casa 570<br>Valor: R$900.000<br>Dono: thai_olivee");
+								createMarker(1502.44, -1533.38,32,"Casa 571<br>Valor: R$900.000<br>Dono: THD_THIAGO");
+								createMarker(1472.84, -1533.46,32,"Casa 572<br>Valor: R$900.000<br>Dono: Kconde");
+								createMarker(1695.39, 99.6417,32,"Casa 573<br>Valor: R$1.650.000<br>Dono: RockShore");
+								createMarker(1692.48, 134.475,32,"Casa 574<br>Valor: R$1.950.000<br>Dono: LIIMA_");
+								createMarker(1764.7, 80.773,32,"Casa 575<br>Valor: R$1.950.000<br>Dono: Balla_Zn");
+								createMarker(1778.53, 102.225,32,"Casa 576<br>Valor: R$1.650.000<br>Dono: gabrielrrlk_sz");
+								createMarker(1841.27, 33.728,32,"Casa 577<br>Valor: R$1.650.000<br>Dono: Lero_");
+								createMarker(1847.15, 82.6936,32,"Casa 578<br>Valor: R$1.950.000<br>Dono: Sayu_");
+								createMarker(1894.81, 56.7572,32,"Casa 579<br>Valor: R$1.650.000<br>Dono: tioquim_pecinha");
+								createMarker(2006.12, 49.1824,32,"Casa 580<br>Valor: R$1.950.000<br>Dono: GuizhiXJ");
+								createMarker(1517.98, -93.4267,32,"Casa 581<br>Valor: R$1.200.000<br>Dono: ErK_RealTrem");
+								createMarker(1881.81, -137.857,32,"Casa 582<br>Valor: R$450.000<br>Dono: isinhaa_");
+								createMarker(1865.49, -216.414,32,"Casa 583<br>Valor: R$900.000<br>Dono: Ryazinho_Rj");
+								createMarker(1896.91, -230.055,32,"Casa 584<br>Valor: R$525.000<br>Dono: Fervour");
+								createMarker(1938.08, -186.299,32,"Casa 585<br>Valor: R$600.000<br>Dono: NURIA");
+								createMarker(1975.15, -188.829,32,"Casa 586<br>Valor: R$900.000<br>Dono: debruka");
+								createMarker(1999.42, -186.717,32,"Casa 587<br>Valor: R$675.000<br>Dono: Ray_Zeira");
+								createMarker(2021.58, -185.973,32,"Casa 588<br>Valor: R$675.000<br>Dono: Olivia_Matias");
+								createMarker(2040.23, -238.639,32,"Casa 589<br>Valor: R$600.000<br>Dono: GODOII");
+								createMarker(1992.46, -237.448,32,"Casa 590<br>Valor: R$600.000<br>Dono: vinizinx_dl");
+								createMarker(1953.91, -237.205,32,"Casa 591<br>Valor: R$600.000<br>Dono: Joy_Kief");
+								createMarker(1964.66, -272.84,32,"Casa 592<br>Valor: R$600.000<br>Dono: Klzinx_Putoo");
+								createMarker(2027.23, -281.445,32,"Casa 593<br>Valor: R$600.000<br>Dono: PK_WARNNING");
+								createMarker(1997.36, -324.039,32,"Casa 594<br>Valor: R$1.200.000<br>Dono: Isa_Trem");
+								createMarker(1969.02, -326.898,32,"Casa 595<br>Valor: R$1.200.000<br>Dono: Mandela_rlk");
+								createMarker(1920.63, -314.407,32,"Casa 596<br>Valor: R$1.200.000<br>Dono: Tdt_redzada");
+								createMarker(2245.46, -121.571,32,"Casa 597<br>Valor: R$975.000<br>Dono: R_tupeti");
+								createMarker(2272.29, -118.765,32,"Casa 598<br>Valor: R$975.000<br>Dono: R_tupeti");
+								createMarker(2293.77, -124.288,32,"Casa 599<br>Valor: R$975.000<br>Dono: R_tupeti");
+								createMarker(2322.28, -124.247,32,"Casa 600<br>Valor: R$975.000<br>Dono: R_tupeti");
+								createMarker(2367.37, -48.4958,32,"Casa 601<br>Valor: R$975.000<br>Dono: PIMENTINHA_DUAMASSA");
+								createMarker(2392.41, -54.0851,32,"Casa 602<br>Valor: R$975.000<br>Dono: rimuro");
+								createMarker(2415.49, -51.5727,32,"Casa 603<br>Valor: R$975.000<br>Dono: sujim");
+								createMarker(2438.81, -54.675,32,"Casa 604<br>Valor: R$975.000<br>Dono: Frann__");
+								createMarker(2448.51, -11.578,32,"Casa 605<br>Valor: R$750.000<br>Dono: Jamilefreittas");
+								createMarker(2410.7, -5.65022,32,"Casa 606<br>Valor: R$750.000<br>Dono: kawan_talyson");
+								createMarker(2410.74, 21.7679,32,"Casa 607<br>Valor: R$750.000<br>Dono: __SilvaXrlk");
+								createMarker(2374.48, -8.65716,32,"Casa 608<br>Valor: R$750.000<br>Dono: Vamp_Alvess");
+								createMarker(2374.5, 22.0181,32,"Casa 609<br>Valor: R$750.000<br>Dono: FOX_Souza");
+								createMarker(2374.58, 42.2973,32,"Casa 610<br>Valor: R$750.000<br>Dono: Haddock_Henryque");
+								createMarker(2374.68, 71.1288,32,"Casa 611<br>Valor: R$750.000<br>Dono: Boy_");
+								createMarker(2398.38, 111.124,32,"Casa 612<br>Valor: R$750.000<br>Dono: criarp");
+								createMarker(2413.6, 61.3496,32,"Casa 613<br>Valor: R$750.000<br>Dono: Parker_CpZ");
+								createMarker(2443.34, 61.118,32,"Casa 614<br>Valor: R$750.000<br>Dono: Bryan_ReiDoFumo");
+								createMarker(2447.03, 18.9807,32,"Casa 615<br>Valor: R$750.000<br>Dono: Paulo_Vitoor");
+								createMarker(2480.66, 64.4429,32,"Casa 616<br>Valor: R$750.000<br>Dono: Arthur_criadorj");
+								createMarker(2479.42, 95.2853,32,"Casa 617<br>Valor: R$750.000<br>Dono: Matheus_game");
+								createMarker(2513.98, 94.9845,32,"Casa 618<br>Valor: R$750.000<br>Dono: Bigjhow_zim");
+								createMarker(2536.2, 128.439,32,"Casa 619<br>Valor: R$750.000<br>Dono: ALAN_MARLON");
+								createMarker(2518.54, 128.18,32,"Casa 620<br>Valor: R$750.000<br>Dono: Monnra_Pitbull");
+								createMarker(2480.64, 126.338,32,"Casa 621<br>Valor: R$750.000<br>Dono: criarp");
+								createMarker(2458.84, 128.33,32,"Casa 622<br>Valor: R$750.000<br>Dono: criarp");
+								createMarker(2444.38, 92.2231,32,"Casa 623<br>Valor: R$750.000<br>Dono: danielyt");
+								createMarker(2484.49, -27.7997,32,"Casa 624<br>Valor: R$750.000<br>Dono: giolino");
+								createMarker(2513.29, -27.6304,32,"Casa 625<br>Valor: R$750.000<br>Dono: rato_007");
+								createMarker(2488.45, 11.0313,32,"Casa 626<br>Valor: R$750.000<br>Dono: Darkzin_Menor");
+								createMarker(2509.48, 11.1797,32,"Casa 627<br>Valor: R$750.000<br>Dono: Mk_SLZ");
+								createMarker(2550.7, -5.52308,32,"Casa 628<br>Valor: R$750.000<br>Dono: FULANO_stos");
+								createMarker(2548.62, 25.148,32,"Casa 629<br>Valor: R$750.000<br>Dono: Walter_Black");
+								createMarker(2550.58, 57.1317,32,"Casa 630<br>Valor: R$750.000<br>Dono: RS__");
+								createMarker(2550.72, 91.746,32,"Casa 631<br>Valor: R$750.000<br>Dono: LuizTralha");
+								createMarker(2519.12, 58.3925,32,"Casa 632<br>Valor: R$750.000<br>Dono: borgesMDM");
+								createMarker(2203.74, -89.2355,32,"Casa 633<br>Valor: R$975.000<br>Dono: Mc_princesa");
+								createMarker(2197.71, -60.7084,32,"Casa 634<br>Valor: R$975.000<br>Dono: zMARA");
+								createMarker(2200.7, -37.3139,32,"Casa 635<br>Valor: R$975.000<br>Dono: R_tupeti");
+								createMarker(2245.53, -2.1681,32,"Casa 636<br>Valor: R$975.000<br>Dono: Junior_Moraes");
+								createMarker(2270.55, -7.96454,32,"Casa 637<br>Valor: R$975.000<br>Dono: zGAUCHO_sm");
+								createMarker(2204.39, 62.275,32,"Casa 638<br>Valor: R$750.000<br>Dono: PURURUK");
+								createMarker(2204.7, 106.175,32,"Casa 639<br>Valor: R$750.000<br>Dono: Geraldo_miranda");
+								createMarker(2236.49, 167.627,32,"Casa 640<br>Valor: R$975.000<br>Dono: RD_REI_DELAS");
+								createMarker(2257.98, 167.892,32,"Casa 641<br>Valor: R$975.000<br>Dono: otavioaugustorp");
+								createMarker(2285.89, 160.898,32,"Casa 642<br>Valor: R$750.000<br>Dono: bielzin");
+								createMarker(2269.46, 111.282,32,"Casa 643<br>Valor: R$750.000<br>Dono: Karolina_");
+								createMarker(2249.22, 111.062,32,"Casa 644<br>Valor: R$750.000<br>Dono: marques_silva");
+								createMarker(2324.36, 116.096,32,"Casa 645<br>Valor: R$750.000<br>Dono: Menor_DoSamp");
+								createMarker(2324.48, 136.364,32,"Casa 646<br>Valor: R$750.000<br>Dono: Vamp_Alvess");
+								createMarker(2324.44, 162.271,32,"Casa 647<br>Valor: R$750.000<br>Dono: Agente_Secreto");
+								createMarker(2324.41, 191.179,32,"Casa 648<br>Valor: R$750.000<br>Dono: arabedacpx");
+								createMarker(2363.58, 187.221,32,"Casa 649<br>Valor: R$750.000<br>Dono: CORINGAsploko");
+								createMarker(2363.63, 166.203,32,"Casa 650<br>Valor: R$750.000<br>Dono: KWAI_CARIOCA");
+								createMarker(2363.22, 141.988,32,"Casa 651<br>Valor: R$750.000<br>Dono: criarp");
+								createMarker(2363.43, 116.114,32,"Casa 652<br>Valor: R$750.000<br>Dono: criarp");
+								createMarker(313.522, -121.272,32,"Casa 653<br>Valor: R$750.000<br>Dono: Bib_Jhouu");
+								createMarker(313.677, -92.3603,32,"Casa 654<br>Valor: R$750.000<br>Dono: voltz_silva");
+								createMarker(295.079, -54.884,32,"Casa 655<br>Valor: R$750.000<br>Dono: Juliaa_Silvaa");
+								createMarker(267.698, -55.4079,32,"Casa 656<br>Valor: R$750.000<br>Dono: Juliaa_Silvaa");
+								createMarker(252.105, -92.3923,32,"Casa 657<br>Valor: R$750.000<br>Dono: SMURFZINN");
+								createMarker(252.204, -121.338,32,"Casa 658<br>Valor: R$750.000<br>Dono: Guilherme_zyech");
+								createMarker(1180.47, -1261,32,"Casa 659<br>Valor: R$180.000<br>Dono: Mafioso_nike");
+								createMarker(1186.89, -1260.84,32,"Casa 660<br>Valor: R$180.000<br>Dono: JuJuh_");
+								createMarker(1180.31, -1254.83,32,"Casa 661<br>Valor: R$180.000<br>Dono: Jade_Miller");
+								createMarker(1186.84, -1254.73,32,"Casa 662<br>Valor: R$180.000<br>Dono: MAGO_DA_BV");
+								createMarker(1186.67, -1254.75,32,"Casa 663<br>Valor: R$180.000<br>Dono: kconde");
+								createMarker(1180.14, -1254.76,32,"Casa 664<br>Valor: R$180.000<br>Dono: SHYVANNA");
+								createMarker(1186.93, -1260.94,32,"Casa 665<br>Valor: R$180.000<br>Dono: ROMANA");
+								createMarker(1180.38, -1260.98,32,"Casa 666<br>Valor: R$180.000<br>Dono: NURIA");
+								createMarker(1180.35, -1233.34,32,"Casa 667<br>Valor: R$180.000<br>Dono: VICKsz");
+								createMarker(1186.99, -1233.27,32,"Casa 668<br>Valor: R$180.000<br>Dono: tiopak");
+								createMarker(1180.29, -1227.09,32,"Casa 669<br>Valor: R$180.000<br>Dono: RECRUTATV");
+								createMarker(1186.9, -1227.09,32,"Casa 670<br>Valor: R$180.000<br>Dono: Mylla_Araujo");
+								createMarker(1186.86, -1227.1,32,"Casa 671<br>Valor: R$180.000<br>Dono: Braga_Vaqueiro");
+								createMarker(1180.35, -1227.11,32,"Casa 672<br>Valor: R$180.000<br>Dono: Luis_Nego");
+								createMarker(1187, -1233.27,32,"Casa 673<br>Valor: R$180.000<br>Dono: FELIPE_APOLIOM");
+								createMarker(1180.37, -1233.32,32,"Casa 674<br>Valor: R$180.000<br>Dono: _LEOA");
+								createMarker(1111.55, -975.552,32,"Casa 675<br>Valor: R$450.000<br>Dono: isabella_ttk");
+								createMarker(1252.29, -901.953,32,"Casa 676<br>Valor: R$180.000<br>Dono: fabriciodelas");
+								createMarker(1245.99, -902.752,32,"Casa 677<br>Valor: R$180.000<br>Dono: joes_golindano");
+								createMarker(1253.33, -908.146,32,"Casa 678<br>Valor: R$180.000<br>Dono: kaduzica");
+								createMarker(1246.78, -908.927,32,"Casa 679<br>Valor: R$180.000<br>Dono: gxfzk");
+								createMarker(1246.6, -908.954,32,"Casa 680<br>Valor: R$180.000<br>Dono: paulopipip");
+								createMarker(1253.36, -908.13,32,"Casa 681<br>Valor: R$180.000<br>Dono: Paulo_Vitoor");
+								createMarker(1245.97, -902.72,32,"Casa 682<br>Valor: R$180.000<br>Dono: Vertinho_pe");
+								createMarker(1252.35, -902.012,32,"Casa 683<br>Valor: R$180.000<br>Dono: taradinha");
+								createMarker(1242.54, -878.226,32,"Casa 684<br>Valor: R$180.000<br>Dono: lulinhakks");
+								createMarker(1249.19, -877.287,32,"Casa 685<br>Valor: R$180.000<br>Dono: BielZKTX");
+								createMarker(1248.31, -871.205,32,"Casa 686<br>Valor: R$180.000<br>Dono: Renato_Freitas_Silva");
+								createMarker(1241.93, -872.059,32,"Casa 687<br>Valor: R$180.000<br>Dono: lmgzim");
+								createMarker(1242.48, -878.205,32,"Casa 688<br>Valor: R$180.000<br>Dono: Renato_Freitas_Silva");
+								createMarker(1249.21, -877.31,32,"Casa 689<br>Valor: R$180.000<br>Dono: Matheus_Castro");
+								createMarker(1241.94, -871.975,32,"Casa 690<br>Valor: R$180.000<br>Dono: Hugo_Kelwin");
+								createMarker(1248.18, -871.271,32,"Casa 691<br>Valor: R$180.000<br>Dono: tilalotato");
+								createMarker(1281.45, -874.771,32,"Casa 692<br>Valor: R$180.000<br>Dono: wellintomoliveira");
+								createMarker(1287.85, -873.898,32,"Casa 693<br>Valor: R$180.000<br>Dono: Baller_Tz");
+								createMarker(1286.97, -867.853,32,"Casa 694<br>Valor: R$180.000<br>Dono: PLAY__GOMES");
+								createMarker(1280.54, -868.619,32,"Casa 695<br>Valor: R$180.000<br>Dono: O_adulto");
+								createMarker(1286.91, -867.861,32,"Casa 696<br>Valor: R$180.000<br>Dono: meno_Samuel");
+								createMarker(1280.65, -868.635,32,"Casa 697<br>Valor: R$180.000<br>Dono: mestre_kakau");
+								createMarker(1287.81, -874.006,32,"Casa 698<br>Valor: R$180.000<br>Dono: Humildade_Sempre");
+								createMarker(1281.48, -874.754,32,"Casa 699<br>Valor: R$180.000<br>Dono: RPks");
+								createMarker(1284.05, -897.822,32,"Casa 700<br>Valor: R$180.000<br>Dono: RAPOSINHA_GATA");
+								createMarker(1290.22, -897.054,32,"Casa 701<br>Valor: R$180.000<br>Dono: Perin_Fps");
+								createMarker(1291.16, -903.125,32,"Casa 702<br>Valor: R$180.000<br>Dono: coto_da_grota");
+								createMarker(1284.8, -903.951,32,"Casa 703<br>Valor: R$180.000<br>Dono: Dj_Leandro");
+								createMarker(1285.04, -903.897,32,"Casa 704<br>Valor: R$180.000<br>Dono: Guizim_Melo");
+								createMarker(1291.29, -903.118,32,"Casa 705<br>Valor: R$180.000<br>Dono: Deyvison_Henrique");
+								createMarker(1290.4, -897.003,32,"Casa 706<br>Valor: R$180.000<br>Dono: Lana_zz");
+								createMarker(1283.96, -897.755,32,"Casa 707<br>Valor: R$180.000<br>Dono: rianzinzl");
+								createMarker(-2868.45, 691.505,32,"Casa 708<br>Valor: R$525.000<br>Dono: Leandro_matador");
+								createMarker(-2882.84, 736.814,32,"Casa 709<br>Valor: R$525.000<br>Dono: GUSTAVO___");
+								createMarker(-2880.65, 790.376,31,"Casa 710<br>Valor: R$525.000<br>Dono: Ninguem");
+								createMarker(-2863.1, 829.454,32,"Casa 711<br>Valor: R$525.000<br>Dono: pacheco");
+								createMarker(-2839.46, 877.339,31,"Casa 712<br>Valor: R$525.000<br>Dono: Ninguem");
+								createMarker(-2843.31, 914.531,32,"Casa 713<br>Valor: R$525.000<br>Dono: MAYKINHO_CPX_MARE");
+								createMarker(-2856.99, 957.314,32,"Casa 714<br>Valor: R$525.000<br>Dono: Babuino");
+								createMarker(-2880.42, 990.103,32,"Casa 715<br>Valor: R$525.000<br>Dono: jack_sp");
+								createMarker(-2898.59, 1027.04,32,"Casa 716<br>Valor: R$525.000<br>Dono: Meliodas_HollyWood");
+								createMarker(-2899.77, 1066.98,32,"Casa 717<br>Valor: R$525.000<br>Dono: Elidio_");
+								createMarker(-2903.83, 1111.58,32,"Casa 718<br>Valor: R$525.000<br>Dono: jkeotrem_157");
+								createMarker(-2904.36, 1164.89,32,"Casa 719<br>Valor: R$525.000<br>Dono: Juliaa_Silvaa");
+								createMarker(-2563.35, 1148.23,32,"Casa 720<br>Valor: R$525.000<br>Dono: FORASTEIRO");
+								createMarker(-2534.61, 1142.66,32,"Casa 721<br>Valor: R$525.000<br>Dono: Gabi_Costa");
+								createMarker(-2506.39, 1141.01,32,"Casa 722<br>Valor: R$525.000<br>Dono: SRWHISK");
+								createMarker(-2478.84, 1141.11,32,"Casa 723<br>Valor: R$525.000<br>Dono: Lero_");
+								createMarker(-2451.19, 1140.8,32,"Casa 724<br>Valor: R$525.000<br>Dono: Lucas_Miranda");
+								createMarker(-2424.15, 1138.51,32,"Casa 725<br>Valor: R$525.000<br>Dono: DyGerass_");
+								createMarker(-2396.81, 1131.86,32,"Casa 726<br>Valor: R$525.000<br>Dono: cesinhasx");
+								createMarker(-2369.8, 1121.52,32,"Casa 727<br>Valor: R$525.000<br>Dono: Maykinho_Cpx_Mare");
+								createMarker(248.045, -33.0714,32,"Casa 728<br>Valor: R$105.000<br>Dono: ZVZINVITOR");
+								createMarker(253.275, -22.7074,32,"Casa 729<br>Valor: R$105.000<br>Dono: Rafa_Miran");
+								createMarker(285.912, 41.4896,32,"Casa 730<br>Valor: R$105.000<br>Dono: rd_cunha");
+								createMarker(309.757, 43.2843,32,"Casa 731<br>Valor: R$105.000<br>Dono: Rute_Duarte");
+								createMarker(316.573, 17.6762,32,"Casa 732<br>Valor: R$105.000<br>Dono: mica_vip");
+								createMarker(340.337, 33.7922,32,"Casa 733<br>Valor: R$105.000<br>Dono: LCS_DO_GERA");
+								createMarker(317.15, 55.0822,32,"Casa 734<br>Valor: R$105.000<br>Dono: Dgmilhas");
+								createMarker(341.995, 62.4017,32,"Casa 735<br>Valor: R$105.000<br>Dono: derick_xint");
+								createMarker(772.267, 348.206,32,"Casa 736<br>Valor: R$105.000<br>Dono: Twx22");
+								createMarker(783.854, 353.189,32,"Casa 737<br>Valor: R$105.000<br>Dono: otavioaugustorp");
+								createMarker(718.368, 300.616,32,"Casa 738<br>Valor: R$105.000<br>Dono: Souza_MTZ");
+								createMarker(747.094, 305.098,32,"Casa 739<br>Valor: R$105.000<br>Dono: bob_loko");
+								createMarker(723.607, 269.003,32,"Casa 740<br>Valor: R$105.000<br>Dono: Sidinho_lp");
+								createMarker(748.053, 257.78,32,"Casa 741<br>Valor: R$105.000<br>Dono: MK_X");
+								createMarker(-151.687, 881.773,32,"Casa 742<br>Valor: R$105.000<br>Dono: cleiton_guimaraes");
+								createMarker(-121.124, 858.135,32,"Casa 743<br>Valor: R$105.000<br>Dono: silva_hugo");
+								createMarker(-123.082, 875.542,32,"Casa 744<br>Valor: R$105.000<br>Dono: Mk_Ziin");
+								createMarker(-153.232, 906.479,32,"Casa 745<br>Valor: R$105.000<br>Dono: LN_fiel");
+								createMarker(-151.068, 933.652,32,"Casa 746<br>Valor: R$105.000<br>Dono: Rapha_vzlw");
+								createMarker(-126.701, 974.504,32,"Casa 747<br>Valor: R$105.000<br>Dono: lhyncoln_");
+								createMarker(-92.6521, 970.671,32,"Casa 748<br>Valor: R$105.000<br>Dono: Ninja_ofc");
+								createMarker(-83.156, 932.415,32,"Casa 749<br>Valor: R$105.000<br>Dono: davi_freitas");
+								createMarker(-124.159, 917.466,32,"Casa 750<br>Valor: R$105.000<br>Dono: TUQUIAdavi_fragi");
+								createMarker(-92.6503, 887.49,32,"Casa 751<br>Valor: R$105.000<br>Dono: Ryuk_dark");
+								createMarker(-87.3669, 915.57,32,"Casa 752<br>Valor: R$105.000<br>Dono: rip_rian");
+								createMarker(-52.9598, 894.865,32,"Casa 753<br>Valor: R$105.000<br>Dono: guijhonson");
+								createMarker(-54.7116, 919.318,32,"Casa 754<br>Valor: R$105.000<br>Dono: Henrique_jr_juventes");
+								createMarker(-56.4925, 935.985,32,"Casa 755<br>Valor: R$105.000<br>Dono: Bryan_roleplay");
+								createMarker(-67.4347, 971.43,32,"Casa 756<br>Valor: R$105.000<br>Dono: Samuca_Oloko");
+								createMarker(-37.0729, 962.471,32,"Casa 757<br>Valor: R$105.000<br>Dono: baiano_rj");
+								createMarker(-12.0233, 974.958,32,"Casa 758<br>Valor: R$105.000<br>Dono: Gusttavo_fernandes");
+								createMarker(-4.2034, 951.708,32,"Casa 759<br>Valor: R$105.000<br>Dono: titio_bolinha_rp");
+								createMarker(-15.5096, 933.77,32,"Casa 760<br>Valor: R$105.000<br>Dono: Rafa_LORD");
+								createMarker(17.69, 909.662,32,"Casa 761<br>Valor: R$105.000<br>Dono: evy_xz");
+								createMarker(32.0446, 924.044,32,"Casa 762<br>Valor: R$105.000<br>Dono: jeyze_ib");
+								createMarker(20.7513, 949.495,32,"Casa 763<br>Valor: R$105.000<br>Dono: Miguel_ib");
+								createMarker(22.8089, 968.86,32,"Casa 764<br>Valor: R$105.000<br>Dono: jeyze_ib");
+								createMarker(64.9738, 1005.56,32,"Casa 765<br>Valor: R$105.000<br>Dono: ansu");
+								createMarker(70.4036, 973.058,32,"Casa 766<br>Valor: R$105.000<br>Dono: Vamp_Alvess");
+								createMarker(-18.2702, 1115.15,32,"Casa 767<br>Valor: R$600.000<br>Dono: debruka");
+								createMarker(-905.76, 1514.73,32,"Casa 768<br>Valor: R$105.000<br>Dono: chico_pecinha");
+								createMarker(-938.889, 1425.27,32,"Casa 769<br>Valor: R$105.000<br>Dono: cleitinveneza");
+								createMarker(-150.165, 2688.56,32,"Casa 770<br>Valor: R$105.000<br>Dono: marianny");
+								createMarker(-169.31, 2707.25,32,"Casa 771<br>Valor: R$105.000<br>Dono: irineutody");
+								createMarker(-160.695, 2728.07,32,"Casa 772<br>Valor: R$105.000<br>Dono: Italo_Bruno");
+								createMarker(-201.855, 2772.48,32,"Casa 773<br>Valor: R$105.000<br>Dono: Marlison_BR");
+								createMarker(-219.57, 2766.65,31,"Casa 774<br>Valor: R$105.000<br>Dono: Ninguem");
+								createMarker(-232.865, 2807.58,31,"Casa 775<br>Valor: R$105.000<br>Dono: Ninguem");
+								createMarker(-257.973, 2782.51,31,"Casa 776<br>Valor: R$105.000<br>Dono: Ninguem");
+								createMarker(-269.315, 2769.43,32,"Casa 777<br>Valor: R$105.000<br>Dono: lukas_lk");
+								createMarker(-286.914, 2758.12,32,"Casa 778<br>Valor: R$105.000<br>Dono: JOAO_DA_FJG");
+								createMarker(-275.323, 2735.78,32,"Casa 779<br>Valor: R$105.000<br>Dono: Jose_Mendingo");
+								createMarker(-279.488, 2722.43,32,"Casa 780<br>Valor: R$105.000<br>Dono: Metralha");
+								createMarker(-310.357, 2726.91,32,"Casa 781<br>Valor: R$105.000<br>Dono: wankerlley");
+								createMarker(2014.08, 650.709,32,"Casa 782<br>Valor: R$350.000<br>Dono: Jonnas");
+								createMarker(2043.21, 652.072,32,"Casa 783<br>Valor: R$350.000<br>Dono: DN_DA_FUGA_");
+								createMarker(2065.77, 650.33,32,"Casa 784<br>Valor: R$350.000<br>Dono: ENZOH");
+								createMarker(2094.09, 650.832,32,"Casa 785<br>Valor: R$350.000<br>Dono: Neroo_xxx");
+								createMarker(2123.28, 652.086,32,"Casa 786<br>Valor: R$350.000<br>Dono: Leonardo_mesa");
+								createMarker(2120.4, 695.575,32,"Casa 787<br>Valor: R$350.000<br>Dono: twn_soares");
+								createMarker(2091.22, 694.374,31,"Casa 788<br>Valor: R$350.000<br>Dono: Ninguem");
+								createMarker(2068.95, 695.925,32,"Casa 789<br>Valor: R$350.000<br>Dono: Jamal_miranda");
+								createMarker(2040.66, 695.516,32,"Casa 790<br>Valor: R$350.000<br>Dono: sandi_ofc");
+								createMarker(2011.49, 694.495,31,"Casa 791<br>Valor: R$350.000<br>Dono: Ninguem");
+								createMarker(2013.31, 730.714,32,"Casa 792<br>Valor: R$350.000<br>Dono: patrikzyw");
+								createMarker(2042.53, 731.922,32,"Casa 793<br>Valor: R$350.000<br>Dono: Elias_fxs");
+								createMarker(2064.97, 730.538,32,"Casa 794<br>Valor: R$350.000<br>Dono: Joaovitor_zc");
+								createMarker(2093.37, 730.952,32,"Casa 795<br>Valor: R$350.000<br>Dono: guizin_cpx");
+								createMarker(2122.47, 732.268,32,"Casa 796<br>Valor: R$350.000<br>Dono: XXDD");
+								createMarker(2123.31, 775.677,32,"Casa 797<br>Valor: R$350.000<br>Dono: Cheetah_Crazy");
+								createMarker(2094.09, 774.396,32,"Casa 798<br>Valor: R$350.000<br>Dono: Matheus_xsza");
+								createMarker(2071.55, 775.972,31,"Casa 799<br>Valor: R$350.000<br>Dono: Ninguem");
+								createMarker(2043.25, 775.659,32,"Casa 800<br>Valor: R$350.000<br>Dono: Agente_Secreto");
+								createMarker(2014.05, 774.51,32,"Casa 801<br>Valor: R$350.000<br>Dono: Kamikaze_Shelby");
+								createMarker(2178.03, 655.658,32,"Casa 802<br>Valor: R$350.000<br>Dono: Carlinhos_ph");
+								createMarker(2206.38, 656.069,31,"Casa 803<br>Valor: R$350.000<br>Dono: Ninguem");
+								createMarker(2228.87, 654.357,32,"Casa 804<br>Valor: R$350.000<br>Dono: Th_xp");
+								createMarker(2258.08, 655.587,32,"Casa 805<br>Valor: R$350.000<br>Dono: Scxtt_Purple");
+								createMarker(2317.81, 655.717,32,"Casa 806<br>Valor: R$350.000<br>Dono: sanguinario_rp");
+								createMarker(2346.1, 655.84,32,"Casa 807<br>Valor: R$350.000<br>Dono: Pedro_Glock");
+								createMarker(2368.34, 654.486,31,"Casa 808<br>Valor: R$350.000<br>Dono: Ninguem");
+								createMarker(2397.53, 655.702,32,"Casa 809<br>Valor: R$350.000<br>Dono: Madu_Folgada");
+								createMarker(2396.9, 690.733,32,"Casa 810<br>Valor: R$350.000<br>Dono: Duque_br");
+								createMarker(2368.64, 690.536,32,"Casa 811<br>Valor: R$350.000<br>Dono: Leonan_Santiago");
+								createMarker(2346.45, 692.193,32,"Casa 812<br>Valor: R$350.000<br>Dono: gorizola");
+								createMarker(2317.21, 690.991,32,"Casa 813<br>Valor: R$350.000<br>Dono: tx_TEXAS");
+								createMarker(2256.92, 691.066,32,"Casa 814<br>Valor: R$350.000<br>Dono: fr_dazl");
+								createMarker(2228.62, 690.432,32,"Casa 815<br>Valor: R$350.000<br>Dono: bundacagada");
+								createMarker(2206.37, 691.998,32,"Casa 816<br>Valor: R$350.000<br>Dono: Jack_Frango");
+								createMarker(2177.28, 690.829,32,"Casa 817<br>Valor: R$350.000<br>Dono: IvoPT");
+								createMarker(2168.51, 772.306,32,"Casa 818<br>Valor: R$350.000<br>Dono: ArthurDETONA");
+								createMarker(2177.57, 735.435,32,"Casa 819<br>Valor: R$350.000<br>Dono: Dan_Nove");
+								createMarker(2205.88, 735.848,32,"Casa 820<br>Valor: R$350.000<br>Dono: Canalha_Mirabamba");
+								createMarker(2228.35, 734.41,32,"Casa 821<br>Valor: R$350.000<br>Dono: BIELL_MAST");
+								createMarker(2257.53, 735.409,32,"Casa 822<br>Valor: R$350.000<br>Dono: Bielzinn_delassx");
+								createMarker(2346.59, 735.915,32,"Casa 823<br>Valor: R$350.000<br>Dono: Gabidvmaia");
+								createMarker(2369.11, 734.454,32,"Casa 824<br>Valor: R$350.000<br>Dono: Bk_MD");
+								createMarker(2398.38, 735.474,32,"Casa 825<br>Valor: R$350.000<br>Dono: Felipe_Winches");
+								createMarker(2449.89, 742.686,32,"Casa 826<br>Valor: R$350.000<br>Dono: IAGO_sz");
+								createMarker(2450.13, 714.396,31,"Casa 827<br>Valor: R$350.000<br>Dono: Ninguem");
+								createMarker(2448.22, 689.831,32,"Casa 828<br>Valor: R$350.000<br>Dono: gabrielytm");
+								createMarker(2449.64, 662.62,32,"Casa 829<br>Valor: R$350.000<br>Dono: Diel_Tavida");
+								createMarker(2049.58, 2763.93,32,"Casa 830<br>Valor: R$600.000<br>Dono: MS_JL");
+								createMarker(2039.49, 2766.18,32,"Casa 831<br>Valor: R$600.000<br>Dono: Expansao_R_Z_O");
+								createMarker(2018.59, 2765.89,32,"Casa 832<br>Valor: R$600.000<br>Dono: Jeff_Yagami");
+								createMarker(1992.6, 2764.28,32,"Casa 833<br>Valor: R$600.000<br>Dono: Pablo_Do_Samp");
+								createMarker(1967.44, 2765.78,32,"Casa 834<br>Valor: R$600.000<br>Dono: JUAN_MACHADO");
+								createMarker(1929.06, 2774.43,31,"Casa 835<br>Valor: R$600.000<br>Dono: Ninguem");
+								createMarker(1931.29, 2721.7,32,"Casa 836<br>Valor: R$400.000<br>Dono: Isa_Solteira");
+								createMarker(1950.74, 2722.59,31,"Casa 837<br>Valor: R$400.000<br>Dono: Ninguem");
+								createMarker(1969.77, 2723.37,32,"Casa 838<br>Valor: R$400.000<br>Dono: amendoim_kauan");
+								createMarker(1998.67, 2721.94,32,"Casa 839<br>Valor: R$400.000<br>Dono: GEANDERSON");
+								createMarker(2018.21, 2722.55,32,"Casa 840<br>Valor: R$400.000<br>Dono: yZezinhoy");
+								createMarker(2037.15, 2723.4,32,"Casa 841<br>Valor: R$400.000<br>Dono: ANQ_VICTOR");
+								createMarker(2066.03, 2721.91,31,"Casa 842<br>Valor: R$400.000<br>Dono: Ninguem");
+								createMarker(2056.56, 2664.34,32,"Casa 843<br>Valor: R$400.000<br>Dono: canabis_jk");
+								createMarker(2037.05, 2663.82,31,"Casa 844<br>Valor: R$400.000<br>Dono: Ninguem");
+								createMarker(2017.87, 2663.03,32,"Casa 845<br>Valor: R$400.000<br>Dono: Kelvin_cremas");
+								createMarker(1989.08, 2664.43,32,"Casa 846<br>Valor: R$400.000<br>Dono: Pedro900");
+								createMarker(1969.67, 2664.12,32,"Casa 847<br>Valor: R$400.000<br>Dono: Medusaxz");
+								createMarker(1950.55, 2663.11,32,"Casa 848<br>Valor: R$400.000<br>Dono: Betin_Samp");
+								createMarker(1921.73, 2664.77,32,"Casa 849<br>Valor: R$400.000<br>Dono: IGORFLAMENGO");
+								createMarker(1735.61, 2691.49,32,"Casa 850<br>Valor: R$600.000<br>Dono: el_chefio");
+								createMarker(1703.6, 2689.32,31,"Casa 851<br>Valor: R$600.000<br>Dono: Ninguem");
+								createMarker(1678.28, 2691.37,32,"Casa 852<br>Valor: R$600.000<br>Dono: Duque_br");
+								createMarker(1652.36, 2709.41,31,"Casa 853<br>Valor: R$600.000<br>Dono: Ninguem");
+								createMarker(1627.15, 2711.45,32,"Casa 854<br>Valor: R$600.000<br>Dono: admarlon");
+								createMarker(1601.1, 2709.32,31,"Casa 855<br>Valor: R$600.000<br>Dono: Ninguem");
+								createMarker(1580.15, 2709.2,32,"Casa 856<br>Valor: R$600.000<br>Dono: Yago_dugera");
+								createMarker(1570.26, 2711.57,32,"Casa 857<br>Valor: R$600.000<br>Dono: pedrinho_geras");
+								createMarker(1663.21, 2753.71,32,"Casa 858<br>Valor: R$400.000<br>Dono: Nissin_Ikarius");
+								createMarker(1643.77, 2753.03,32,"Casa 859<br>Valor: R$400.000<br>Dono: NRZIN");
+								createMarker(1626.7, 2753.69,32,"Casa 860<br>Valor: R$400.000<br>Dono: Hygor_Souzza");
+								createMarker(1608.54, 2753.79,32,"Casa 861<br>Valor: R$400.000<br>Dono: Igor_lourenco");
+								createMarker(1599.57, 2757.15,32,"Casa 862<br>Valor: R$600.000<br>Dono: BaguaL_Mg");
+								createMarker(1564.95, 2757.12,32,"Casa 863<br>Valor: R$400.000<br>Dono: MrC_");
+								createMarker(1564.3, 2776.59,32,"Casa 864<br>Valor: R$400.000<br>Dono: Danny_S");
+								createMarker(1565.02, 2793.55,32,"Casa 865<br>Valor: R$400.000<br>Dono: Davi_Jubis");
+								createMarker(1588.41, 2797.75,32,"Casa 866<br>Valor: R$600.000<br>Dono: Alex_Xerife");
+								createMarker(1618.42, 2801.24,32,"Casa 867<br>Valor: R$400.000<br>Dono: SCOfield");
+								createMarker(1637.85, 2801.9,31,"Casa 868<br>Valor: R$400.000<br>Dono: Ninguem");
+								createMarker(1654.87, 2801.52,32,"Casa 869<br>Valor: R$400.000<br>Dono: Vini_Escobar");
+								createMarker(1673.07, 2801.48,32,"Casa 870<br>Valor: R$400.000<br>Dono: Kzinwalker_");
+								createMarker(1664.83, 2845.65,32,"Casa 871<br>Valor: R$600.000<br>Dono: GAVETA_SAMP");
+								createMarker(1632.73, 2843.38,31,"Casa 872<br>Valor: R$600.000<br>Dono: Ninguem");
+								createMarker(1622.92, 2845.35,31,"Casa 873<br>Valor: R$600.000<br>Dono: Ninguem");
+								createMarker(1601.95, 2845.66,31,"Casa 874<br>Valor: R$600.000<br>Dono: Ninguem");
+								createMarker(1575.88, 2843.47,31,"Casa 875<br>Valor: R$600.000<br>Dono: Ninguem");
+								createMarker(1550.6, 2845.34,31,"Casa 876<br>Valor: R$600.000<br>Dono: Ninguem");
+								createMarker(1607.15, 2679.31,32,"Casa 877<br>Valor: R$400.000<br>Dono: Connor_silva_ofc");
+								createMarker(1555.98, 2658.99,32,"Casa 878<br>Valor: R$400.000<br>Dono: Pacheco_Original");
+								createMarker(1573.03, 2658.22,32,"Casa 879<br>Valor: R$400.000<br>Dono: kauezin_cpx");
+								createMarker(1610.95, 2648.14,32,"Casa 880<br>Valor: R$600.000<br>Dono: jaiminho_pingulin");
+								createMarker(1666.95, 2608.61,32,"Casa 881<br>Valor: R$400.000<br>Dono: carlocvb");
+								createMarker(1638.17, 2610.12,32,"Casa 882<br>Valor: R$400.000<br>Dono: mamaria");
+								createMarker(1618.74, 2609.62,32,"Casa 883<br>Valor: R$400.000<br>Dono: terror_de_sp");
+								createMarker(1600.49, 2609.55,31,"Casa 884<br>Valor: R$400.000<br>Dono: Ninguem");
+								createMarker(1554.54, 2610.14,32,"Casa 885<br>Valor: R$400.000<br>Dono: Teyscottsilva");
+								createMarker(1535.04, 2609.56,32,"Casa 886<br>Valor: R$400.000<br>Dono: VETINNE");
+								createMarker(1515.9, 2608.9,32,"Casa 887<br>Valor: R$400.000<br>Dono: Vini_Bielzito");
+								createMarker(1344.64, 2608.75,32,"Casa 888<br>Valor: R$400.000<br>Dono: Seu_silva");
+								createMarker(1313.7, 2608.6,32,"Casa 889<br>Valor: R$400.000<br>Dono: Daniel_Vp");
+								createMarker(1284.95, 2610.22,32,"Casa 890<br>Valor: R$400.000<br>Dono: EL_YUMA");
+								createMarker(1265.55, 2609.64,32,"Casa 891<br>Valor: R$400.000<br>Dono: Hzinn_novinrlk");
+								createMarker(1223.48, 2616.88,31,"Casa 892<br>Valor: R$600.000<br>Dono: Ninguem");
+								createMarker(1225.87, 2584.78,32,"Casa 893<br>Valor: R$600.000<br>Dono: diparis_solif");
+								createMarker(1272.36, 2564.37,32,"Casa 894<br>Valor: R$600.000<br>Dono: MK_duCRIME");
+								createMarker(1269.97, 2554.54,32,"Casa 895<br>Valor: R$600.000<br>Dono: thj_xp");
+								createMarker(1325.73, 2567.93,32,"Casa 896<br>Valor: R$600.000<br>Dono: Joao_platinuss");
+								createMarker(1349.74, 2568.04,32,"Casa 897<br>Valor: R$600.000<br>Dono: Thiago_faixa");
+								createMarker(1359.66, 2565.89,32,"Casa 898<br>Valor: R$600.000<br>Dono: principeda_paz");
+								createMarker(1362.72, 2525.61,32,"Casa 899<br>Valor: R$600.000<br>Dono: GEFERSON_SAMUEL");
+								createMarker(1407.57, 2524.46,32,"Casa 900<br>Valor: R$600.000<br>Dono: COBRAOLLO");
+								createMarker(1417.93, 2567.92,32,"Casa 901<br>Valor: R$600.000<br>Dono: Pamella");
+								createMarker(1441.68, 2568.48,32,"Casa 902<br>Valor: R$600.000<br>Dono: bragavital");
+								createMarker(1451.26, 2565.9,32,"Casa 903<br>Valor: R$600.000<br>Dono: erinho_");
+								createMarker(1454.36, 2525.59,32,"Casa 904<br>Valor: R$600.000<br>Dono: grego");
+								createMarker(1500.35, 2535.35,32,"Casa 905<br>Valor: R$600.000<br>Dono: Geralt_de_Rivia");
+								createMarker(1503.36, 2568.16,32,"Casa 906<br>Valor: R$600.000<br>Dono: Boanerge");
+								createMarker(1513.2, 2566.2,32,"Casa 907<br>Valor: R$600.000<br>Dono: mzsilva");
+								createMarker(1551.54, 2567.96,32,"Casa 908<br>Valor: R$600.000<br>Dono: SHELB_");
+								createMarker(1564.43, 2566.1,32,"Casa 909<br>Valor: R$600.000<br>Dono: Diego_Escobar.");
+								createMarker(1596.6, 2568.14,31,"Casa 910<br>Valor: R$600.000<br>Dono: Ninguem");
+								createMarker(1623.52, 2568.01,32,"Casa 911<br>Valor: R$600.000<br>Dono: Mara_Mackenzie");
+								createMarker(1646.36, 2570.05,32,"Casa 912<br>Valor: R$400.000<br>Dono: Rafael_barroso");
+								createMarker(1665.58, 2570.92,32,"Casa 913<br>Valor: R$400.000<br>Dono: Denis_anjoss");
+								createMarker(984.857, 2343.64,31,"Casa 914<br>Valor: R$350.000<br>Dono: Ninguem");
+								createMarker(986.22, 2314.17,32,"Casa 915<br>Valor: R$350.000<br>Dono: pamela_euzebio");
+								createMarker(986.469, 2272,32,"Casa 916<br>Valor: R$350.000<br>Dono: Rhaelson_Santos");
+								createMarker(956.992, 2270.75,32,"Casa 917<br>Valor: R$350.000<br>Dono: guizin_ObsCuRY");
+								createMarker(886.301, 2047.07,32,"Casa 918<br>Valor: R$350.000<br>Dono: Ghost_Zn");
+								createMarker(886.246, 1980.5,31,"Casa 919<br>Valor: R$350.000<br>Dono: Ninguem");
+								createMarker(929.833, 2027.91,32,"Casa 920<br>Valor: R$350.000<br>Dono: Meliodas_Hollywood");
+								createMarker(928.305, 2006.48,32,"Casa 921<br>Valor: R$350.000<br>Dono: Lucaslml");
+								createMarker(930.035, 1928.2,31,"Casa 922<br>Valor: R$350.000<br>Dono: Ninguem");
+								createMarker(984.707, 1878.85,31,"Casa 923<br>Valor: R$350.000<br>Dono: Ninguem");
+								createMarker(986.338, 1901.02,31,"Casa 924<br>Valor: R$350.000<br>Dono: Ninguem");
+								createMarker(985.178, 1930.63,32,"Casa 925<br>Valor: R$350.000<br>Dono: MdsGodzila");
+								createMarker(984.651, 1978.27,32,"Casa 926<br>Valor: R$350.000<br>Dono: Cristiano_delas");
+								createMarker(986.078, 2000.54,32,"Casa 927<br>Valor: R$350.000<br>Dono: Gogodilo_Cpx");
+								createMarker(985.299, 2030.1,32,"Casa 928<br>Valor: R$350.000<br>Dono: THALISSON_OLIVEIRA");
+								createMarker(1032.5, 2315.93,31,"Casa 929<br>Valor: R$350.000<br>Dono: Ninguem");
+								createMarker(1030.06, 2028.17,32,"Casa 930<br>Valor: R$350.000<br>Dono: Roman_Parker");
+								createMarker(1028.53, 2005.56,32,"Casa 931<br>Valor: R$350.000<br>Dono: LIBAZIN");
+								createMarker(1029.46, 1976.09,32,"Casa 932<br>Valor: R$350.000<br>Dono: wellyton_souzza");
+								createMarker(1030.08, 1928.19,32,"Casa 933<br>Valor: R$350.000<br>Dono: Tiago_fugarel");
+								createMarker(1028.6, 1905.92,31,"Casa 934<br>Valor: R$350.000<br>Dono: Ninguem");
+								createMarker(1029.92, 1876.39,32,"Casa 935<br>Valor: R$350.000<br>Dono: _padrinho_");
+								createMarker(1030.11, 1848.08,31,"Casa 936<br>Valor: R$350.000<br>Dono: Ninguem");
+								createMarker(1084.77, 2031.66,32,"Casa 937<br>Valor: R$350.000<br>Dono: Alisson_Deus");
+								createMarker(1086.27, 2000.86,32,"Casa 938<br>Valor: R$350.000<br>Dono: Rk_Zimgtz");
+								createMarker(1085.18, 1976.63,32,"Casa 939<br>Valor: R$350.000<br>Dono: Wesleyjp");
+								createMarker(1320.05, 2028.2,32,"Casa 940<br>Valor: R$350.000<br>Dono: MARCILO");
+								createMarker(1318.57, 2005.77,31,"Casa 941<br>Valor: R$350.000<br>Dono: Ninguem");
+								createMarker(1319.72, 1976.16,32,"Casa 942<br>Valor: R$350.000<br>Dono: LICON_DANTAS");
+								createMarker(1309.31, 1932.28,31,"Casa 943<br>Valor: R$350.000<br>Dono: Ninguem");
+								createMarker(1336.46, 1932.23,31,"Casa 944<br>Valor: R$350.000<br>Dono: Ninguem");
+								createMarker(1366.27, 2027.94,32,"Casa 945<br>Valor: R$350.000<br>Dono: LORDMF_O_MELHOR");
+								createMarker(1365.18, 2003.72,32,"Casa 946<br>Valor: R$350.000<br>Dono: Rapha_vzlw");
+								createMarker(1366.16, 1974.2,32,"Casa 947<br>Valor: R$350.000<br>Dono: menorgl");
+								createMarker(1364.61, 1931.59,31,"Casa 948<br>Valor: R$350.000<br>Dono: Ninguem");
+								createMarker(1365.17, 1896.65,32,"Casa 949<br>Valor: R$350.000<br>Dono: Mog_Nox");
+								createMarker(1407.76, 1896.89,32,"Casa 950<br>Valor: R$350.000<br>Dono: justin_bieberr");
+								createMarker(1408.7, 1920.03,32,"Casa 951<br>Valor: R$350.000<br>Dono: Klebinho_Arauj");
+								createMarker(1412.61, 1952.07,32,"Casa 952<br>Valor: R$350.000<br>Dono: WENDEL_CORREIA");
+								createMarker(1439.81, 1952.17,32,"Casa 953<br>Valor: R$350.000<br>Dono: martins_Calabreso");
+								createMarker(1462.33, 1950.57,31,"Casa 954<br>Valor: R$350.000<br>Dono: Ninguem");
+								createMarker(1465.19, 1919.98,32,"Casa 955<br>Valor: R$350.000<br>Dono: Kiana");
+								createMarker(1465.17, 1895.05,32,"Casa 956<br>Valor: R$350.000<br>Dono: Meliodas_HollyWood");
+								createMarker(1548.53, 2125.56,31,"Casa 957<br>Valor: R$350.000<br>Dono: Ninguem");
+								createMarker(1549.56, 2096.46,32,"Casa 958<br>Valor: R$350.000<br>Dono: Bryan_Surtado");
+								createMarker(1554.48, 2074.67,32,"Casa 959<br>Valor: R$350.000<br>Dono: x_Nervoso");
+								createMarker(1596.12, 2038.36,32,"Casa 960<br>Valor: R$350.000<br>Dono: Meliodas_HollyWood");
+								createMarker(1595.75, 2071.03,31,"Casa 961<br>Valor: R$350.000<br>Dono: Ninguem");
+								createMarker(1597.2, 2093.64,31,"Casa 962<br>Valor: R$350.000<br>Dono: Ninguem");
+								createMarker(1596.16, 2123.19,32,"Casa 963<br>Valor: R$350.000<br>Dono: Qeeda_SFC");
+								createMarker(1597.38, 2147.36,31,"Casa 964<br>Valor: R$350.000<br>Dono: Ninguem");
+								createMarker(1640.5, 2149.75,32,"Casa 965<br>Valor: R$350.000<br>Dono: Nauk_oliveira");
+								createMarker(1645.48, 2127.94,31,"Casa 966<br>Valor: R$350.000<br>Dono: Ninguem");
+								createMarker(1639.51, 2102.83,32,"Casa 967<br>Valor: R$350.000<br>Dono: Nizh_");
+								createMarker(1639.33, 2075.72,32,"Casa 968<br>Valor: R$350.000<br>Dono: yLuFFy_TdC");
+								createMarker(1641.07, 2044.92,32,"Casa 969<br>Valor: R$350.000<br>Dono: caio_diego");
+								createMarker(1685.19, 2046.54,32,"Casa 970<br>Valor: R$350.000<br>Dono: WilliamLindo");
+								createMarker(1680.28, 2068.85,31,"Casa 971<br>Valor: R$350.000<br>Dono: Ninguem");
+								createMarker(1686.42, 2093.8,32,"Casa 972<br>Valor: R$350.000<br>Dono: Coronel_Franco");
+								createMarker(1685.21, 2123.33,32,"Casa 973<br>Valor: R$350.000<br>Dono: Jhonnzzx_Silvazzx");
+								createMarker(1846.19, 661.145,32,"Casa 974<br>Valor: R$350.000<br>Dono: RsxVagabundo");
+								createMarker(1845.28, 690.386,32,"Casa 975<br>Valor: R$350.000<br>Dono: kmargo");
+								createMarker(1844.69, 718.669,32,"Casa 976<br>Valor: R$350.000<br>Dono: paulin_bob");
+								createMarker(1846.23, 741.229,32,"Casa 977<br>Valor: R$350.000<br>Dono: REIZINHO_PX");
+								createMarker(-2635.48, 261.158,32,"Casa 978<br>Valor: R$525.000<br>Dono: BiroSamp");
+								createMarker(-2635.75, 239.658,31,"Casa 979<br>Valor: R$525.000<br>Dono: Ninguem");
+								createMarker(-2632.92, 274.487,31,"Casa 980<br>Valor: R$300.000<br>Dono: Ninguem");
+								createMarker(-2654.09, 202.162,31,"Casa 981<br>Valor: R$525.000<br>Dono: Ninguem");
+								createMarker(-2660.37, 200.504,31,"Casa 982<br>Valor: R$525.000<br>Dono: Ninguem");
+								createMarker(-2672.28, 202.498,31,"Casa 983<br>Valor: R$525.000<br>Dono: Ninguem");
+								createMarker(-2678.53, 200.525,32,"Casa 984<br>Valor: R$525.000<br>Dono: MAYKINHO_CPX_MARE");
+								createMarker(-2688.71, 198.229,32,"Casa 985<br>Valor: R$525.000<br>Dono: Kuringa0_ssp");
+								createMarker(-2639.74, 168.662,32,"Casa 986<br>Valor: R$525.000<br>Dono: Jappa");
+								createMarker(-2621.58, 168.61,32,"Casa 987<br>Valor: R$525.000<br>Dono: DraKings");
+								createMarker(-2691.8, 123.749,32,"Casa 988<br>Valor: R$525.000<br>Dono: ghmidia");
+								createMarker(-2691.56, 102.291,32,"Casa 989<br>Valor: R$525.000<br>Dono: Daniel_dagda");
+								createMarker(-2691.44, 64.4907,32,"Casa 990<br>Valor: R$525.000<br>Dono: Rauan_Oliveira");
+								createMarker(-2721.31, 14.4552,32,"Casa 991<br>Valor: R$525.000<br>Dono: Pytaya");
+								createMarker(-2721.03, -23.2843,32,"Casa 992<br>Valor: R$525.000<br>Dono: sorriso_ronaldo");
+								createMarker(-2721.34, -44.7578,32,"Casa 993<br>Valor: R$525.000<br>Dono: Argentino_sz");
+								createMarker(-2721.24, -120.817,31,"Casa 994<br>Valor: R$525.000<br>Dono: Ninguem");
+								createMarker(-2691.42, -114.238,32,"Casa 995<br>Valor: R$525.000<br>Dono: Brabo_Itz");
+								createMarker(-2691.56, -152.85,32,"Casa 996<br>Valor: R$525.000<br>Dono: jhonnas_fxp");
+								createMarker(-2721.17, -166.474,32,"Casa 997<br>Valor: R$525.000<br>Dono: otavioaugustorp");
+								createMarker(-2140.03, 1189.58,32,"Casa 998<br>Valor: R$600.000<br>Dono: Fvl_Casual");
+								createMarker(-2015.56, 897.469,32,"Casa 999<br>Valor: R$600.000<br>Dono: terror_de_sp");
+								createMarker(-2281.5, 916.653,32,"Casa 1000<br>Valor: R$600.000<br>Dono: rayenne_vivih");
+			
+						createMarker(1352.56, -1758.73,17,"Empresa: Supermercado 24/7 - 1<br>Valor: R$22.000.000<br>Dono: FaeL_Chefe");
+								createMarker(1929.06, -1775.39,17,"Empresa: Supermercado 24/7 - 2<br>Valor: R$6.000.000<br>Dono: Konan_Garcia");
+								createMarker(2244.51, -1665,45,"Empresa: Loja de skin Binco - 3<br>Valor: R$5.000.000<br>Dono: riq_sp");
+								createMarker(2104.82, -1806.49,29,"Empresa: Pizzaria - 4<br>Valor: R$6.000.000<br>Dono: Julio_Xy");
+								createMarker(2070.87, -1793.85,7,"Empresa: Barbearia - 5<br>Valor: R$200.000<br>Dono: joao_ppo");
+								createMarker(2229.51, -1721.65,54,"Empresa: Academia LS - 6<br>Valor: R$800.000<br>Dono: Marcol");
+								createMarker(2069.21, -1779.84,39,"Empresa: Studio de Tatuagem - 7<br>Valor: R$300.000<br>Dono: nauk_oliveira");
+								createMarker(811.038, -1616.26,10,"Empresa: Burger shot - 8<br>Valor: R$1.500.000<br>Dono: Striker_Mec");
+								createMarker(823.657, -1588.71,7,"Empresa: Barbearia - 9<br>Valor: R$200.000<br>Dono: OVERDOZE_Viceratti");
+								createMarker(2449.24, -1763.74,17,"Empresa: Supermercado 24/7 - 10<br>Valor: R$2.000.000<br>Dono: Demonic");
+								createMarker(2309.78, -1643.85,49,"Empresa: Bar - 11<br>Valor: R$1.000.000<br>Dono: marcelo_pzl");
+								createMarker(328.463, -1512.64,25,"Empresa: Hotel - 12<br>Valor: R$1.800.000<br>Dono: NajuX_Yamazaki");
+								createMarker(461.083, -1500.93,45,"Empresa: Loja de skin Victim - 13<br>Valor: R$1.600.000<br>Dono: silv_asa");
+								createMarker(453.637, -1478.19,45,"Empresa: Loja de skin Zip - 14<br>Valor: R$1.600.000<br>Dono: Lohainy");
+								createMarker(2420.17, -1508.97,14,"Empresa: Cluckin bell - 15<br>Valor: R$1.000.000<br>Dono: FelipeNs");
+								createMarker(499.792, -1359.98,45,"Empresa: Loja de skin Prolaps - 16<br>Valor: R$1.800.000<br>Dono: Luan_Thales");
+								createMarker(1000.05, -919.999,17,"Empresa: Supermercado 24/7 - 17<br>Valor: R$16.000.000<br>Dono: zDragoN");
+								createMarker(2421.53, -1219.79,48,"Empresa: Strip Club - 18<br>Valor: R$300.000<br>Dono: Winchester_");
+								createMarker(1199.42, -918.612,10,"Empresa: Burger shot - 19<br>Valor: R$5.600.000<br>Dono: Victor_Trok");
+								createMarker(1315.51, -898.359,17,"Empresa: Supermercado 24/7 - 20<br>Valor: R$6.000.000<br>Dono: Vinizin_TTxxx");
+								createMarker(1368.23, -1279.72,6,"Empresa: Ammunation 1 - 21<br>Valor: R$10.000.000<br>Dono: Flavinhaa_SP");
+								createMarker(2232.77, -1159.78,25,"Empresa: Hotel - 22<br>Valor: R$1.400.000<br>Dono: Balla_Zn");
+								createMarker(2139.81, -1168.64,17,"Empresa: Supermercado 24/7 - 23<br>Valor: R$3.000.000<br>Dono: Kconde");
+								createMarker(1038.16, -1339.98,50,"Empresa: Restaurante - 24<br>Valor: R$8.000.000<br>Dono: Delas.fxp");
+								createMarker(928.404, -1353.08,14,"Empresa: Cluckin bell - 25<br>Valor: R$1.200.000<br>Dono: zDiablo_");
+								createMarker(2139.84, -1191.99,17,"Empresa: Supermercado 24/7 - 26<br>Valor: R$3.000.000<br>Dono: genno");
+								createMarker(953.872, -1336.81,21,"Empresa: Sex Shop - 27<br>Valor: R$500.000<br>Dono: joao_henriqxs");
+								createMarker(2112.81, -1212.04,45,"Empresa: Loja de skin Suburban - 28<br>Valor: R$1.800.000<br>Dono: SunBarbosa");
+								createMarker(2400.53, -1981.39,6,"Empresa: Ammunation 2 - 29<br>Valor: R$1.000.000<br>Dono: Joaon_Souza");
+								createMarker(681.525, -474.279,49,"Empresa: Bar - 30<br>Valor: R$1.000.000<br>Dono: LN_fiel");
+								createMarker(2397.82, -1898.79,14,"Empresa: Cluckin bell - 31<br>Valor: R$800.000<br>Dono: Leonardo_Delas_XTT");
+								createMarker(672.588, -496.887,7,"Empresa: Barbearia - 32<br>Valor: R$200.000<br>Dono: Isa_Solteira");
+								createMarker(-1567.18, -2729.81,17,"Empresa: Supermercado 24/7 - 33<br>Valor: R$1.000.000<br>Dono: kovalski_th");
+								createMarker(-2231.87, -2557.97,17,"Empresa: Supermercado 24/7 - 34<br>Valor: R$800.000<br>Dono: bob_");
+								createMarker(-2154.62, -2460.73,14,"Empresa: Cluckin bell - 35<br>Valor: R$600.000<br>Dono: terror_de_sp");
+								createMarker(-2093.28, -2464.53,6,"Empresa: Ammunation 2 - 36<br>Valor: R$800.000<br>Dono: CHICO_TRIPA");
+								createMarker(-2336.7, -166.777,10,"Empresa: Burger shot - 37<br>Valor: R$800.000<br>Dono: Rd_adrianxx");
+								createMarker(-2242.49, 128.591,47,"Empresa: Zero RC shop - 38<br>Valor: R$200.000<br>Dono: Ninguem");
+								createMarker(-2270.22, -155.976,54,"Empresa: Academia - 39<br>Valor: R$600.000<br>Dono: Ninguem");
+								createMarker(1087.66, -923.017,21,"Empresa: Sex Shop - 40<br>Valor: R$500.000<br>Dono: THD_THIAGO");
+								createMarker(-2719.58, -319.143,25,"Empresa: Hotel - 41<br>Valor: R$600.000<br>Dono: Ninguem");
+								createMarker(-2356.35, 1008.11,10,"Empresa: Burger shot - 42<br>Valor: R$600.000<br>Dono: OliverXx");
+								createMarker(-2419.36, 969.809,17,"Empresa: Supermercado 24/7 - 43<br>Valor: R$600.000<br>Dono: WellSales");
+								createMarker(-1620.37, 1163.04,22,"Empresa: Farmacia - 44<br>Valor: R$1.500.000<br>Dono: Isa_Trem");
+								createMarker(-2442.7, 754.559,17,"Empresa: Supermercado 24/7 - 45<br>Valor: R$1.200.000<br>Dono: STILES7");
+								createMarker(1022.47, -1121.65,48,"Empresa: Boate - 46<br>Valor: R$300.000<br>Dono: PL_BALA");
+								createMarker(-1816.53, 618.011,14,"Empresa: Cluckin bell - 47<br>Valor: R$600.000<br>Dono: Vitim_turco");
+								createMarker(-1721.54, 1359.71,50,"Empresa: Restaurante - 48<br>Valor: R$600.000<br>Dono: Lombrigo");
+								createMarker(-2624.59, 1412.18,48,"Empresa: Club do prazer - 49<br>Valor: R$600.000<br>Dono: FUSION");
+								createMarker(-78.67, -1169.78,17,"Empresa: Supermercado 24/7 - 50<br>Valor: R$12.000.000<br>Dono: Luis");
+								createMarker(-2767.78, 788.726,50,"Empresa: Lanchonete - 51<br>Valor: R$600.000<br>Dono: RsxVagabundo");
+								createMarker(-2672.4, 258.355,14,"Empresa: Cluckin bell - 52<br>Valor: R$600.000<br>Dono: Taldo_Traficante");
+								createMarker(-2626.63, 208.95,6,"Empresa: Ammunation 2 - 53<br>Valor: R$600.000<br>Dono: MAYKINHO_CPX_MARE");
+								createMarker(203.452, -202.618,29,"Empresa: Pizzaria - 54<br>Valor: R$2.000.000<br>Dono: Subzer0");
+								createMarker(-2571.08, 246.419,7,"Empresa: Barbearia - 55<br>Valor: R$200.000<br>Dono: Ninguem");
+								createMarker(242.418, -178.392,6,"Empresa: Ammunation 2 - 56<br>Valor: R$2.000.000<br>Dono: Lero_");
+								createMarker(-1912.04, 828.275,10,"Empresa: Burger shot - 57<br>Valor: R$600.000<br>Dono: Juliaa_Silvaa");
+								createMarker(143.348, -201.318,49,"Empresa: Barzinho - 58<br>Valor: R$500.000<br>Dono: Jonas_Juninhodafruta");
+								createMarker(-1882.49, 866.252,45,"Empresa: Loja de skin Suburban - 59<br>Valor: R$600.000<br>Dono: pedrinho_h");
+								createMarker(-2490.77, -29.0616,45,"Empresa: Loja de skin Suburban - 60<br>Valor: R$600.000<br>Dono: Victor_Almeida");
+								createMarker(-2491.43, -38.8102,39,"Empresa: Studio de Tatuagem - 61<br>Valor: R$200.000<br>Dono: Ninguem");
+								createMarker(172.18, -152.506,49,"Empresa: Barzinho - 62<br>Valor: R$500.000<br>Dono: naua_vitor");
+								createMarker(-1808.48, 945.734,50,"Empresa: Restaurante - 63<br>Valor: R$600.000<br>Dono: MENOR_TH__");
+								createMarker(-1694.54, 950.835,45,"Empresa: Loja de skin Victim - 64<br>Valor: R$600.000<br>Dono: firoluiz");
+								createMarker(292.272, -195.404,50,"Empresa: Restaurante - 65<br>Valor: R$800.000<br>Dono: bielzin");
+								createMarker(-1755.78, 962.462,48,"Empresa: Boate - 66<br>Valor: R$200.000<br>Dono: Gabriel__Reliquia");
+								createMarker(-1941.47, 2379.72,50,"Empresa: Lanchonete - 67<br>Valor: R$600.000<br>Dono: alysson_silvaa");
+								createMarker(-1213.43, 1830.69,14,"Empresa: Cluckin bell - 68<br>Valor: R$600.000<br>Dono: Gordinho_Gato");
+								createMarker(-1465.52, 2610.93,25,"Empresa: Hotel - 69<br>Valor: R$600.000<br>Dono: MR_Senor");
+								createMarker(-1988.55, 1039.29,22,"Empresa: Farmacia - 70<br>Valor: R$1.500.000<br>Dono: Thiagui_Real");
+								createMarker(-1508.86, 2610.42,6,"Empresa: Ammunation 2 - 71<br>Valor: R$600.000<br>Dono: Marques_Silva");
+								createMarker(-1272.03, 2713.01,17,"Empresa: Supermercado 24/7 - 72<br>Valor: R$1.500.000<br>Dono: Paulo_beramar");
+								createMarker(-2374.63, 910.169,45,"Empresa: Loja de skin Binco - 73<br>Valor: R$600.000<br>Dono: CLEBSON_LUCAS");
+								createMarker(-254.48, 2603.3,14,"Empresa: Cluckin bell - 74<br>Valor: R$600.000<br>Dono: guizin_ObsCuRY");
+								createMarker(693.662, 1966.6,48,"Empresa: Strip Club - 75<br>Valor: R$300.000<br>Dono: twn_soares");
+								createMarker(662.623, 1716.8,17,"Empresa: Supermercado 24/7 - 76<br>Valor: R$1.600.000<br>Dono: RD__");
+								createMarker(-53.8204, 1189.34,50,"Empresa: Restaurante - 77<br>Valor: R$800.000<br>Dono: meliodas_hollywood");
+								createMarker(-144.088, 1224.43,50,"Empresa: Lanchonete - 78<br>Valor: R$1.000.000<br>Dono: digoro_reis");
+								createMarker(-1675.95, 431.904,17,"Empresa: Supermercado 24/7 - 79<br>Valor: R$1.200.000<br>Dono: Bryan_roleplay");
+								createMarker(-2523.54, 1216.12,50,"Empresa: Lanchonete - 80<br>Valor: R$600.000<br>Dono: Escobar_fe");
+								createMarker(-89.0693, 1378.28,50,"Empresa: Lanchonete - 81<br>Valor: R$600.000<br>Dono: ALAN_MARLON");
+								createMarker(-179.847, 1087.62,49,"Empresa: Bar - 82<br>Valor: R$600.000<br>Dono: DanielX_Yamazaki");
+								createMarker(-857.728, 1535.63,50,"Empresa: Lanchonete - 83<br>Valor: R$600.000<br>Dono: debruka");
+								createMarker(172.682, 1176.73,14,"Empresa: Cluckin bell - 84<br>Valor: R$1.000.000<br>Dono: _Matheus_x_s_");
+								createMarker(1599.78, 2221.37,17,"Empresa: Supermercado 24/7 - 85<br>Valor: R$600.000<br>Dono: malak_rp");
+								createMarker(-181.283, 1034.84,17,"Empresa: Supermercado 24/7 - 86<br>Valor: R$3.700.000<br>Dono: buiu");
+								createMarker(1872.79, 2071.77,10,"Empresa: Burger shot - 87<br>Valor: R$600.000<br>Dono: Darkzin_Menor");
+								createMarker(1937.25, 2307.27,17,"Empresa: Supermercado 24/7 - 88<br>Valor: R$600.000<br>Dono: karolina_");
+								createMarker(1968.71, 2295.49,54,"Empresa: Academia - 89<br>Valor: R$600.000<br>Dono: Ninguem");
+								createMarker(2102.81, 2257.33,45,"Empresa: Loja de skin Binco - 90<br>Valor: R$600.000<br>Dono: edilsonariel");
+								createMarker(2102.47, 2228.81,14,"Empresa: Cluckin bell - 91<br>Valor: R$600.000<br>Dono: Coringa_Marley");
+								createMarker(2097.73, 2223.97,17,"Empresa: Supermercado 24/7 - 92<br>Valor: R$600.000<br>Dono: Pitoco_Delas");
+								createMarker(2090.43, 2224.37,45,"Empresa: Loja de skin Prolaps - 93<br>Valor: R$600.000<br>Dono: bradoock_zn");
+								createMarker(1367.17, 248.501,29,"Empresa: Pizzaria - 94<br>Valor: R$3.000.000<br>Dono: alexandre_1993");
+								createMarker(2083.24, 2224.06,50,"Empresa: Lanchonete - 95<br>Valor: R$600.000<br>Dono: Duque_br");
+								createMarker(1311.1, 329.532,49,"Empresa: Bar - 96<br>Valor: R$800.000<br>Dono: Chefin_Original");
+								createMarker(-315.891, 829.965,6,"Empresa: Ammunation 2 - 97<br>Valor: R$2.000.000<br>Dono: Isaac_guem");
+								createMarker(1294.59, 235.97,50,"Empresa: Restaurante - 98<br>Valor: R$800.000<br>Dono: PURURUK");
+								createMarker(2556.98, 2064.84,6,"Empresa: Ammunation 2 - 99<br>Valor: R$600.000<br>Dono: Fofao_Rp");
+								createMarker(2472.47, 2034.18,10,"Empresa: Burger shot - 100<br>Valor: R$600.000<br>Dono: luana_marques");
+								createMarker(2393.39, 2042.36,14,"Empresa: Cluckin bell - 101<br>Valor: R$600.000<br>Dono: thai_olivee");
+								createMarker(2366.93, 2071.11,10,"Empresa: Burger shot - 102<br>Valor: R$600.000<br>Dono: Leandrinho_sump");
+								createMarker(-90.718, 1229.01,25,"Empresa: Hotel - 103<br>Valor: R$600.000<br>Dono: Menorr_Bebel");
+								createMarker(2332.59, 74.9826,29,"Empresa: Pizzaria - 104<br>Valor: R$800.000<br>Dono: taciogato");
+								createMarker(2333.63, 61.521,6,"Empresa: Ammunation 2 - 105<br>Valor: R$1.000.000<br>Dono: HS_ARCANJO");
+								createMarker(2194.21, 1990.93,17,"Empresa: Supermercado 24/7 - 106<br>Valor: R$600.000<br>Dono: Jacob_Levy");
+								createMarker(2333.48, -67.3539,17,"Empresa: Supermercado 24/7 - 107<br>Valor: R$600.000<br>Dono: Rayzin");
+								createMarker(2247.63, 2396.64,17,"Empresa: Supermercado 24/7 - 108<br>Valor: R$600.000<br>Dono: kaiky_meirelles");
+								createMarker(2159.53, 943.197,17,"Empresa: Supermercado 24/7 - 109<br>Valor: R$1.000.000<br>Dono: Paulo_Jadiel");
+								createMarker(2117.41, 897.342,17,"Empresa: Supermercado 24/7 - 110<br>Valor: R$600.000<br>Dono: ErickzinOfc");
+								createMarker(2515.68, 2297.39,21,"Empresa: Sex Shop - 111<br>Valor: R$200.000<br>Dono: Cristiano_Sbl");
+								createMarker(2170.42, 2795.83,10,"Empresa: Burger shot - 112<br>Valor: R$600.000<br>Dono: silva_hugo");
+								createMarker(2150.63, 2733.88,17,"Empresa: Supermercado 24/7 - 113<br>Valor: R$600.000<br>Dono: SCOfield");
+								createMarker(-2193.08, -2255.06,25,"Empresa: Hotel - 114<br>Valor: R$600.000<br>Dono: Ninguem");
+								createMarker(2885.12, 2453.34,17,"Empresa: Supermercado 24/7 - 115<br>Valor: R$600.000<br>Dono: mrs_slv_mdr");
+								createMarker(2802.6, 2430.35,45,"Empresa: Loja de skin Victim - 116<br>Valor: R$600.000<br>Dono: Ninguem");
+								createMarker(2779.3, 2453.3,45,"Empresa: Loja de skin Suburban - 117<br>Valor: R$600.000<br>Dono: Ninguem");
+								createMarker(2756.3, 2476.81,50,"Empresa: Restaurante - 118<br>Valor: R$600.000<br>Dono: joaovictor_borges");
+								createMarker(2628.22, 2349.04,25,"Empresa: Hotel - 119<br>Valor: R$600.000<br>Dono: ErK_RealTrem");
+								createMarker(2546.51, 1971.91,17,"Empresa: Supermercado 24/7 - 120<br>Valor: R$600.000<br>Dono: BALAOO_MILLER");
+								createMarker(2409.01, 2016.13,21,"Empresa: Sex Shop - 121<br>Valor: R$600.000<br>Dono: Ninguem");
+								createMarker(1383.18, 465.256,17,"Empresa: Supermercado 24/7 - 122<br>Valor: R$2.000.000<br>Dono: MK_X");
+								createMarker(1158.48, 2072.32,10,"Empresa: Burger shot - 123<br>Valor: R$600.000<br>Dono: falks");
+								createMarker(2015.31, 1106.32,48,"Empresa: Boate - 124<br>Valor: R$200.000<br>Dono: Thexx_Henrii");
+								createMarker(2351.97, 2533.18,50,"Empresa: Lanchonete - 125<br>Valor: R$600.000<br>Dono: MK_ESCOBA");
+								createMarker(-2430.84, -51.8266,22,"Empresa: Farmacia - 126<br>Valor: R$1.500.000<br>Dono: ketlyn_Dank");
+								createMarker(826.306, -1738.41,17,"Empresa: Supermercado 24/7 - 127<br>Valor: R$2.000.000<br>Dono: VitinhoMec");
+								createMarker(1456.73, -1138.02,45,"Empresa: Loja de skin Zip - 128<br>Valor: R$1.700.000<br>Dono: chico_pecinha");
+								createMarker(2924.01, -759.602,17,"Empresa: Supermercado 24/7 - 129<br>Valor: R$1.200.000<br>Dono: Fervour");
+								createMarker(1419.58, -1623.82,45,"Empresa: Loja de skin Prolaps - 130<br>Valor: R$2.000.000<br>Dono: Mc_Coringa");
+								createMarker(687.849, -1183.86,10,"Empresa: Burger shot - 131<br>Valor: R$2.600.000<br>Dono: SementinhaXcalmo");
+								createMarker(1363.29, -1753.83,50,"Empresa: Hz Restaurante - 132<br>Valor: R$6.000.000<br>Dono: Liiraa_");
+								createMarker(1833.11, -1842.53,17,"Empresa: Supermercado 24/7 - 133<br>Valor: R$3.000.000<br>Dono: Arcanjo_S");
+								createMarker(1381.65, 40.5966,17,"Empresa: Supermercado 24/7 - 134<br>Valor: R$3.600.000<br>Dono: Rodrigo__");
+								createMarker(1404.26, 51.1617,29,"Empresa: Pizzaria - 135<br>Valor: R$1.400.000<br>Dono: Bob_ppn");
+								createMarker(701.664, -519.025,45,"Empresa: Loja de skin Prolaps - 136<br>Valor: R$1.000.000<br>Dono: giolino");
+								createMarker(671.223, -519.575,49,"Empresa: Barzinho - 137<br>Valor: R$1.000.000<br>Dono: arabedacpx");
+								createMarker(875.792, -1565.04,45,"Empresa: Loja de skin Prolaps - 138<br>Valor: R$1.000.000<br>Dono: Cariocazz_Naoki");
+								createMarker(805.157, -1067.21,45,"Empresa: Loja de skin Prolaps - 139<br>Valor: R$6.000.000<br>Dono: Ravi_Bittencourt");
+								createMarker(-2462.96, 132.247,25,"Empresa: Hotel - 140<br>Valor: R$600.000<br>Dono: paolinhaaaaaaaa");
+								createMarker(-2165.38, -2416.98,17,"Empresa: Supermercado 24/7 - 141<br>Valor: R$800.000<br>Dono: Dariu_Ravok");
+								createMarker(-2103.97, -2342.08,50,"Empresa: Restaurante - 142<br>Valor: R$800.000<br>Dono: Agente_Secreto");
+								createMarker(548.779, -176.3,49,"Empresa: Bar - 143<br>Valor: R$800.000<br>Dono: carlos_antunoi");
+								createMarker(1001.52, 819.843,17,"Empresa: Supermercado 24/7 - 144<br>Valor: R$2.000.000<br>Dono: Drax_Negrao");
+								createMarker(1836.12, -1682.48,49,"Empresa: Alhambra Club - 145<br>Valor: R$800.001<br>Dono: Mk_SLZ");
+			
+						createMarker(252.286, 36.9616,35,"Oficina: Oficina Vila Mecanica<br>Valor: 40.000 HzCoins<br>Dono: Carolzinha_reeis");
+								createMarker(1797.84, -1718.49,35,"Oficina: Oficina Central<br>Valor: 50.000 HzCoins<br>Dono: bah_do_pastel");
+								createMarker(2144.28, -1733.81,35,"Oficina: Oficina Art Car<br>Valor: 50.000 HzCoins<br>Dono: Cicero_Sergio");
+								createMarker(1256.97, -1267.24,35,"Oficina: Oficina Destak Car<br>Valor: 50.000 HzCoins<br>Dono: Tyle");
+								createMarker(-153.436, 1175.37,35,"Oficina: Oficina Imperio Car<br>Valor: 40.000 HzCoins<br>Dono: giolino");
+								createMarker(-1840.75, 146.039,35,"Oficina: Stop Car<br>Valor: 40.000 HzCoins<br>Dono: Dr_houser");
+								createMarker(639.607, -492.767,35,"Oficina: Oficina Real Car<br>Valor: 40.000 HzCoins<br>Dono: kovalski_th");
+								createMarker(198.701, -250.112,35,"Oficina: Oficina Imperial<br>Valor: 40.000 HzCoins<br>Dono: marcelo_pzl");
+			
+						createMarker(2233.11, -993.438,60,"Org: TROPA DA JAMAICA<br>Valor: 120.000 HzCoins<br>Líder: thall_cristian");
+								createMarker(75.6286, -662.263,60,"Org: MAFIA-YAKUZA 3.0<br>Valor: 100.000 HzCoins<br>Líder: Carlos_Drak");
+								createMarker(1896.94, 707.314,60,"Org: Morro Do Vidigal<br>Valor: 100.000 HzCoins<br>Líder: Boanerge");
+								createMarker(2593.97, 34.6958,60,"Org: CAPAO REDONDO<br>Valor: 100.000 HzCoins<br>Líder: Tioquim_Pecinha");
+								createMarker(1714.98, 1224.51,60,"Org: A TRIBO<br>Valor: 100.000 HzCoins<br>Líder: _Japaan02");
+								createMarker(536.323, 162.399,60,"Org: Tropa Dos Milionarios<br>Valor: 100.000 HzCoins<br>Líder: Balla_Zn");
+								createMarker(-786.723, 2723.88,60,"Org: TROPA DO BRUXO<br>Valor: 100.000 HzCoins<br>Líder: Morenah_Martins");
+								createMarker(-2301.39, 164.935,60,"Org: SINDICATO DO CRIME<br>Valor: 100.000 HzCoins<br>Líder: zDiablo_");
+								createMarker(2839.57, -866.001,60,"Org: OS TALIBAN<br>Valor: 120.000 HzCoins<br>Líder: Menor_Smith");
+								createMarker(-652.655, -1599.68,60,"Org: TURQUIA <br>Valor: 100.000 HzCoins<br>Líder: TURCA_DELE");
+								createMarker(1792.83, -815.85,60,"Org: N . S . P  NEM SEI PORQUE <br>Valor: 120.000 HzCoins<br>Líder: CHICO_TRIPA");
+								createMarker(349.789, -844.814,60,"Org: COMPLEXO DO CHAPADAO<br>Valor: 100.000 HzCoins<br>Líder: HAMBALL");
+								createMarker(-221.023, 211.064,60,"Org: CIDADE DE DEUS <br>Valor: 100.000 HzCoins<br>Líder: Vinizin_TTxxx");
+								createMarker(-2238.21, -428.291,60,"Org: GROTA<br>Valor: 100.000 HzCoins<br>Líder: Lero_");
+			
+						createMarker(1554.44, -1675.64,30,"Corp: Policia Civil<br>Valor: 80.000 HzCoins<br>Líder: HaLe_ReVoKe");
+								createMarker(745.688, -1370.76,30,"Corp: Policia Militar<br>Valor: 80.000 HzCoins<br>Líder: AndersonGomes");
+								createMarker(1653.52, -315.585,30,"Corp: Policia Rodoviaria Federal<br>Valor: 80.000 HzCoins<br>Líder: Felipe_Gomes");
+								createMarker(942.558, 1733.13,30,"Corp: Rocam<br>Valor: 80.000 HzCoins<br>Líder: jeff_both");
+								createMarker(1876.6, 2189.16,30,"Corp: Rota<br>Valor: 80.000 HzCoins<br>Líder: Cel_Monteiro");
+								createMarker(-532.816, -526.22,30,"Corp: Batalhao de Choque<br>Valor: 80.000 HzCoins<br>Líder: joao_cavura");
+								createMarker(-1605.54, 711.143,30,"Corp: Forca Tatica<br>Valor: 80.000 HzCoins<br>Líder: J_ThzinR");
+								createMarker(1133.57, -2037.19,30,"Corp: Bope<br>Valor: 80.000 HzCoins<br>Líder: Aninha_mp");
+								createMarker(153.331, 2529.56,30,"Corp: Aeronautica<br>Valor: 80.000 HzCoins<br>Líder: Mk_SLZ");
+								createMarker(209.755, 1812,30,"Corp: Exercito<br>Valor: 80.000 HzCoins<br>Líder: RONAN_SANTOS");
+								createMarker(876.546, -1189.93,30,"Corp: BAEP<br>Valor: 80.000 HzCoins<br>Líder: JOAOTDF");
+			
+						createMarker(555.221, 1198.6,27,"Desmanche de Veiculos 1<br>Valor: 50.000 HzCoins<br>Proprietário: Paulo_Jadiel");
+								createMarker(2795.01, 1320.74,27,"Desmanche de Veiculos 2<br>Valor: 50.000 HzCoins<br>Proprietário: IsaiasSill");
+								createMarker(1273.93, 193.102,27,"Desmanche de Veiculos 3<br>Valor: 50.000 HzCoins<br>Proprietário: GuizhiXJ");
+								createMarker(-2109.37, -154.416,27,"Desmanche de Veiculos 4<br>Valor: 50.000 HzCoins<br>Proprietário: WellSales");
+			
+						createMarker(1185.76, -1331.97,22,"Hospital: All Saints General Hospital<br>Valor: 50.000 HzCoins<br>Dono: Vinizin_TTxxx");
+								createMarker(2025.28, -1402.95,22,"Hospital: County General Hospital<br>Valor: 50.000 HzCoins<br>Dono: Thiago_delacruz");
+								createMarker(1252.26, 332.724,22,"Hospital: Crippen Memorial Hospital<br>Valor: 40.000 HzCoins<br>Dono: zivaar");
+								createMarker(-2202.34, -2314.25,22,"Hospital: Angel Pine Medical Center<br>Valor: 40.000 HzCoins<br>Dono: Agente_Secreto");
+								createMarker(-2658.4, 638.758,22,"Hospital: San Fierro Medical Center<br>Valor: 40.000 HzCoins<br>Dono: Sr.Duck_Garcia");
+								createMarker(1581.31, 1776.28,22,"Hospital: Las Venturas Hospital<br>Valor: 40.000 HzCoins<br>Dono: Cel_Monteiro");
+								createMarker(-323.047, 1054.7,22,"Hospital: Fort Carson Medical Center<br>Valor: 40.000 HzCoins<br>Dono: alexandre_1993");
+								createMarker(-1507.77, 2520.22,22,"Hospital: El Quebrados Medical Center<br>Valor: 40.000 HzCoins<br>Dono: Bob_ppn");
+									createMarker(608.972, 1689,55,"Posto: #1<br>Dono: genno");
+								createMarker(66.9299, 1216.92,55,"Posto: #2<br>Dono: ketlyn_Dank");
+								createMarker(2147.69, 2747.99,55,"Posto: #3<br>Dono: cb_jbl");
+								createMarker(2114.62, 920.056,55,"Posto: #4<br>Dono: PL_BALA");
+								createMarker(-1471.66, 1863.84,55,"Posto: #5<br>Dono: camilasc");
+								createMarker(2639.69, 1106.24,55,"Posto: #6<br>Dono: STILES7");
+								createMarker(-1328.6, 2677.56,55,"Posto: #7<br>Dono: Wesleyjp");
+								createMarker(2202.41, 2474.74,55,"Posto: #8<br>Dono: HS_ARCANJO");
+								createMarker(-1675.95, 413.252,55,"Posto: #9<br>Valor: R$800.000<br>Dono: fast_gamer");
+								createMarker(-2410.88, 961.561,55,"Posto: #10<br>Valor: R$800.000<br>Dono: FUSION");
+								createMarker(-91.1111, -1168.81,55,"Posto: #11<br>Dono: FaeL_Chefe");
+								createMarker(994.04, -938.181,55,"Posto: #12<br>Dono: Kconde");
+								createMarker(1941.33, -1769.47,55,"Posto: #13<br>Dono: giolino");
+								createMarker(-2244.38, -2560.91,55,"Posto: #14<br>Valor: R$800.000<br>Dono: Marques_Silva");
+								createMarker(-1606.32, -2713.73,55,"Posto: #15<br>Dono: ninaodogera");
+								createMarker(1596.27, 2199.4,55,"Posto: #16<br>Dono: Sayu_");
+								createMarker(1376.11, 462.294,55,"Posto: #17<br>Valor: R$1.200.000<br>Dono: OliverXx");
+								createMarker(-1142.96, -145.657,55,"Posto: #18<br>Dono: WellSales");
+								createMarker(1550.45, -2640.85,55,"Posto: #19<br>Dono: Mc_Coringa");
+								createMarker(1306.2, 1440,55,"Posto: #20<br>Valor: R$640.000<br>Dono: Arthur_criadorj");
+								createMarker(386.651, 2597.95,55,"Posto: #21<br>Valor: R$480.000<br>Dono: Lucas_ssilva");
+								createMarker(837.455, -1751.49,55,"Posto: #22<br>Dono: Gabi_Costa");
+								createMarker(2440.8, -1750.65,55,"Posto: #23<br>Dono: Agente_Secreto");
+								createMarker(2917.19, -772.243,55,"Posto: #24<br>Dono: Fervour");
+								createMarker(1395.73, 18.6222,55,"Posto: #25<br>Dono: Rodrigo__");
+								createMarker(554.416, -170.915,55,"Posto: #26<br>Dono: kayke111");
+								createMarker(1011.37, 811.838,55,"Posto: #27<br>Dono: pedrinho_h");
+								createMarker(655.701, -565.005,55,"Posto: #28<br>Dono: R_tupeti");
+								createMarker(-2026.54, 162.373,55,"Posto: #29<br>Dono: RD__");
+			</script></main><div style="backdrop-filter: blur(2px);margin-top: -6px" class="footer footer-dark">
+  <div class="container pt-5">
+    <div class="row pt-md px-4 align_responsive">
+      <div class="col-md-2 justify-content-start d-flex p-0 ml-0 mb-5 mb-lg-0">
+        <a style="margin: 11px" class="align_responsive mx-auto mx-md-0" href="">
+          <img src="images/logo_new.png" alt="Footer logo" style="width: 100px;">
+        </a>
+      </div>
+      <div class="col-lg-3 col-12 mx-auto text-justified col-sm-4 ml-lg-auto mb-5 mb-lg-0">
+        <h6 style="font-weight: 700;font-size: 1.2em;letter-spacing: 1px;" class="heading monument text-white mb-2">REDES<span class="billion text-primary">Sociais</span></h6>
+        <ul class="list-unstyled monument-medium text-uppercase text-muted">
+          <li><a class="link_footer" target="_blank" href="https://www.instagram.com/horizontegamesrp/">Instagram</a></li>
+          <li><a class="link_footer" target="_blank" href="https://www.youtube.com/channel/UCHgBTyRtIqetyih6jh-eLXw">YouTube</a></li>
+          <li><a class="link_footer" target="_blank" href="http://discord.horizonte-rp.com/">Discord</a></li>
+        </ul>
+      </div>
+      <div class="col-lg-3 col-12 mx-auto text-justified col-sm-4 mb-5 mb-lg-0">
+        <h6 style="font-weight: 700;font-size: 1.2em;letter-spacing: 1px;" class="heading monument text-white mb-2 text-uppercase">Links<span class="billion text-primary">Úteis</span></h6>
+        <ul class="list-unstyled text-muted monument-medium text-uppercase text-small">
+          <li><a class="link_footer" href="termos.html">Termos e condições</a></li>
+          <li><a class="link_footer" href="privacy.html">Políticas de privacidade</a></li>
+          <li><a class="link_footer" href="prazos.html">Prazos de compensação</a></li>
+        </ul>
+      </div>
+      <div class="col-lg-3 col-12 mx-auto text-justified col-sm-4 mb-5 mb-lg-0">
+        <div class="d-flex align-items-center icones_footer justify-content-end">
+          <img class="mr-2" src="images/mercadopago.png" width="50px">
+          <img class="mx-2" src="images/googleplay.png" width="30px">
+          <img class="mx-2" src="images/pix.png" width="60px">
+          <img class="mx-1" src="images/mastercard.png" width="50px">
+        </div>
+        <br>
+        <div class="d-flex flex-column icones_footer align-items-center align-items-md-end justify-content-end">
+          <a class="monument" style="color: #9cddff;font-size: 0.6em" href="email-protection.html#047771746b767061446c6b766d7e6b6a70612976742a676b69"><span class="__cf_email__" data-cfemail="6615131609141203260e09140f1c090812034b14164805090b">[email&nbsp;protected]</span></a>
+          <div style="color: #9cddff;font-size: 0.7em" class="copyright monument pt-1 mt-0">CNPJ 40.897.020/0001-21</div>
+        </div>
+      </div>
+    </div>
+    <div class="row align_responsive align-items-center justify-content-center py-4 mt-4 delimiter-top">
+      <div class="col-md-6">
+        <div style="color: #9cddff;font-size: 0.7em" class="copyright monument text-center">
+          � 2024 <span class="text-primary">Horizonte Roleplay</span>. Todos os direitos reservados. <br>
+        </div>
+      </div>
+    </div>
+ </div>
+</div>
+	<script data-cfasync="false" src="js/email-decode.min.js"></script><script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+	<script type="text/javascript">
+		AOS.init({
+			easing: 'ease-out-back'
+		});
+					$('.header-slide').slick({
+				autoplay: true,
+				arrows: false,
+				dots: true,
+				appendDots: $('.slider-dots'),
+			});
+
+			$('.header-slide').on('beforeChange', function(event, slick, currentSlide, nextSlide){
+				$('.slide__title').removeClass('aos-animate');
+				$('.slide__subtitle-container').removeClass('aos-animate');
+				$('.slide__action').removeClass('aos-animate');
+				$('.slide__picture').removeClass('aos-animate');
+			})
+			.on('afterChange', function(event, slick, currentSlide) {
+				$('[data-aos]').addClass("aos-animate");
+				$('.slide__title').addClass('aos-animate');
+				$('.slide__subtitle-container').addClass('aos-animate');
+				$('.slide__action').addClass('aos-animate');
+				$('.slide__picture').addClass('aos-animate');
+			});
+					</script>
+	
+</body></html>
